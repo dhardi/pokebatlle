@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+   
+}
+
+header{
+    background-color: yellow;
+}
+main{
+    background-color: aqua;
+}
+footer{
+    background-color: blueviolet;
+}
+
+#opcards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    margin-top: 15px;
+}
+.bordercard{
+    border-style: solid;
+    background-color: yellow;
+    box-sizing: border-box;
+    width: 65px;
+    height: 100px;
+}
