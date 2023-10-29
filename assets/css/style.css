@@ -26,22 +26,36 @@ header{
     background-color: yellow;
 }
 main{
+    display: flex;
     background-color: aqua;
 }
 footer{
     background-color: blueviolet;
 }
 
-#opcards{
+#battlecamp{
+    display: flex;
+    width: 375px;
+    height: 565px;
+}
+
+#playcards{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    margin-top: 15px;
+    
+    align-self: flex-end;
+    
 }
 .bordercard{
     border-style: solid;
     background-color: yellow;
     box-sizing: border-box;
-    width: 65px;
-    height: 100px;
+    width: 106px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-image: url("../images/pokecardback.PNG");
+    background-size: cover;
 }
