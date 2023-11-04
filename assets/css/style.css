@@ -70,7 +70,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    padding-top: 200px;
+    padding-top: 150px;
     align-self: flex-end;
     
     
@@ -104,6 +104,30 @@ footer{
 }
 
 #scoreboard{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#pokescore{
+    border-style: solid;
+    
+}
+
+#youscore{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    
+}
+#youscore>h2{
+    margin-right: 10px;
+}
+
+#youboxscoreboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     border-style: solid;
     box-sizing: border-box;
     width: 65px;
@@ -111,6 +135,25 @@ footer{
     border-radius: 17px;
     
    
+}
+
+#opscore {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    
+}
+
+#opscore>h2 {
+    margin-right: 10px;
+}
+
+#opboxscoreboard{
+    border-style: solid;
+    box-sizing: border-box;
+    width: 65px;
+    height: 56px;
+    border-radius: 17px;
 }
 
 #boxround{
