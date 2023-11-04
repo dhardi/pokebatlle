@@ -56,8 +56,8 @@ footer{
 }
 .opboxcard{
     border-style: solid;
-box-sizing: border-box;
-width: 106px;
+    box-sizing: border-box;
+    width: 106px;
     height: 150px;
     margin-left: 10px;
     margin-right: 10px;
@@ -70,8 +70,9 @@ width: 106px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    
+    padding-top: 200px;
     align-self: flex-end;
+    
     
 
   /*border card player*/  
@@ -87,4 +88,37 @@ width: 106px;
     margin-bottom: 10px;
     background-image: url("../images/pokecardback.PNG");
     background-size: cover;
+}
+
+
+/*middle lane*/
+#middlelane{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 150px;
+
+}
+
+#scoreboard{
+    border-style: solid;
+    box-sizing: border-box;
+    width: 65px;
+    height: 56px;
+    border-radius: 17px;
+    
+   
+}
+
+#boxround{
+    border-style: solid;
+    box-sizing: border-box;
+    width: 65px;
+    height: 56px;
+    border-radius: 17px;
+    
+    
 }
