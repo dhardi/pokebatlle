@@ -31,14 +31,41 @@ main{
 }
 footer{
     background-color: blueviolet;
+    height: 50px;
+}
+
+.gifstyle{
+    width: 20%;
 }
 
 #battlecamp{
     display: flex;
-    width: 375px;
-    height: 565px;
+    flex-direction: column;
+   
+    width: 390px;
+    height: 800px;
 }
 
+/*Oponent cards*/
+#opcards{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-between;
+
+}
+.opboxcard{
+    border-style: solid;
+box-sizing: border-box;
+width: 106px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+/*players cards */
 #playcards{
     display: flex;
     flex-direction: row;
@@ -46,6 +73,8 @@ footer{
     
     align-self: flex-end;
     
+
+  /*border card player*/  
 }
 .bordercard{
     border-style: solid;
