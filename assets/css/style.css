@@ -54,14 +54,15 @@ footer{
     justify-content: space-between;
 
 }
-.opboxcard{
+.playboxcard{
     border-style: solid;
     box-sizing: border-box;
-    width: 106px;
-    height: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: 122px;
+    height: 173px ;
+    margin-left: 5px;
+    margin-right: 0px;
+    background-image: url("../images/frontcard.jpg");
+    background-size: cover;
 
 }
 
