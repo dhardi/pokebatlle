@@ -16,3 +16,53 @@ const pokemons = [
     "Porygon", "Omanyte", "Omastar", "Kabuto", "Kabutops", "Aerodactyl", "Snorlax", "Articuno", "Zapdos", "Moltres",
     "Dratini", "Dragonair", "Dragonite", "Mewtwo", "Mew"
 ];
+
+
+
+
+function runGame(){
+
+};
+
+
+
+
+
+function scoreCount(){
+
+};
+
+
+
+
+
+
+
+function selectPower(){
+
+};
+
+
+
+
+
+
+
+function battlePowers(){
+
+};
+
+
+
+
+
+function gameOver(){
+
+};
+
+
+
+function dealCards(){
+
+};
+
