@@ -18,8 +18,8 @@ let pokemons = [
 ];
 
 
-document.getElementById("btn - start").addEventListener("click", runGame());
-
+let element = document.getElementById("btn-start")
+element.addEventListener("click", dealCards);
 
 function runGame(){
 
@@ -66,8 +66,16 @@ function gameOver(){
 
 
 function dealCards(){
-
-    let pokename = document.getElementById("namepoke");
+    
+    let pokename = Math.floor(Math.random()*pokemons.length);
+    let power = Math.floor(Math.random()*100);
+    let speed = Math.floor(Math.random()*100);
+    let stamina = Math.floor(Math.random()*100);
+    namepoke = pokemons[pokename];
+    document.getElementById("name").innerHTML = namepoke;
+    document.getElementById("power").innerHTML =`Power:${power}` ;
+    document.getElementById("speed").innerHTML = `Speed:${speed}`;
+    document.getElementById("stamina").innerHTML = `Stamina:${stamina}`;
 
 };
 

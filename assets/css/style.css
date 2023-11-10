@@ -71,7 +71,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    padding-top: 128px;
+    padding-top: 100px;
     align-self: flex-end;
 }
 /*cards details */
