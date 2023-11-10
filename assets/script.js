@@ -72,10 +72,25 @@ function dealCards(){
     let speed = Math.floor(Math.random()*100);
     let stamina = Math.floor(Math.random()*100);
     namepoke = pokemons[pokename];
-    document.getElementById("name").innerHTML = namepoke;
-    document.getElementById("power").innerHTML =`Power:${power}` ;
-    document.getElementById("speed").innerHTML = `Speed:${speed}`;
-    document.getElementById("stamina").innerHTML = `Stamina:${stamina}`;
+    document.getElementsByClassName("name")[0].innerHTML = namepoke;
+    document.getElementsByClassName("name")[1].innerHTML = namepoke;
+    document.getElementsByClassName("name")[2].innerHTML = namepoke;
+
+    document.getElementsByClassName("power")[0].innerHTML =`Power:${power}` ;
+    document.getElementsByClassName("power")[1].innerHTML =`Power:${power}` ;
+    document.getElementsByClassName("power")[2].innerHTML =`Power:${power}` ;
+
+
+    document.getElementsByClassName("speed")[0].innerHTML = `Speed:${speed}`;
+    document.getElementsByClassName("speed")[1].innerHTML = `Speed:${speed}`;
+    document.getElementsByClassName("speed")[2].innerHTML = `Speed:${speed}`;
+
+
+
+
+    document.getElementsByClassName("stamina")[0].innerHTML = `Stamina:${stamina}`;
+    document.getElementsByClassName("stamina")[1].innerHTML = `Stamina:${stamina}`;
+    document.getElementsByClassName("stamina")[2].innerHTML = `Stamina:${stamina}`;
 
 };
 
