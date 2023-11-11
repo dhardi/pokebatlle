@@ -22,16 +22,26 @@ let pokename ="notdefined";
 let element = document.getElementById("btn-start")
 element.addEventListener("click", runGame);
 
+
+
+
+
+
+
+
+let power = document.getElementsByClassName("power");
+
+power[3].addEventListener("click", battlePowers);
+power[4].addEventListener("click", battlePowers);
+power[5].addEventListener("click", battlePowers);
+
+
+
 function runGame(){
-for(let i = 0 ; i < pokemons.length; i++){
-    if(pokename === pokemons[i]){
-        alert("ready to play");
-    }else{
+
        
         dealCards();
-    }
 
-}
     
 
 };
@@ -40,12 +50,19 @@ for(let i = 0 ; i < pokemons.length; i++){
 
 
 
-function scoreCount(){
+function scoreCountYou(){
+    let youscore = parseInt(document.getElementById("youpoints").innerText);
+    document.getElementById("youpoints").innerText = ++youscore 
 
 };
 
 
 
+function scoreCountOp(){
+    let opscore = parseInt(document.getElementById("youpoints").innerText);
+    document.getElementById("oppoints").innerText = ++opscore 
+
+};
 
 
 
@@ -61,8 +78,24 @@ function selectPower(){
 
 
 function battlePowers(){
-
-};
+    //my hand 
+    //for(let f = 0 ; f < power.length; f++){
+        
+        let opNum0 =  parseInt (document.getElementsByClassName("power")[0].innerText);
+        let myNum3 =  parseInt (document.getElementsByClassName("power")[3].innerText);
+       
+     if(myNum3 > opNum0 ){
+        alert("you win");
+        
+     }else{
+        
+        alert(myNum3);
+        scoreCountYou()
+     }
+         
+    
+}
+//};
 
 
 
@@ -111,43 +144,7 @@ function dealCards(){
         }
 
     }
-        
-    //ends here sort cards
-
-
-
-
-    // pokename = Math.floor(Math.random()*pokemons.length);
-   //  let power = Math.floor(Math.random()*100);
-   //  let speed = Math.floor(Math.random()*100);
-  //   let stamina = Math.floor(Math.random()*100);
- //   namepoke = pokemons[pokename];
-   
-
-
-
-    //document.getElementsByClassName("name")[0].innerHTML = namepoke;
-   // document.getElementsByClassName("name")[1].innerHTML = namepoke;
-   // document.getElementsByClassName("name")[2].innerHTML = namepoke;
-
-   // document.getElementsByClassName("power")[0].innerHTML =`Power:${power}` ;
-   // document.getElementsByClassName("power")[1].innerHTML =`Power:${power}` ;
-  //  document.getElementsByClassName("power")[2].innerHTML =`Power:${power}` ;
-
-
-   // document.getElementsByClassName("speed")[0].innerHTML = `Speed:${speed}`;
-   // document.getElementsByClassName("speed")[1].innerHTML = `Speed:${speed}`;
-   // document.getElementsByClassName("speed")[2].innerHTML = `Speed:${speed}`;
-
-
-
-
-   // document.getElementsByClassName("stamina")[0].innerHTML = `Stamina:${stamina}`;
-   // document.getElementsByClassName("stamina")[1].innerHTML = `Stamina:${stamina}`;
-   // document.getElementsByClassName("stamina")[2].innerHTML = `Stamina:${stamina}`;
-
-
-
-    
+         
 };
+
 

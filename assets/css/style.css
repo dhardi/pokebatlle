@@ -71,7 +71,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    padding-top: 100px;
+    padding-top: 74px;
+    padding-right: 10px;
     align-self: flex-end;
 }
 /*cards details */
@@ -163,6 +164,7 @@ footer{
     margin-right: 10px;
 }
 
+
 #youboxscoreboard{
     display: flex;
     flex-wrap: wrap;
@@ -174,6 +176,12 @@ footer{
     border-radius: 17px;
     
    
+}
+#youboxscoreboard>span{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+
 }
 
 #opscore {
@@ -194,6 +202,11 @@ footer{
     height: 56px;
     border-radius: 17px;
 }
+#opboxscoreboard>span{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
+}
 
 #boxround{
     border-style: solid;
@@ -202,6 +215,12 @@ footer{
     height: 56px;
     border-radius: 17px;
     
+    
+}
+#boxround>span{
+    display: flex;
+    padding-left: 25px;
+    padding-top: 17px;
     
 }
 
