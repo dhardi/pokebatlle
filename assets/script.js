@@ -30,12 +30,19 @@ element.addEventListener("click", runGame);
 
 
  let power = document.getElementsByClassName("power");
+ let speed = document.getElementsByClassName("speed");
+ let stamina = document.getElementsByClassName("stamina");
 
 
 power[3].addEventListener("click", battlePowers);
 power[4].addEventListener("click", battlePowers);
 power[5].addEventListener("click", battlePowers);
-
+speed[3].addEventListener("click", battlePowers);
+speed[4].addEventListener("click", battlePowers);
+speed[5].addEventListener("click", battlePowers);
+stamina[3].addEventListener("click", battlePowers);
+stamina[4].addEventListener("click", battlePowers);
+stamina[5].addEventListener("click", battlePowers);
 
 
 function runGame(){
@@ -76,9 +83,45 @@ function selectPower(){
 
 };
 
+function battleSpeed(){
+    let opNum3= parseInt (document.getElementsByClassName("speed")[0].innerText.replace(/\D/g,''));
+    let opNum4= parseInt (document.getElementsByClassName("speed")[1].innerText.replace(/\D/g,''));
+    let opNum5= parseInt (document.getElementsByClassName("speed")[2].innerText.replace(/\D/g,''));
+    let arrayspeed=[];
+    arrayspeed.push(opNum3,opNum4,opNum5);
+    let speedrandom = Math.floor(Math.random()*3);
+    let speedbattlenumrandom = arrayspeed[speedrandom];
+
+    //my deck
+
+    let myNum6 =  parseInt (document.getElementsByClassName("speed")[3].innerText.replace(/\D/g,''));
+    let myNum7 =  parseInt (document.getElementsByClassName("speed")[4].innerText.replace(/\D/g,''));
+    let myNum8 =  parseInt (document.getElementsByClassName("speed")[5].innerText.replace(/\D/g,''));
+
+    if(myNum6 > speedbattlenumrandom ){
+        alert("you win");
+        alert(speedbattlenumrandom);
+        roundCount();
+        scoreCountYou();
+        
+        
+     }else{
+        
+        alert("you lost");
+        alert(speedbattlenumrandom);
+        scoreCountOp ();      
+        roundCount();
+        
+     }
+    
+         
 
 
+}
 
+function battleStamina(){
+
+}
 
 
 
@@ -92,17 +135,38 @@ function battlePowers(){
         let opNum2 = parseInt (document.getElementsByClassName("power")[2].innerText.replace(/\D/g,''));
         let arraypowers=[];
         arraypowers.push(opNum0,opNum1,opNum2);
+       
+
+        let opNum6= parseInt (document.getElementsByClassName("stamina")[0].innerText.replace(/\D/g,''));
+        let opNum7= parseInt (document.getElementsByClassName("stamina")[1].innerText.replace(/\D/g,''));
+        let opNum8= parseInt (document.getElementsByClassName("stamina")[2].innerText.replace(/\D/g,''));
+        let arraystamina = [];
+        arraystamina.push(opNum6,opNum7,opNum8);
         //sort a random number and select a item into the array
         let powerrandom = Math.floor(Math.random()*3);
+        
+        let staminarandom = Math.floor(Math.random()*3);
         
      //my hand deck
         let myNum3 =  parseInt (document.getElementsByClassName("power")[3].innerText.replace(/\D/g,''));
         let myNum4 =  parseInt (document.getElementsByClassName("power")[4].innerText.replace(/\D/g,''));
         let myNum5 =  parseInt (document.getElementsByClassName("power")[5].innerText.replace(/\D/g,''));
-        let battlenumrandom = arraypowers[powerrandom];
-     if(myNum3 > battlenumrandom ){
+
+
+      
+
+        let myNum9 =  parseInt (document.getElementsByClassName("stamina")[3].innerText.replace(/\D/g,''));
+        let myNum10 =  parseInt (document.getElementsByClassName("stamina")[4].innerText.replace(/\D/g,''));
+        let myNum11 =  parseInt (document.getElementsByClassName("stamina")[5].innerText.replace(/\D/g,''));
+
+
+        let powerbattlenumrandom = arraypowers[powerrandom];
+       
+        let staminarandomnum = arraystamina[staminarandom];
+
+     if(myNum6 > speedbattlenumrandom ){
         alert("you win");
-        alert(battlenumrandom);
+        alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
         
@@ -110,11 +174,12 @@ function battlePowers(){
      }else{
         
         alert("you lost");
-        alert(battlenumrandom);
+        alert(speedbattlenumrandom);
         scoreCountOp ();      
         roundCount();
         
      }
+    
          
     
 }
