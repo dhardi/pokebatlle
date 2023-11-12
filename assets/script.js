@@ -37,12 +37,12 @@ element.addEventListener("click", runGame);
 power[3].addEventListener("click", battlePowers);
 power[4].addEventListener("click", battlePowers);
 power[5].addEventListener("click", battlePowers);
-speed[3].addEventListener("click", battlePowers);
-speed[4].addEventListener("click", battlePowers);
-speed[5].addEventListener("click", battlePowers);
-stamina[3].addEventListener("click", battlePowers);
-stamina[4].addEventListener("click", battlePowers);
-stamina[5].addEventListener("click", battlePowers);
+speed[3].addEventListener("click", battleSpeed);
+speed[4].addEventListener("click", battleSpeed);
+speed[5].addEventListener("click", battleSpeed);
+stamina[3].addEventListener("click", battleStamina);
+stamina[4].addEventListener("click", battleStamina);
+stamina[5].addEventListener("click", battleStamina);
 
 
 function runGame(){
@@ -120,6 +120,37 @@ function battleSpeed(){
 }
 
 function battleStamina(){
+        let opNum6= parseInt (document.getElementsByClassName("stamina")[0].innerText.replace(/\D/g,''));
+        let opNum7= parseInt (document.getElementsByClassName("stamina")[1].innerText.replace(/\D/g,''));
+        let opNum8= parseInt (document.getElementsByClassName("stamina")[2].innerText.replace(/\D/g,''));
+        let arraystamina = [];
+        arraystamina.push(opNum6,opNum7,opNum8);
+        let staminarandom = Math.floor(Math.random()*3);
+        let staminarandomnum = arraystamina[staminarandom];
+
+
+        //my deck
+        let myNum9 =  parseInt (document.getElementsByClassName("stamina")[3].innerText.replace(/\D/g,''));
+        let myNum10 =  parseInt (document.getElementsByClassName("stamina")[4].innerText.replace(/\D/g,''));
+        let myNum11 =  parseInt (document.getElementsByClassName("stamina")[5].innerText.replace(/\D/g,''));
+
+        if(myNum9 > staminarandomnum ){
+            alert("you win");
+            alert(staminarandomnum);
+            roundCount();
+            scoreCountYou();
+            
+            
+         }else{
+            
+            alert("you lost");
+            alert(staminarandomnum);
+            scoreCountOp ();      
+            roundCount();
+            
+         }
+        
+             
 
 }
 
@@ -135,38 +166,19 @@ function battlePowers(){
         let opNum2 = parseInt (document.getElementsByClassName("power")[2].innerText.replace(/\D/g,''));
         let arraypowers=[];
         arraypowers.push(opNum0,opNum1,opNum2);
-       
-
-        let opNum6= parseInt (document.getElementsByClassName("stamina")[0].innerText.replace(/\D/g,''));
-        let opNum7= parseInt (document.getElementsByClassName("stamina")[1].innerText.replace(/\D/g,''));
-        let opNum8= parseInt (document.getElementsByClassName("stamina")[2].innerText.replace(/\D/g,''));
-        let arraystamina = [];
-        arraystamina.push(opNum6,opNum7,opNum8);
+          
         //sort a random number and select a item into the array
         let powerrandom = Math.floor(Math.random()*3);
-        
-        let staminarandom = Math.floor(Math.random()*3);
-        
+             
      //my hand deck
         let myNum3 =  parseInt (document.getElementsByClassName("power")[3].innerText.replace(/\D/g,''));
         let myNum4 =  parseInt (document.getElementsByClassName("power")[4].innerText.replace(/\D/g,''));
         let myNum5 =  parseInt (document.getElementsByClassName("power")[5].innerText.replace(/\D/g,''));
-
-
-      
-
-        let myNum9 =  parseInt (document.getElementsByClassName("stamina")[3].innerText.replace(/\D/g,''));
-        let myNum10 =  parseInt (document.getElementsByClassName("stamina")[4].innerText.replace(/\D/g,''));
-        let myNum11 =  parseInt (document.getElementsByClassName("stamina")[5].innerText.replace(/\D/g,''));
-
-
         let powerbattlenumrandom = arraypowers[powerrandom];
        
-        let staminarandomnum = arraystamina[staminarandom];
-
-     if(myNum6 > speedbattlenumrandom ){
+     if(myNum3 > powerbattlenumrandom ){
         alert("you win");
-        alert(speedbattlenumrandom);
+        alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
         
@@ -174,7 +186,7 @@ function battlePowers(){
      }else{
         
         alert("you lost");
-        alert(speedbattlenumrandom);
+        alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
         
