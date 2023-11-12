@@ -29,7 +29,8 @@ element.addEventListener("click", runGame);
 
 
 
-let power = document.getElementsByClassName("power");
+ let power = document.getElementsByClassName("power");
+
 
 power[3].addEventListener("click", battlePowers);
 power[4].addEventListener("click", battlePowers);
@@ -59,12 +60,16 @@ function scoreCountYou(){
 
 
 function scoreCountOp(){
-    let opscore = parseInt(document.getElementById("youpoints").innerText);
+    let opscore = parseInt(document.getElementById("oppoints").innerText);
     document.getElementById("oppoints").innerText = ++opscore 
 
 };
 
+function roundCount(){
+    let opscore = parseInt(document.getElementById("roundpoint").innerText);
+    document.getElementById("roundpoint").innerText = ++opscore
 
+}
 
 
 function selectPower(){
@@ -78,19 +83,37 @@ function selectPower(){
 
 
 function battlePowers(){
-    //my hand 
+   
     //for(let f = 0 ; f < power.length; f++){
+         //this part take 3 int numbers from the class and push into array 
+         
+        let opNum0 =  parseInt (document.getElementsByClassName("power")[0].innerText.replace(/\D/g,''));
+        let opNum1 = parseInt (document.getElementsByClassName("power")[1].innerText.replace(/\D/g,''));
+        let opNum2 = parseInt (document.getElementsByClassName("power")[2].innerText.replace(/\D/g,''));
+        let arraypowers=[];
+        arraypowers.push(opNum0,opNum1,opNum2);
+        //sort a random number and select a item into the array
+        let powerrandom = Math.floor(Math.random()*3);
         
-        let opNum0 =  parseInt (document.getElementsByClassName("power")[0].innerText);
-        let myNum3 =  parseInt (document.getElementsByClassName("power")[3].innerText);
-       
-     if(myNum3 > opNum0 ){
+     //my hand deck
+        let myNum3 =  parseInt (document.getElementsByClassName("power")[3].innerText.replace(/\D/g,''));
+        let myNum4 =  parseInt (document.getElementsByClassName("power")[4].innerText.replace(/\D/g,''));
+        let myNum5 =  parseInt (document.getElementsByClassName("power")[5].innerText.replace(/\D/g,''));
+        let battlenumrandom = arraypowers[powerrandom];
+     if(myNum3 > battlenumrandom ){
         alert("you win");
+        alert(battlenumrandom);
+        roundCount();
+        scoreCountYou();
+        
         
      }else{
         
-        alert(myNum3);
-        scoreCountYou()
+        alert("you lost");
+        alert(battlenumrandom);
+        scoreCountOp ();      
+        roundCount();
+        
      }
          
     
