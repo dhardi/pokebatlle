@@ -141,7 +141,10 @@ function battleStamina(){
             scoreCountYou();
             
             
-         }else{
+      
+         
+         
+        }else {
             
             alert("you lost");
             alert(staminarandomnum);
@@ -175,15 +178,51 @@ function battlePowers(){
         let myNum4 =  parseInt (document.getElementsByClassName("power")[4].innerText.replace(/\D/g,''));
         let myNum5 =  parseInt (document.getElementsByClassName("power")[5].innerText.replace(/\D/g,''));
         let powerbattlenumrandom = arraypowers[powerrandom];
+
+
+    
        
      if(myNum3 > powerbattlenumrandom ){
-        alert("you win");
-        alert(powerbattlenumrandom);
+       alert("you win");
+       alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
         
         
-     }else{
+     }else if(myNum4 > powerbattlenumrandom){
+       alert("you win");
+       alert(powerbattlenumrandom);
+       roundCount();
+       scoreCountYou();
+
+    }else if (myNum5 > powerbattlenumrandom){
+        alert("you win");
+        alert(powerbattlenumrandom);
+        roundCount();
+        scoreCountYou();
+
+
+    }else if(myNum3 < powerbattlenumrandom){
+        alert("you lost");
+        alert(powerbattlenumrandom);
+        scoreCountOp ();      
+        roundCount();
+
+    }else if(myNum4 < powerbattlenumrandom){
+        alert("you lost");
+        alert(powerbattlenumrandom);
+        scoreCountOp ();      
+        roundCount();
+
+
+    }else if(myNum5 < powerbattlenumrandom){
+        alert("you lost");
+        alert(powerbattlenumrandom);
+        scoreCountOp ();      
+        roundCount();
+     
+     
+    } else{
         
         alert("you lost");
         alert(powerbattlenumrandom);
@@ -191,8 +230,7 @@ function battlePowers(){
         roundCount();
         
      }
-    
-         
+     
     
 }
 //};
