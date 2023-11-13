@@ -74,14 +74,16 @@ function scoreCountOp(){
 
 function roundCount(){
     let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
+    if(roundpoint === 1){
     document.getElementById("roundpoint").innerText = ++roundpoint
 
-    if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18  ){
+    }else if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18  ){
         
         dealCards();
-    }else if(roundpoint=== 21){
+    }else if (roundpoint === 21){
         gameOver();
     }
+
 
 }
 
@@ -308,8 +310,8 @@ function battlePowers(){
 
 function gameOver(){
     
-    let yourscore = parseInt(document.getElementById("youpoints"));
-    let opscore = parseInt(document.getElementById("oppoints"));
+    let yourscore = parseInt(document.getElementById("youpoints").innerText);
+    let opscore = parseInt(document.getElementById("oppoints").innerText);
     
 
     if( yourscore > opscore ){
