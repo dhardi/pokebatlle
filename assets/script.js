@@ -67,14 +67,19 @@ function scoreCountYou(){
 
 
 function scoreCountOp(){
-    let opscore = parseInt(document.getElementById("oppoints").innerText);
-    document.getElementById("oppoints").innerText = ++opscore 
+    let oppoints = parseInt(document.getElementById("oppoints").innerText);
+    document.getElementById("oppoints").innerText = ++oppoints 
 
 };
 
 function roundCount(){
-    let opscore = parseInt(document.getElementById("roundpoint").innerText);
-    document.getElementById("roundpoint").innerText = ++opscore
+    let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
+    document.getElementById("roundpoint").innerText = ++roundpoint
+
+    if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18 && roundpoint=== 21 ){
+        
+        dealCards();
+    }
 
 }
 
@@ -101,20 +106,51 @@ function battleSpeed(){
     if(myNum6 > speedbattlenumrandom ){
         alert("you win");
         alert(speedbattlenumrandom);
+         roundCount();
+         scoreCountYou();
+         
+         
+      }else if(myNum7 > speedbattlenumrandom){
+        alert("you win");
+        alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
-        
-        
-     }else{
-        
-        alert("you lost");
-        alert(speedbattlenumrandom);
-        scoreCountOp ();      
-        roundCount();
-        
-     }
-    
+ 
+     }else if (myNum8 > speedbattlenumrandom){
+         alert("you win");
+         alert(speedbattlenumrandom);
+         roundCount();
+         scoreCountYou();
+ 
+ 
+     }else if(myNum6 < speedbattlenumrandom){
+         alert("you lost");
+         alert(speedbattlenumrandom);
+         scoreCountOp ();      
+         roundCount();
+ 
+     }else if(myNum7 < speedbattlenumrandom){
+         alert("you lost");
+         alert(speedbattlenumrandom);
+         scoreCountOp ();      
+         roundCount();
+ 
+ 
+     }else if(myNum8 < speedbattlenumrandom){
+         alert("you lost");
+         alert(speedbattlenumrandom);
+         scoreCountOp ();      
+         roundCount();
+      
+      
+     } else{
          
+         alert("you lost");
+         alert(speedbattlenumrandom);
+         scoreCountOp ();      
+         roundCount();
+         
+      } 
 
 
 }
@@ -137,22 +173,51 @@ function battleStamina(){
         if(myNum9 > staminarandomnum ){
             alert("you win");
             alert(staminarandomnum);
+             roundCount();
+             scoreCountYou();
+             
+             
+          }else if(myNum10 > staminarandomnum){
+            alert("you win");
+            alert(staminarandomnum);
             roundCount();
             scoreCountYou();
-            
-            
-      
-         
-         
-        }else {
-            
-            alert("you lost");
-            alert(staminarandomnum);
-            scoreCountOp ();      
-            roundCount();
-            
-         }
-        
+     
+         }else if (myNum11 > staminarandomnum){
+             alert("you win");
+             alert(staminarandomnum);
+             roundCount();
+             scoreCountYou();
+     
+     
+         }else if(myNum9 < staminarandomnum){
+             alert("you lost");
+             alert(staminarandomnum);
+             scoreCountOp ();      
+             roundCount();
+     
+         }else if(myNum10 < staminarandomnum){
+             alert("you lost");
+             alert(staminarandomnum);
+             scoreCountOp ();      
+             roundCount();
+     
+     
+         }else if(myNum11 < staminarandomnum){
+             alert("you lost");
+             alert(staminarandomnum);
+             scoreCountOp ();      
+             roundCount();
+          
+          
+         } else{
+             
+             alert("you lost");
+             alert(staminarandomnum);
+             scoreCountOp ();      
+             roundCount();
+             
+          }
              
 
 }
