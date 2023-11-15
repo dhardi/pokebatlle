@@ -73,19 +73,43 @@ function scoreCountOp(){
 };
 
 function roundCount(){
-    let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
-    if(roundpoint === 1){
-    document.getElementById("roundpoint").innerText = ++roundpoint
+    let i = 0
+    do{
+        i++
+        let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
+        document.getElementById("roundpoint").innerText = ++roundpoint
+        if(roundpoint ===3){
+            dealCards();
+        }else if(roundpoint===6){
+            dealCards();
+        }else if(roundpoint===9){
+            dealCards();
+        }else if (roundpoint===12){
+            dealCards();
+        }else if (roundpoint===15){
+            dealCards();
 
-    }else if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18  ){
-        
-        dealCards();
-    }else if (roundpoint === 21){
-        gameOver();
-    }
-
-
+            }else if (roundpoint===18){
+                dealCards(); 
+            }else if (roundpoint===21)
+            gameOver();
+            break;
+        }
+    
+    while(i<21,i++);
 }
+
+
+
+   // }else if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18  ){
+        
+   //     dealCards();
+  //  }else if (roundpoint === 21){
+   //     gameOver();
+  //  }
+
+
+
 
 
 function selectPower(){
@@ -315,6 +339,7 @@ function gameOver(){
     
 
     if( yourscore > opscore ){
+        
         alert("Game Over!",yourscore, "You Win");
 
     }else{
