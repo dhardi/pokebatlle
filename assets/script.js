@@ -17,162 +17,165 @@ let pokemons = [
     "Dratini", "Dragonair", "Dragonite", "Mewtwo", "Mew"
 ];
 
-let pokepath =["../images/abra.PNG",
-"../images/aerodactyl.PNG",
-"../images/alakazam.PNG",
-"../images/arbok.PNG",
-"../images/arcanine.PNG",
-"../images/articuno.PNG",
-"../images/beedrill.PNG",
-"../images/bellsprout.PNG",
-"../images/blastoise.PNG",
-"../images/bulbasaur.PNG",
-"../images/butterfree.PNG",
-"../images/caterpie.PNG",
-"../images/chansey.PNG",
-"../images/charizard.PNG",
-"../images/charmander.PNG",
-"../images/charmeleon.PNG",
-"../images/clefable.PNG",
-"../images/clefairy.PNG",
-"../images/cloyster.PNG",
-"../images/cubone.PNG",
-"../images/dewgong.PNG",
-"../images/diglett.PNG",
-"../images/ditto.PNG",
-"../images/dodrio.PNG",
-"../images/doduo.PNG",
-"../images/dragonair.PNG",
-"../images/dragonite.PNG",
-"../images/dratini.PNG",
-"../images/drowzee.PNG",
-"../images/dugtrio.PNG",
-"../images/eevee.PNG",
-"../images/ekans.PNG",
-"../images/electabuzz.PNG",
-"../images/electrode.PNG",
-"../images/exeggcute.PNG",
-"../images/exeggutor.PNG",
-"../images/farfetch'd.PNG",
-"../images/fearow.PNG",
-"../images/flareon.PNG",
-"../images/gastly.PNG",
-"../images/gengar.PNG",
-"../images/geodude.PNG",
-"../images/gloom.PNG",
-"../images/golbat.PNG",
-"../images/goldeen.PNG",
-"../images/golduck.PNG",
-"../images/golem.PNG",
-"../images/graveler.PNG",
-"../images/grimer.PNG",
-"../images/growlithe.PNG",
-"../images/gyarados.PNG",
-"../images/haunter.PNG",
-"../images/hitmonchan.PNG",
-"../images/hitmonlee.PNG",
-"../images/horsea.PNG",
-"../images/hypno.PNG",
-"../images/ivysaur.PNG",
-"../images/jigglypuff.PNG",
-"../images/jolteon.PNG",
-"../images/jynx.PNG",
-"../images/kabuto.PNG",
-"../images/kabutops.PNG",
-"../images/kadabra.PNG",
-"../images/kakuna.PNG",
-"../images/kangaskhan.PNG",
-"../images/kingler.PNG",
-"../images/koffing.PNG",
-"../images/krabby.PNG",
-"../images/lapras.PNG",
-"../images/lickitung.PNG",
-"../images/machamp.PNG",
-"../images/machoke.PNG",
-"../images/machop.PNG",
-"../images/magikarp.PNG",
-"../images/magmar.PNG",
-"../images/magnemite.PNG",
-"../images/magneton.PNG",
-"../images/mankey.PNG",
-"../images/marowak.PNG",
-"../images/meowth.PNG",
-"../images/metapod.PNG",
-"../images/mew.PNG",
-"../images/mewtwo.PNG",
-"../images/moltres.PNG",
-"../images/mrmime.PNG",
-"../images/muk.PNG",
-"../images/nidoking.PNG",
-"../images/nidoqueen.PNG",
-"../images/nidoran.PNG",
-"../images/nidoranf.PNG",
-"../images/nidorina.PNG",
-"../images/nidorino.PNG",
-"../images/ninetales.PNG",
-"../images/oddish.PNG",
-"../images/omanyte.PNG",
-"../images/omastar.PNG",
-"../images/onix.PNG",
-"../images/paras.PNG",
-"../images/parasect.PNG",
-"../images/persian.PNG",
-"../images/pidgeot.PNG",
-"../images/pidgeotto.PNG",
-"../images/pidgey.PNG",
-"../images/pikachu.PNG",
-"../images/pinsir.PNG",
-"../images/poliwag.PNG",
-"../images/poliwhirl.PNG",
-"../images/poliwrath.PNG",
-"../images/ponyta.PNG",
-"../images/porygon.PNG",
-"../images/primeape.PNG",
-"../images/psyduck.PNG",
-"../images/raichu.PNG",
-"../images/rapidash.PNG",
-"../images/raticate.PNG",
-"../images/rattata.PNG",
-"../images/rhydon.PNG",
-"../images/rhyhorn.PNG",
-"../images/sandshrew.PNG",
-"../images/sandslash.PNG",
-"../images/scyther.PNG",
-"../images/seadra.PNG",
-"../images/seaking.PNG",
-"../images/seel.PNG",
-"../images/shellder.PNG",
-"../images/slowbro.PNG",
-"../images/slowpoke.PNG",
-"../images/snorlax.PNG",
-"../images/spearow.PNG",
-"../images/squirtle.PNG",
-"../images/starmie.PNG",
-"../images/staryu.PNG",
-"../images/tangela.PNG",
-"../images/tauros.PNG",
-"../images/tentacool.PNG",
-"../images/tentacruel.PNG",
-"../images/vaporeon.PNG",
-"../images/venomoth.PNG",
-"../images/venonat.PNG",
-"../images/venusaur.PNG",
-"../images/victreebel.PNG",
-"../images/vileplume.PNG",
-"../images/voltorb.PNG",
-"../images/vulpix.PNG",
-"../images/wartortle.PNG",
-"../images/weedle.PNG",
-"../images/weepinbell.PNG",
-"../images/weezing.PNG",
-"../images/wigglytuff.PNG",
-"../images/zapdos.PNG",
-"../images/zubat.PNG",
+
+let pokepath =["abra.PNG",
+"aerodactyl.PNG",
+"alakazam.PNG",
+"arbok.PNG",
+"arcanine.PNG",
+"articuno.PNG",
+"beedrill.PNG",
+"bellsprout.PNG",
+"blastoise.PNG",
+"bulbasaur.PNG",
+"butterfree.PNG",
+"caterpie.PNG",
+"chansey.PNG",
+"charizard.PNG",
+"charmander.PNG",
+"charmeleon.PNG",
+"clefable.PNG",
+"clefairy.PNG",
+"cloyster.PNG",
+"cubone.PNG",
+"dewgong.PNG",
+"diglett.PNG",
+"ditto.PNG",
+"dodrio.PNG",
+"doduo.PNG",
+"dragonair.PNG",
+"dragonite.PNG",
+"dratini.PNG",
+"drowzee.PNG",
+"dugtrio.PNG",
+"eevee.PNG",
+"ekans.PNG",
+"electabuzz.PNG",
+"electrode.PNG",
+"exeggcute.PNG",
+"exeggutor.PNG",
+"farfetchd.PNG",
+"fearow.PNG",
+"flareon.PNG",
+"gastly.PNG",
+"gengar.PNG",
+"geodude.PNG",
+"gloom.PNG",
+"golbat.PNG",
+"goldeen.PNG",
+"golduck.PNG",
+"golem.PNG",
+"graveler.PNG",
+"grimer.PNG",
+"growlithe.PNG",
+"gyarados.PNG",
+"haunter.PNG",
+"hitmonchan.PNG",
+"hitmonlee.PNG",
+"horsea.PNG",
+"hypno.PNG",
+"ivysaur.PNG",
+"jigglypuff.PNG",
+"jolteon.PNG",
+"jynx.PNG",
+"kabuto.PNG",
+"kabutops.PNG",
+"kadabra.PNG",
+"kakuna.PNG",
+"kangaskhan.PNG",
+"kingler.PNG",
+"koffing.PNG",
+"krabby.PNG",
+"lapras.PNG",
+"lickitung.PNG",
+"machamp.PNG",
+"machoke.PNG",
+"machop.PNG",
+"magikarp.PNG",
+"magmar.PNG",
+"magnemite.PNG",
+"magneton.PNG",
+"mankey.PNG",
+"marowak.PNG",
+"meowth.PNG",
+"metapod.PNG",
+"mew.PNG",
+"mewtwo.PNG",
+"moltres.PNG",
+"mrmime.PNG",
+"muk.PNG",
+"nidoking.PNG",
+"nidoqueen.PNG",
+"nidoran.PNG",
+"nidoranf.PNG",
+"nidorina.PNG",
+"nidorino.PNG",
+"ninetales.PNG",
+"oddish.PNG",
+"omanyte.PNG",
+"omastar.PNG",
+"onix.PNG",
+"paras.PNG",
+"parasect.PNG",
+"persian.PNG",
+"pidgeot.PNG",
+"pidgeotto.PNG",
+"pidgey.PNG",
+"pikachu.PNG",
+"pinsir.PNG",
+"poliwag.PNG",
+"poliwhirl.PNG",
+"poliwrath.PNG",
+"ponyta.PNG",
+"porygon.PNG",
+"primeape.PNG",
+"psyduck.PNG",
+"raichu.PNG",
+"rapidash.PNG",
+"raticate.PNG",
+"rattata.PNG",
+"rhydon.PNG",
+"rhyhorn.PNG",
+"sandshrew.PNG",
+"sandslash.PNG",
+"scyther.PNG",
+"seadra.PNG",
+"seaking.PNG",
+"seel.PNG",
+"shellder.PNG",
+"slowbro.PNG",
+"slowpoke.PNG",
+"snorlax.PNG",
+"spearow.PNG",
+"squirtle.PNG",
+"starmie.PNG",
+"staryu.PNG",
+"tangela.PNG",
+"tauros.PNG",
+"tentacool.PNG",
+"tentacruel.PNG",
+"vaporeon.PNG",
+"venomoth.PNG",
+"venonat.PNG",
+"venusaur.PNG",
+"victreebel.PNG",
+"vileplume.PNG",
+"voltorb.PNG",
+"vulpix.PNG",
+"wartortle.PNG",
+"weedle.PNG",
+"weepinbell.PNG",
+"weezing.PNG",
+"wigglytuff.PNG",
+"zapdos.PNG",
+"zubat.PNG",
+
+
 
 ];
 
 let pokename ="notdefined";
-
+let findMyPoke = "notdefined";
 let element = document.getElementById("btn-start")
 element.addEventListener("click", runGame);
 
@@ -201,7 +204,7 @@ stamina[5].addEventListener("click", battleStamina);
 
 function runGame(){
 
-       console.log(pokepath);
+    pokemons.sort();
         dealCards();
 
     
@@ -506,6 +509,7 @@ function gameOver(){
 
 function dealCards(){
     // it will get all elements i need 
+    let imgpoke = document.getElementsByClassName("imgpoke");
     let name = document.getElementsByClassName("name");
     let power = document.getElementsByClassName("power");
     let speed = document.getElementsByClassName("speed");
@@ -515,6 +519,7 @@ function dealCards(){
         for (let p = 0; p < power.length ; p++){
             for (let s = 0; s < speed.length ; s++){
                 for (let a = 0; a < stamina.length ; a++){
+                    for (let y = 0; y < imgpoke.length; y++){
                     if( name[j] === name[j]  ){
 
 
@@ -523,12 +528,15 @@ function dealCards(){
                         let speed = Math.floor(Math.random()*100);
                          let stamina = Math.floor(Math.random()*100);
                           namepoke = pokemons[pokename];
-
+                          findMyPoke = pokepath[pokename];
+                          
                           document.getElementsByClassName("name")[j].innerHTML = namepoke;
                           document.getElementsByClassName("power")[p].innerHTML =`Power:${power}` ;
                           document.getElementsByClassName("speed")[s].innerHTML = `Speed:${speed}`;
                           document.getElementsByClassName("stamina")[a].innerHTML = `Stamina:${stamina}`;
-
+                          //document.getElementsByClassName("imgpoke")[y].style.backgroundImage = "url(./assets/images/arbok.PNG";
+                          imgpoke[y].style.backgroundImage = 'url("./assets/images/' + findMyPoke + '")';
+                         
 
                     }
 
@@ -541,7 +549,27 @@ function dealCards(){
         }
 
     }
+}
          
 };
 
+function sortImgPoke(){
+    let name = document.getElementsByClassName("name");
+    let imgpoke = document.getElementsByClassName("imgpoke");
 
+    for (let i = 0 ;i < name.length ; i++){
+        for (let r = 0 ; r < pokepath.length; r++){
+
+            if(name[i]==pokepath[r]){
+                
+            }
+
+
+
+
+        }
+    }
+
+
+
+}
