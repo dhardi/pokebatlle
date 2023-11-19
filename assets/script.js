@@ -1,155 +1,155 @@
 let pokeObjetc = [
-{pokemonname:"abra",path:"abra.PNG"},
-{pokemonname:"aerodactyl",path:"aerodactyl.PNG"},
-{pokemonname:"alakazam",path:"alakazam.PNG"},
-{pokemonname:"arbok",path:"arbok.PNG"},
-{pokemonname:"arcanine",path:"arcanine.PNG"},
-{pokemonname:"articuno",path:"articuno.PNG"},
-{pokemonname:"beedrill",path:"beedrill.PNG"},
-{pokemonname:"bellsprout",path:"bellsprout.PNG"},
-{pokemonname:"blastoise",path:"blastoise.PNG"},
-{pokemonname:"bulbasaur",path:"bulbasaur.PNG"},
-{pokemonname:"butterfree",path:"butterfree.PNG"},
-{pokemonname:"caterpie",path:"caterpie.PNG"},
-{pokemonname:"chansey",path:"chansey.PNG"},
-{pokemonname:"charizard",path:"charizard.PNG"},
-{pokemonname:"charmander",path:"charmander.PNG"},
-{pokemonname:"charmeleon",path:"charmeleon.PNG"},
-{pokemonname:"clefable",path:"clefable.PNG"},
-{pokemonname:"clefairy",path:"clefairy.PNG"},
-{pokemonname:"cloyster",path:"cloyster.PNG"},
-{pokemonname:"cubone",path:"cubone.PNG"},
-{pokemonname:"dewgong",path:"dewgong.PNG"},
-{pokemonname:"diglett",path:"diglett.PNG"},
-{pokemonname:"ditto",path:"ditto.PNG"},
-{pokemonname:"dodrio",path:"dodrio.PNG"},
-{pokemonname:"doduo",path:"doduo.PNG"},
-{pokemonname:"dragonair",path:"dragonair.PNG"},
-{pokemonname:"dragonite",path:"dragonite.PNG"},
-{pokemonname:"dratini",path:"dratini.PNG"},
-{pokemonname:"drowzee",path:"drowzee.PNG"},
-{pokemonname:"dugtrio",path:"dugtrio.PNG"},
-{pokemonname:"eevee",path:"eevee.PNG"},
-{pokemonname:"ekans",path:"ekans.PNG"},
-{pokemonname:"electabuzz",path:"electabuzz.PNG"},
-{pokemonname:"electrode",path:"electrode.PNG"},
-{pokemonname:"exeggcute",path:"exeggcute.PNG"},
-{pokemonname:"exeggutor",path:"exeggutor.PNG"},
-{pokemonname:"farfetchd",path:"farfetchd.PNG"},
-{pokemonname:"fearow",path:"fearow.PNG"},
-{pokemonname:"flareon",path:"flareon.PNG"},
-{pokemonname:"gastly",path:"gastly.PNG"},
-{pokemonname:"gengar",path:"gengar.PNG"},
-{pokemonname:"geodude",path:"geodude.PNG"},
-{pokemonname:"gloom",path:"gloom.PNG"},
-{pokemonname:"golbat",path:"golbat.PNG"},
-{pokemonname:"goldeen",path:"goldeen.PNG"},
-{pokemonname:"golduck",path:"golduck.PNG"},
-{pokemonname:"golem",path:"golem.PNG"},
-{pokemonname:"graveler",path:"graveler.PNG"},
-{pokemonname:"grimer",path:"grimer.PNG"},
-{pokemonname:"growlithe",path:"growlithe.PNG"},
-{pokemonname:"gyarados",path:"gyarados.PNG"},
-{pokemonname:"haunter",path:"haunter.PNG"},
-{pokemonname:"hitmonchan",path:"hitmonchan.PNG"},
-{pokemonname:"hitmonlee",path:"hitmonlee.PNG"},
-{pokemonname:"horsea",path:"horsea.PNG"},
-{pokemonname:"hypno",path:"hypno.PNG"},
-{pokemonname:"ivysaur",path:"ivysaur.PNG"},
-{pokemonname:"jigglypuff",path:"jigglypuff.PNG"},
-{pokemonname:"jolteon",path:"jolteon.PNG"},
-{pokemonname:"jynx",path:"jynx.PNG"},
-{pokemonname:"kabuto",path:"kabuto.PNG"},
-{pokemonname:"kabutops",path:"kabutops.PNG"},
-{pokemonname:"kadabra",path:"kadabra.PNG"},
-{pokemonname:"kakuna",path:"kakuna.PNG"},
-{pokemonname:"kangaskhan",path:"kangaskhan.PNG"},
-{pokemonname:"kingler",path:"kingler.PNG"},
-{pokemonname:"koffing",path:"koffing.PNG"},
-{pokemonname:"krabby",path:"krabby.PNG"},
-{pokemonname:"lapras",path:"lapras.PNG"},
-{pokemonname:"lickitung",path:"lickitung.PNG"},
-{pokemonname:"machamp",path:"machamp.PNG"},
-{pokemonname:"machoke",path:"machoke.PNG"},
-{pokemonname:"machop",path:"machop.PNG"},
-{pokemonname:"magikarp",path:"magikarp.PNG"},
-{pokemonname:"magmar",path:"magmar.PNG"},
-{pokemonname:"magnemite",path:"magnemite.PNG"},
-{pokemonname:"magneton",path:"magneton.PNG"},
-{pokemonname:"mankey",path:"mankey.PNG"},
-{pokemonname:"marowak",path:"marowak.PNG"},
-{pokemonname:"meowth",path:"meowth.PNG"},
-{pokemonname:"metapod",path:"metapod.PNG"},
-{pokemonname:"mew",path:"mew.PNG"},
-{pokemonname:"mewtwo",path:"mewtwo.PNG"},
-{pokemonname:"moltres",path:"moltres.PNG"},
-{pokemonname:"mrmime",path:"mrmime.PNG"},
-{pokemonname:"muk",path:"muk.PNG"},
-{pokemonname:"nidoking",path:"nidoking.PNG"},
-{pokemonname:"nidoqueen",path:"nidoqueen.PNG"},
-{pokemonname:"nidoran",path:"nidoran.PNG"},
-{pokemonname:"nidoranf",path:"nidoranf.PNG"},
-{pokemonname:"nidorina",path:"nidorina.PNG"},
-{pokemonname:"nidorino",path:"nidorino.PNG"},
-{pokemonname:"ninetales",path:"ninetales.PNG"},
-{pokemonname:"oddish",path:"oddish.PNG"},
-{pokemonname:"omanyte",path:"omanyte.PNG"},
-{pokemonname:"omastar",path:"omastar.PNG"},
-{pokemonname:"onix",path:"onix.PNG"},
-{pokemonname:"paras",path:"paras.PNG"},
-{pokemonname:"parasect",path:"parasect.PNG"},
-{pokemonname:"persian",path:"persian.PNG"},
-{pokemonname:"pidgeot",path:"pidgeot.PNG"},
-{pokemonname:"pidgeotto",path:"pidgeotto.PNG"},
-{pokemonname:"pidgey",path:"pidgey.PNG"},
-{pokemonname:"pikachu",path:"pikachu.PNG"},
-{pokemonname:"pinsir",path:"pinsir.PNG"},
-{pokemonname:"poliwag",path:"poliwag.PNG"},
-{pokemonname:"poliwhirl",path:"poliwhirl.PNG"},
-{pokemonname:"poliwrath",path:"poliwrath.PNG"},
-{pokemonname:"ponyta",path:"ponyta.PNG"},
-{pokemonname:"porygon",path:"porygon.PNG"},
-{pokemonname:"primeape",path:"primeape.PNG"},
-{pokemonname:"psyduck",path:"psyduck.PNG"},
-{pokemonname:"raichu",path:"raichu.PNG"},
-{pokemonname:"rapidash",path:"rapidash.PNG"},
-{pokemonname:"raticate",path:"raticate.PNG"},
-{pokemonname:"rattata",path:"rattata.PNG"},
-{pokemonname:"rhydon",path:"rhydon.PNG"},
-{pokemonname:"",path:"rhyhorn.PNG"},
-{pokemonname:"sandshrew",path:"sandshrew.PNG"},
-{pokemonname:"sandslash",path:"sandslash.PNG"},
-{pokemonname:"scyther",path:"scyther.PNG"},
-{pokemonname:"seadra",path:"seadra.PNG"},
-{pokemonname:"seaking",path:"seaking.PNG"},
-{pokemonname:"seel",path:"seel.PNG"},
-{pokemonname:"shellder",path:"shellder.PNG"},
-{pokemonname:"slowbro",path:"slowbro.PNG"},
-{pokemonname:"slowpoke",path:"slowpoke.PNG"},
-{pokemonname:"snorlax",path:"snorlax.PNG"},
-{pokemonname:"spearow",path:"spearow.PNG"},
-{pokemonname:"squirtle",path:"squirtle.PNG"},
-{pokemonname:"starmie",path:"starmie.PNG"},
-{pokemonname:"staryu",path:"staryu.PNG"},
-{pokemonname:"tangela",path:"tangela.PNG"},
-{pokemonname:"tauros",path:"tauros.PNG"},
-{pokemonname:"tentacool",path:"tentacool.PNG"},
-{pokemonname:"tentacruel",path:"tentacruel.PNG"},
-{pokemonname:"vaporeon",path:"vaporeon.PNG"},
-{pokemonname:"venomoth",path:"venomoth.PNG"},
-{pokemonname:"venonat",path:"venonat.PNG"},
-{pokemonname:"venusaur",path:"venusaur.PNG"},
-{pokemonname:"victreebel",path:"victreebel.PNG"},
-{pokemonname:"vileplume",path:"vileplume.PNG"},
-{pokemonname:"voltorb",path:"voltorb.PNG"},
-{pokemonname:"vulpix",path:"vulpix.PNG"},
-{pokemonname:"wartortle",path:"wartortle.PNG"},
-{pokemonname:"weedle",path:"weedle.PNG"},
-{pokemonname:"weepinbell",path:"weepinbell.PNG"},
-{pokemonname:"weezing",path:"weezing.PNG"},
-{pokemonname:"wigglytuff",path:"wigglytuff.PNG"},
-{pokemonname:"zapdos",path:"zapdos.PNG"},
-{pokemonname:"zubat",path:"zubat.PNG"},
+{pokemonname:"Abra",path:"abra.PNG"},
+{pokemonname:"Aerodactyl",path:"aerodactyl.PNG"},
+{pokemonname:"Alakazam",path:"alakazam.PNG"},
+{pokemonname:"Arbok",path:"arbok.PNG"},
+{pokemonname:"Arcanine",path:"arcanine.PNG"},
+{pokemonname:"Articuno",path:"articuno.PNG"},
+{pokemonname:"Beedrill",path:"beedrill.PNG"},
+{pokemonname:"Bellsprout",path:"bellsprout.PNG"},
+{pokemonname:"Blastoise",path:"blastoise.PNG"},
+{pokemonname:"Bulbasaur",path:"bulbasaur.PNG"},
+{pokemonname:"Butterfree",path:"butterfree.PNG"},
+{pokemonname:"Baterpie",path:"caterpie.PNG"},
+{pokemonname:"Chansey",path:"chansey.PNG"},
+{pokemonname:"Charizard",path:"charizard.PNG"},
+{pokemonname:"Charmander",path:"charmander.PNG"},
+{pokemonname:"Charmeleon",path:"charmeleon.PNG"},
+{pokemonname:"Clefable",path:"clefable.PNG"},
+{pokemonname:"Clefairy",path:"clefairy.PNG"},
+{pokemonname:"Cloyster",path:"cloyster.PNG"},
+{pokemonname:"Cubone",path:"cubone.PNG"},
+{pokemonname:"Dewgong",path:"dewgong.PNG"},
+{pokemonname:"Diglett",path:"diglett.PNG"},
+{pokemonname:"Ditto",path:"ditto.PNG"},
+{pokemonname:"Dodrio",path:"dodrio.PNG"},
+{pokemonname:"Doduo",path:"doduo.PNG"},
+{pokemonname:"Dragonair",path:"dragonair.PNG"},
+{pokemonname:"Dragonite",path:"dragonite.PNG"},
+{pokemonname:"Dratini",path:"dratini.PNG"},
+{pokemonname:"Drowzee",path:"drowzee.PNG"},
+{pokemonname:"Dugtrio",path:"dugtrio.PNG"},
+{pokemonname:"Eevee",path:"eevee.PNG"},
+{pokemonname:"Ekans",path:"ekans.PNG"},
+{pokemonname:"Electabuzz",path:"electabuzz.PNG"},
+{pokemonname:"Electrode",path:"electrode.PNG"},
+{pokemonname:"Exeggcute",path:"exeggcute.PNG"},
+{pokemonname:"Exeggutor",path:"exeggutor.PNG"},
+{pokemonname:"Farfetchd",path:"farfetchd.PNG"},
+{pokemonname:"Fearow",path:"fearow.PNG"},
+{pokemonname:"Flareon",path:"flareon.PNG"},
+{pokemonname:"Gastly",path:"gastly.PNG"},
+{pokemonname:"Gengar",path:"gengar.PNG"},
+{pokemonname:"Geodude",path:"geodude.PNG"},
+{pokemonname:"Gloom",path:"gloom.PNG"},
+{pokemonname:"Golbat",path:"golbat.PNG"},
+{pokemonname:"Goldeen",path:"goldeen.PNG"},
+{pokemonname:"Golduck",path:"golduck.PNG"},
+{pokemonname:"Golem",path:"golem.PNG"},
+{pokemonname:"Graveler",path:"graveler.PNG"},
+{pokemonname:"Grimer",path:"grimer.PNG"},
+{pokemonname:"Growlithe",path:"growlithe.PNG"},
+{pokemonname:"Gyarados",path:"gyarados.PNG"},
+{pokemonname:"Haunter",path:"haunter.PNG"},
+{pokemonname:"Hitmonchan",path:"hitmonchan.PNG"},
+{pokemonname:"Hitmonlee",path:"hitmonlee.PNG"},
+{pokemonname:"Horsea",path:"horsea.PNG"},
+{pokemonname:"Hypno",path:"hypno.PNG"},
+{pokemonname:"Ivysaur",path:"ivysaur.PNG"},
+{pokemonname:"Iigglypuff",path:"jigglypuff.PNG"},
+{pokemonname:"Jolteon",path:"jolteon.PNG"},
+{pokemonname:"Jynx",path:"jynx.PNG"},
+{pokemonname:"Kabuto",path:"kabuto.PNG"},
+{pokemonname:"Kabutops",path:"kabutops.PNG"},
+{pokemonname:"Kadabra",path:"kadabra.PNG"},
+{pokemonname:"Kakuna",path:"kakuna.PNG"},
+{pokemonname:"Kangaskhan",path:"kangaskhan.PNG"},
+{pokemonname:"Kingler",path:"kingler.PNG"},
+{pokemonname:"Koffing",path:"koffing.PNG"},
+{pokemonname:"Krabby",path:"krabby.PNG"},
+{pokemonname:"Lapras",path:"lapras.PNG"},
+{pokemonname:"Lickitung",path:"lickitung.PNG"},
+{pokemonname:"Machamp",path:"machamp.PNG"},
+{pokemonname:"Machoke",path:"machoke.PNG"},
+{pokemonname:"Machop",path:"machop.PNG"},
+{pokemonname:"Magikarp",path:"magikarp.PNG"},
+{pokemonname:"Magmar",path:"magmar.PNG"},
+{pokemonname:"Magnemite",path:"magnemite.PNG"},
+{pokemonname:"Magneton",path:"magneton.PNG"},
+{pokemonname:"Mankey",path:"mankey.PNG"},
+{pokemonname:"Marowak",path:"marowak.PNG"},
+{pokemonname:"Meowth",path:"meowth.PNG"},
+{pokemonname:"Metapod",path:"metapod.PNG"},
+{pokemonname:"Mew",path:"mew.PNG"},
+{pokemonname:"Mewtwo",path:"mewtwo.PNG"},
+{pokemonname:"Moltres",path:"moltres.PNG"},
+{pokemonname:"Mrmime",path:"mrmime.PNG"},
+{pokemonname:"Muk",path:"muk.PNG"},
+{pokemonname:"Nidoking",path:"nidoking.PNG"},
+{pokemonname:"Nidoqueen",path:"nidoqueen.PNG"},
+{pokemonname:"Nidoran",path:"nidoran.PNG"},
+{pokemonname:"Nidoranf",path:"nidoranf.PNG"},
+{pokemonname:"Nidorina",path:"nidorina.PNG"},
+{pokemonname:"Nidorino",path:"nidorino.PNG"},
+{pokemonname:"Ninetales",path:"ninetales.PNG"},
+{pokemonname:"Oddish",path:"oddish.PNG"},
+{pokemonname:"Omanyte",path:"omanyte.PNG"},
+{pokemonname:"Omastar",path:"omastar.PNG"},
+{pokemonname:"Onix",path:"onix.PNG"},
+{pokemonname:"Paras",path:"paras.PNG"},
+{pokemonname:"Parasect",path:"parasect.PNG"},
+{pokemonname:"Persian",path:"persian.PNG"},
+{pokemonname:"Pidgeot",path:"pidgeot.PNG"},
+{pokemonname:"Pidgeotto",path:"pidgeotto.PNG"},
+{pokemonname:"Pidgey",path:"pidgey.PNG"},
+{pokemonname:"Pikachu",path:"pikachu.PNG"},
+{pokemonname:"Pinsir",path:"pinsir.PNG"},
+{pokemonname:"Poliwag",path:"poliwag.PNG"},
+{pokemonname:"Poliwhirl",path:"poliwhirl.PNG"},
+{pokemonname:"Poliwrath",path:"poliwrath.PNG"},
+{pokemonname:"Ponyta",path:"ponyta.PNG"},
+{pokemonname:"Porygon",path:"porygon.PNG"},
+{pokemonname:"Primeape",path:"primeape.PNG"},
+{pokemonname:"Psyduck",path:"psyduck.PNG"},
+{pokemonname:"Raichu",path:"raichu.PNG"},
+{pokemonname:"Rapidash",path:"rapidash.PNG"},
+{pokemonname:"Raticate",path:"raticate.PNG"},
+{pokemonname:"Rattata",path:"rattata.PNG"},
+{pokemonname:"Rhydon",path:"rhydon.PNG"},
+{pokemonname:"Rhyhorn",path:"rhyhorn.PNG"},
+{pokemonname:"Sandshrew",path:"sandshrew.PNG"},
+{pokemonname:"Sandslash",path:"sandslash.PNG"},
+{pokemonname:"Scyther",path:"scyther.PNG"},
+{pokemonname:"Seadra",path:"seadra.PNG"},
+{pokemonname:"Seaking",path:"seaking.PNG"},
+{pokemonname:"Seel",path:"seel.PNG"},
+{pokemonname:"Shellder",path:"shellder.PNG"},
+{pokemonname:"Slowbro",path:"slowbro.PNG"},
+{pokemonname:"Slowpoke",path:"slowpoke.PNG"},
+{pokemonname:"Snorlax",path:"snorlax.PNG"},
+{pokemonname:"Spearow",path:"spearow.PNG"},
+{pokemonname:"Squirtle",path:"squirtle.PNG"},
+{pokemonname:"Starmie",path:"starmie.PNG"},
+{pokemonname:"Staryu",path:"staryu.PNG"},
+{pokemonname:"Tangela",path:"tangela.PNG"},
+{pokemonname:"Tauros",path:"tauros.PNG"},
+{pokemonname:"Tentacool",path:"tentacool.PNG"},
+{pokemonname:"Tentacruel",path:"tentacruel.PNG"},
+{pokemonname:"Vaporeon",path:"vaporeon.PNG"},
+{pokemonname:"Venomoth",path:"venomoth.PNG"},
+{pokemonname:"Venonat",path:"venonat.PNG"},
+{pokemonname:"Venusaur",path:"venusaur.PNG"},
+{pokemonname:"Victreebel",path:"victreebel.PNG"},
+{pokemonname:"Vileplume",path:"vileplume.PNG"},
+{pokemonname:"Voltorb",path:"voltorb.PNG"},
+{pokemonname:"Vulpix",path:"vulpix.PNG"},
+{pokemonname:"Wartortle",path:"wartortle.PNG"},
+{pokemonname:"Weedle",path:"weedle.PNG"},
+{pokemonname:"Weepinbell",path:"weepinbell.PNG"},
+{pokemonname:"Weezing",path:"weezing.PNG"},
+{pokemonname:"Wigglytuff",path:"wigglytuff.PNG"},
+{pokemonname:"Zapdos",path:"zapdos.PNG"},
+{pokemonname:"Zubat",path:"zubat.PNG"},
 
 ]
 
@@ -160,22 +160,22 @@ let pokeObjetc = [
 
 
 let pokemons = [
-    "Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise",
-    "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot",
-    "Rattata", "Raticate", "Spearow", "Fearow", "Ekans", "Arbok", "Pikachu", "Raichu", "Sandshrew", "Sandslash",
-    "Nidoran♀", "Nidorina", "Nidoqueen", "Nidoran♂", "Nidorino", "Nidoking", "Clefairy", "Clefable", "Vulpix",
-    "Ninetales", "Jigglypuff", "Wigglytuff", "Zubat", "Golbat", "Oddish", "Gloom", "Vileplume", "Paras", "Parasect",
-    "Venonat", "Venomoth", "Diglett", "Dugtrio", "Meowth", "Persian", "Psyduck", "Golduck", "Mankey", "Primeape",
-    "Growlithe", "Arcanine", "Poliwag", "Poliwhirl", "Poliwrath", "Abra", "Kadabra", "Alakazam", "Machop", "Machoke",
-    "Machamp", "Bellsprout", "Weepinbell", "Victreebel", "Tentacool", "Tentacruel", "Geodude", "Graveler", "Golem",
-    "Ponyta", "Rapidash", "Slowpoke", "Slowbro", "Magnemite", "Magneton", "Farfetch'd", "Doduo", "Dodrio", "Seel",
-    "Dewgong", "Grimer", "Muk", "Shellder", "Cloyster", "Gastly", "Haunter", "Gengar", "Onix", "Drowzee",
-    "Hypno", "Krabby", "Kingler", "Voltorb", "Electrode", "Exeggcute", "Exeggutor", "Cubone", "Marowak", "Hitmonlee",
-    "Hitmonchan", "Lickitung", "Koffing", "Weezing", "Rhyhorn", "Rhydon", "Chansey", "Tangela", "Kangaskhan", "Horsea",
-    "Seadra", "Goldeen", "Seaking", "Staryu", "Starmie", "Mr. Mime", "Scyther", "Jynx", "Electabuzz", "Magmar",
-    "Pinsir", "Tauros", "Magikarp", "Gyarados", "Lapras", "Ditto", "Eevee", "Vaporeon", "Jolteon", "Flareon",
-    "Porygon", "Omanyte", "Omastar", "Kabuto", "Kabutops", "Aerodactyl", "Snorlax", "Articuno", "Zapdos", "Moltres",
-    "Dratini", "Dragonair", "Dragonite", "Mewtwo", "Mew"
+    "bulbasaur", "ivysaur", "venusaur", "charmander", "charmeleon", "charizard", "squirtle", "wartortle", "blastoise",
+    "caterpie", "metapod", "butterfree", "weedle", "kakuna", "beedrill", "pidgey", "pidgeotto", "pidgeot",
+    "rattata", "raticate", "spearow", "fearow", "ekans", "arbok", "pikachu", "raichu", "sandshrew", "sandslash",
+    "nidoran♀", "nidorina", "nidoqueen", "nidoran♂", "nidorino", "nidoking", "clefairy", "clefable", "culpix",
+    "ninetales", "jigglypuff", "wigglytuff", "zubat", "golbat", "oddish", "gloom", "vileplume", "paras", "parasect",
+    "venonat", "venomoth", "diglett", "dugtrio", "meowth", "persian", "psyduck", "golduck", "mankey", "primeape",
+    "growlithe", "arcanine", "poliwag", "poliwhirl", "poliwrath", "abra", "kadabra", "alakazam", "machop", "machoke",
+    "machamp", "bellsprout", "weepinbell", "victreebel", "tentacool", "tentacruel", "geodude", "graveler", "golem",
+    "ponyta", "rapidash", "slowpoke", "slowbro", "magnemite", "magneton", "farfetchd", "doduo", "dodrio", "seel",
+    "dewgong", "grimer", "muk", "shellder", "cloyster", "gastly", "haunter", "gengar", "onix", "drowzee",
+    "hypno", "krabby", "kingler", "voltorb", "electrode", "exeggcute", "exeggutor", "cubone", "marowak", "hitmonlee",
+    "hitmonchan", "lickitung", "koffing", "weezing", "rhyhorn", "rhydon", "chansey", "tangela", "kangaskhan", "horsea",
+    "seadra", "goldeen", "seaking", "staryu", "starmie", "mrmime", "scyther", "jynx", "electabuzz", "magmar",
+    "pinsir", "tauros", "magikarp", "gyarados", "lapras", "ditto", "eevee", "vaporeon", "jolteon", "flareon",
+    "porygon", "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres",
+    "dratini", "dragonair", "dragonite", "mewtwo", "mew"
 ];
 
 
@@ -366,10 +366,10 @@ stamina[5].addEventListener("click", battleStamina);
 function runGame(){
 
 
-   console.log(pokeObjetc[5].pokemonname);
-    sortImgPoke()
+  
+       
         dealCards();
-
+        sortImgPoke()
     
 
 };
@@ -690,15 +690,17 @@ function dealCards(){
                         let power = Math.floor(Math.random()*100);
                         let speed = Math.floor(Math.random()*100);
                          let stamina = Math.floor(Math.random()*100);
+                         pokemons.sort();
                           namepoke = pokemons[pokename];
-                          findMyPoke = pokepath[pokename];
+                          //findMyPoke = pokepath[pokename];
                           
+                          //imgpoke[y].style.backgroundImage = 'url("./assets/images/' + namepoke + '.PNG")';
                           document.getElementsByClassName("name")[j].innerHTML = namepoke;
                           document.getElementsByClassName("power")[p].innerHTML =`Power:${power}` ;
                           document.getElementsByClassName("speed")[s].innerHTML = `Speed:${speed}`;
                           document.getElementsByClassName("stamina")[a].innerHTML = `Stamina:${stamina}`;
                           //document.getElementsByClassName("imgpoke")[y].style.backgroundImage = "url(./assets/images/arbok.PNG";
-                          imgpoke[y].style.backgroundImage = 'url("./assets/images/' + findMyPoke + '")';
+                          
                          
 
                     }
@@ -717,16 +719,46 @@ function dealCards(){
 };
 
 function sortImgPoke(){
-    let name = document.getElementsByClassName("name")
-    for (let i = 0 ; i < name.length; i++){
-        let arrayname=[];
-         arrayname.push(document.getElementsByClassName("name")[i].innerHTML);
-       // for (let j = 0 ; j < pokeObjetc.length; j++){
-     // let choosenpoke =   document.getElementsByClassName("name")[i]
-        console.log(arrayname);
+   
+   let cardname00 = (document.getElementsByClassName("name")[0]).innerText;
+   let cardname01= (document.getElementsByClassName("name")[1]).innerText;
+ let   cardname02= (document.getElementsByClassName("name")[2]).innerText;
+  let  cardname03 =(document.getElementsByClassName("name")[3]).innerText;
+  let  cardname04 =(document.getElementsByClassName("name")[4]).innerText;
+   let cardname05=(document.getElementsByClassName("name")[5]).innerText;
 
-        }
+
+
+
+   
+  let  imgpokes00 =(document.getElementsByClassName("imgpoke")[0]);
+  let  imgpokes01 =(document.getElementsByClassName("imgpoke")[1]);
+  let  imgpokes02= (document.getElementsByClassName("imgpoke")[2]);
+   let imgpokes03 =(document.getElementsByClassName("imgpoke")[3]);
+  let  imgpokes04 =(document.getElementsByClassName("imgpoke")[4]);
+  let  imgpokes05 =(document.getElementsByClassName("imgpoke")[5]);
+
+
+
+  imgpokes00.style.backgroundImage = 'url("./assets/images/' + cardname00 + '.PNG")';
+  imgpokes01.style.backgroundImage = 'url("./assets/images/' + cardname01 + '.PNG")';
+  imgpokes02.style.backgroundImage = 'url("./assets/images/' + cardname02 + '.PNG")';
+  imgpokes03.style.backgroundImage = 'url("./assets/images/' + cardname03 + '.PNG")';
+  imgpokes04.style.backgroundImage = 'url("./assets/images/' + cardname04 + '.PNG")';
+  imgpokes05.style.backgroundImage = 'url("./assets/images/' + cardname05 + '.PNG")';
+     console.log(cardname00)
+     
+
+
+
     }
+        
+
+    
+     
+
+        
+    
     //}
 
 
