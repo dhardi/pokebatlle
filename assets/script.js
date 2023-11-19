@@ -400,17 +400,23 @@ function roundCount(){
         document.getElementById("roundpoint").innerText = ++roundpoint
         if(roundpoint ===3){
             dealCards();
+            sortImgPoke();
         }else if(roundpoint===6){
             dealCards();
+            sortImgPoke();
         }else if(roundpoint===9){
             dealCards();
+            sortImgPoke();
         }else if (roundpoint===12){
             dealCards();
+            sortImgPoke();
         }else if (roundpoint===15){
             dealCards();
+            sortImgPoke();
 
             }else if (roundpoint===18){
                 dealCards(); 
+                sortImgPoke();
             }else if (roundpoint===21)
             gameOver();
             break;
@@ -746,7 +752,7 @@ function sortImgPoke(){
   imgpokes03.style.backgroundImage = 'url("./assets/images/' + cardname03 + '.PNG")';
   imgpokes04.style.backgroundImage = 'url("./assets/images/' + cardname04 + '.PNG")';
   imgpokes05.style.backgroundImage = 'url("./assets/images/' + cardname05 + '.PNG")';
-     console.log(cardname00)
+    
      
 
 
