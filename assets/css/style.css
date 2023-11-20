@@ -173,7 +173,11 @@ footer{
     
 }
 #youscore>h2{
+    font-family:  "Pokemon GB";
     margin-right: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 16px;
 }
 
 
@@ -186,6 +190,7 @@ footer{
     width: 65px;
     height: 56px;
     border-radius: 17px;
+    font-family:  "Pokemon GB";
     
    
 }
@@ -193,6 +198,7 @@ footer{
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
+    font-family:  "Pokemon GB";
 
 }
 
@@ -200,14 +206,20 @@ footer{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+    font-family:  "Pokemon GB";
     
 }
 
 #opscore>h2 {
+    font-family:  "Pokemon GB";
     margin-right: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+
 }
 
 #opboxscoreboard{
+    font-family:  "Pokemon GB";
     border-style: solid;
     box-sizing: border-box;
     width: 65px;
@@ -218,9 +230,11 @@ footer{
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
+    font-family:  "Pokemon GB";
 }
 
 #boxround{
+    font-family:  "Pokemon GB";
     border-style: solid;
     box-sizing: border-box;
     width: 65px;
@@ -230,6 +244,7 @@ footer{
     
 }
 #boxround>span{
+    font-family:  "Pokemon GB";
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
