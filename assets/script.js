@@ -427,13 +427,7 @@ function roundCount(){
 
 
 
-   // }else if(roundpoint=== 3 && roundpoint=== 6 && roundpoint=== 9 && roundpoint=== 12 && roundpoint=== 12 && roundpoint=== 15 && roundpoint=== 18  ){
-        
-   //     dealCards();
-  //  }else if (roundpoint === 21){
-   //     gameOver();
-  //  }
-
+  
 
 
 

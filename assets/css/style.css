@@ -11,6 +11,13 @@ body {
   
 
 }
+
+@font-face {
+    font-family: "Pokemon GB";
+    src: url("../fonts/Pokemon_GB.woff") format('woff');
+    src: url("../fonts/Pokemon\ GB.ttf") format('truetype');
+}
+
 main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
@@ -83,11 +90,15 @@ footer{
 }
 
 #namepoke{
+    font-family: "Pokemon GB";
     border-style: solid;
     box-sizing: border-box;
 }
 
 #namepoke>h2{
+    height: 30px;
+    padding-top: 5px;
+    font-size: 12px;
     padding-left: 4px;
 }
 
@@ -103,14 +114,15 @@ footer{
 }
 
 #powerspoke{
+    font-family: "Pokemon GB";
     padding-left: 12px;
     
 }
 
 #skillspoke{
-    padding-top: 5px;
+    padding-top: 10px;
     list-style: none;
-    font-size: 86%;
+    font-size: 10px;
     width: 100px;
     height: 50px;
 }
