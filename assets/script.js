@@ -1,165 +1,5 @@
-let pokeObjetc = [
-{pokemonname:"Abra",path:"abra.PNG"},
-{pokemonname:"Aerodactyl",path:"aerodactyl.PNG"},
-{pokemonname:"Alakazam",path:"alakazam.PNG"},
-{pokemonname:"Arbok",path:"arbok.PNG"},
-{pokemonname:"Arcanine",path:"arcanine.PNG"},
-{pokemonname:"Articuno",path:"articuno.PNG"},
-{pokemonname:"Beedrill",path:"beedrill.PNG"},
-{pokemonname:"Bellsprout",path:"bellsprout.PNG"},
-{pokemonname:"Blastoise",path:"blastoise.PNG"},
-{pokemonname:"Bulbasaur",path:"bulbasaur.PNG"},
-{pokemonname:"Butterfree",path:"butterfree.PNG"},
-{pokemonname:"Baterpie",path:"caterpie.PNG"},
-{pokemonname:"Chansey",path:"chansey.PNG"},
-{pokemonname:"Charizard",path:"charizard.PNG"},
-{pokemonname:"Charmander",path:"charmander.PNG"},
-{pokemonname:"Charmeleon",path:"charmeleon.PNG"},
-{pokemonname:"Clefable",path:"clefable.PNG"},
-{pokemonname:"Clefairy",path:"clefairy.PNG"},
-{pokemonname:"Cloyster",path:"cloyster.PNG"},
-{pokemonname:"Cubone",path:"cubone.PNG"},
-{pokemonname:"Dewgong",path:"dewgong.PNG"},
-{pokemonname:"Diglett",path:"diglett.PNG"},
-{pokemonname:"Ditto",path:"ditto.PNG"},
-{pokemonname:"Dodrio",path:"dodrio.PNG"},
-{pokemonname:"Doduo",path:"doduo.PNG"},
-{pokemonname:"Dragonair",path:"dragonair.PNG"},
-{pokemonname:"Dragonite",path:"dragonite.PNG"},
-{pokemonname:"Dratini",path:"dratini.PNG"},
-{pokemonname:"Drowzee",path:"drowzee.PNG"},
-{pokemonname:"Dugtrio",path:"dugtrio.PNG"},
-{pokemonname:"Eevee",path:"eevee.PNG"},
-{pokemonname:"Ekans",path:"ekans.PNG"},
-{pokemonname:"Electabuzz",path:"electabuzz.PNG"},
-{pokemonname:"Electrode",path:"electrode.PNG"},
-{pokemonname:"Exeggcute",path:"exeggcute.PNG"},
-{pokemonname:"Exeggutor",path:"exeggutor.PNG"},
-{pokemonname:"Farfetchd",path:"farfetchd.PNG"},
-{pokemonname:"Fearow",path:"fearow.PNG"},
-{pokemonname:"Flareon",path:"flareon.PNG"},
-{pokemonname:"Gastly",path:"gastly.PNG"},
-{pokemonname:"Gengar",path:"gengar.PNG"},
-{pokemonname:"Geodude",path:"geodude.PNG"},
-{pokemonname:"Gloom",path:"gloom.PNG"},
-{pokemonname:"Golbat",path:"golbat.PNG"},
-{pokemonname:"Goldeen",path:"goldeen.PNG"},
-{pokemonname:"Golduck",path:"golduck.PNG"},
-{pokemonname:"Golem",path:"golem.PNG"},
-{pokemonname:"Graveler",path:"graveler.PNG"},
-{pokemonname:"Grimer",path:"grimer.PNG"},
-{pokemonname:"Growlithe",path:"growlithe.PNG"},
-{pokemonname:"Gyarados",path:"gyarados.PNG"},
-{pokemonname:"Haunter",path:"haunter.PNG"},
-{pokemonname:"Hitmonchan",path:"hitmonchan.PNG"},
-{pokemonname:"Hitmonlee",path:"hitmonlee.PNG"},
-{pokemonname:"Horsea",path:"horsea.PNG"},
-{pokemonname:"Hypno",path:"hypno.PNG"},
-{pokemonname:"Ivysaur",path:"ivysaur.PNG"},
-{pokemonname:"Iigglypuff",path:"jigglypuff.PNG"},
-{pokemonname:"Jolteon",path:"jolteon.PNG"},
-{pokemonname:"Jynx",path:"jynx.PNG"},
-{pokemonname:"Kabuto",path:"kabuto.PNG"},
-{pokemonname:"Kabutops",path:"kabutops.PNG"},
-{pokemonname:"Kadabra",path:"kadabra.PNG"},
-{pokemonname:"Kakuna",path:"kakuna.PNG"},
-{pokemonname:"Kangaskhan",path:"kangaskhan.PNG"},
-{pokemonname:"Kingler",path:"kingler.PNG"},
-{pokemonname:"Koffing",path:"koffing.PNG"},
-{pokemonname:"Krabby",path:"krabby.PNG"},
-{pokemonname:"Lapras",path:"lapras.PNG"},
-{pokemonname:"Lickitung",path:"lickitung.PNG"},
-{pokemonname:"Machamp",path:"machamp.PNG"},
-{pokemonname:"Machoke",path:"machoke.PNG"},
-{pokemonname:"Machop",path:"machop.PNG"},
-{pokemonname:"Magikarp",path:"magikarp.PNG"},
-{pokemonname:"Magmar",path:"magmar.PNG"},
-{pokemonname:"Magnemite",path:"magnemite.PNG"},
-{pokemonname:"Magneton",path:"magneton.PNG"},
-{pokemonname:"Mankey",path:"mankey.PNG"},
-{pokemonname:"Marowak",path:"marowak.PNG"},
-{pokemonname:"Meowth",path:"meowth.PNG"},
-{pokemonname:"Metapod",path:"metapod.PNG"},
-{pokemonname:"Mew",path:"mew.PNG"},
-{pokemonname:"Mewtwo",path:"mewtwo.PNG"},
-{pokemonname:"Moltres",path:"moltres.PNG"},
-{pokemonname:"Mrmime",path:"mrmime.PNG"},
-{pokemonname:"Muk",path:"muk.PNG"},
-{pokemonname:"Nidoking",path:"nidoking.PNG"},
-{pokemonname:"Nidoqueen",path:"nidoqueen.PNG"},
-{pokemonname:"Nidoran",path:"nidoran.PNG"},
-{pokemonname:"Nidoranf",path:"nidoranf.PNG"},
-{pokemonname:"Nidorina",path:"nidorina.PNG"},
-{pokemonname:"Nidorino",path:"nidorino.PNG"},
-{pokemonname:"Ninetales",path:"ninetales.PNG"},
-{pokemonname:"Oddish",path:"oddish.PNG"},
-{pokemonname:"Omanyte",path:"omanyte.PNG"},
-{pokemonname:"Omastar",path:"omastar.PNG"},
-{pokemonname:"Onix",path:"onix.PNG"},
-{pokemonname:"Paras",path:"paras.PNG"},
-{pokemonname:"Parasect",path:"parasect.PNG"},
-{pokemonname:"Persian",path:"persian.PNG"},
-{pokemonname:"Pidgeot",path:"pidgeot.PNG"},
-{pokemonname:"Pidgeotto",path:"pidgeotto.PNG"},
-{pokemonname:"Pidgey",path:"pidgey.PNG"},
-{pokemonname:"Pikachu",path:"pikachu.PNG"},
-{pokemonname:"Pinsir",path:"pinsir.PNG"},
-{pokemonname:"Poliwag",path:"poliwag.PNG"},
-{pokemonname:"Poliwhirl",path:"poliwhirl.PNG"},
-{pokemonname:"Poliwrath",path:"poliwrath.PNG"},
-{pokemonname:"Ponyta",path:"ponyta.PNG"},
-{pokemonname:"Porygon",path:"porygon.PNG"},
-{pokemonname:"Primeape",path:"primeape.PNG"},
-{pokemonname:"Psyduck",path:"psyduck.PNG"},
-{pokemonname:"Raichu",path:"raichu.PNG"},
-{pokemonname:"Rapidash",path:"rapidash.PNG"},
-{pokemonname:"Raticate",path:"raticate.PNG"},
-{pokemonname:"Rattata",path:"rattata.PNG"},
-{pokemonname:"Rhydon",path:"rhydon.PNG"},
-{pokemonname:"Rhyhorn",path:"rhyhorn.PNG"},
-{pokemonname:"Sandshrew",path:"sandshrew.PNG"},
-{pokemonname:"Sandslash",path:"sandslash.PNG"},
-{pokemonname:"Scyther",path:"scyther.PNG"},
-{pokemonname:"Seadra",path:"seadra.PNG"},
-{pokemonname:"Seaking",path:"seaking.PNG"},
-{pokemonname:"Seel",path:"seel.PNG"},
-{pokemonname:"Shellder",path:"shellder.PNG"},
-{pokemonname:"Slowbro",path:"slowbro.PNG"},
-{pokemonname:"Slowpoke",path:"slowpoke.PNG"},
-{pokemonname:"Snorlax",path:"snorlax.PNG"},
-{pokemonname:"Spearow",path:"spearow.PNG"},
-{pokemonname:"Squirtle",path:"squirtle.PNG"},
-{pokemonname:"Starmie",path:"starmie.PNG"},
-{pokemonname:"Staryu",path:"staryu.PNG"},
-{pokemonname:"Tangela",path:"tangela.PNG"},
-{pokemonname:"Tauros",path:"tauros.PNG"},
-{pokemonname:"Tentacool",path:"tentacool.PNG"},
-{pokemonname:"Tentacruel",path:"tentacruel.PNG"},
-{pokemonname:"Vaporeon",path:"vaporeon.PNG"},
-{pokemonname:"Venomoth",path:"venomoth.PNG"},
-{pokemonname:"Venonat",path:"venonat.PNG"},
-{pokemonname:"Venusaur",path:"venusaur.PNG"},
-{pokemonname:"Victreebel",path:"victreebel.PNG"},
-{pokemonname:"Vileplume",path:"vileplume.PNG"},
-{pokemonname:"Voltorb",path:"voltorb.PNG"},
-{pokemonname:"Vulpix",path:"vulpix.PNG"},
-{pokemonname:"Wartortle",path:"wartortle.PNG"},
-{pokemonname:"Weedle",path:"weedle.PNG"},
-{pokemonname:"Weepinbell",path:"weepinbell.PNG"},
-{pokemonname:"Weezing",path:"weezing.PNG"},
-{pokemonname:"Wigglytuff",path:"wigglytuff.PNG"},
-{pokemonname:"Zapdos",path:"zapdos.PNG"},
-{pokemonname:"Zubat",path:"zubat.PNG"},
 
-]
-
-
-
-
-
-
-
-let pokemons = [
+const pokemons = [
     "bulbasaur", "ivysaur", "venusaur", "charmander", "charmeleon", "charizard", "squirtle", "wartortle", "blastoise",
     "caterpie", "metapod", "butterfree", "weedle", "kakuna", "beedrill", "pidgey", "pidgeotto", "pidgeot",
     "rattata", "raticate", "spearow", "fearow", "ekans", "arbok", "pikachu", "raichu", "sandshrew", "sandslash",
@@ -179,189 +19,44 @@ let pokemons = [
 ];
 
 
-let pokepath =["abra.PNG",
-"aerodactyl.PNG",
-"alakazam.PNG",
-"arbok.PNG",
-"arcanine.PNG",
-"articuno.PNG",
-"beedrill.PNG",
-"bellsprout.PNG",
-"blastoise.PNG",
-"bulbasaur.PNG",
-"butterfree.PNG",
-"caterpie.PNG",
-"chansey.PNG",
-"charizard.PNG",
-"charmander.PNG",
-"charmeleon.PNG",
-"clefable.PNG",
-"clefairy.PNG",
-"cloyster.PNG",
-"cubone.PNG",
-"dewgong.PNG",
-"diglett.PNG",
-"ditto.PNG",
-"dodrio.PNG",
-"doduo.PNG",
-"dragonair.PNG",
-"dragonite.PNG",
-"dratini.PNG",
-"drowzee.PNG",
-"dugtrio.PNG",
-"eevee.PNG",
-"ekans.PNG",
-"electabuzz.PNG",
-"electrode.PNG",
-"exeggcute.PNG",
-"exeggutor.PNG",
-"farfetchd.PNG",
-"fearow.PNG",
-"flareon.PNG",
-"gastly.PNG",
-"gengar.PNG",
-"geodude.PNG",
-"gloom.PNG",
-"golbat.PNG",
-"goldeen.PNG",
-"golduck.PNG",
-"golem.PNG",
-"graveler.PNG",
-"grimer.PNG",
-"growlithe.PNG",
-"gyarados.PNG",
-"haunter.PNG",
-"hitmonchan.PNG",
-"hitmonlee.PNG",
-"horsea.PNG",
-"hypno.PNG",
-"ivysaur.PNG",
-"jigglypuff.PNG",
-"jolteon.PNG",
-"jynx.PNG",
-"kabuto.PNG",
-"kabutops.PNG",
-"kadabra.PNG",
-"kakuna.PNG",
-"kangaskhan.PNG",
-"kingler.PNG",
-"koffing.PNG",
-"krabby.PNG",
-"lapras.PNG",
-"lickitung.PNG",
-"machamp.PNG",
-"machoke.PNG",
-"machop.PNG",
-"magikarp.PNG",
-"magmar.PNG",
-"magnemite.PNG",
-"magneton.PNG",
-"mankey.PNG",
-"marowak.PNG",
-"meowth.PNG",
-"metapod.PNG",
-"mew.PNG",
-"mewtwo.PNG",
-"moltres.PNG",
-"mrmime.PNG",
-"muk.PNG",
-"nidoking.PNG",
-"nidoqueen.PNG",
-"nidoran.PNG",
-"nidoranf.PNG",
-"nidorina.PNG",
-"nidorino.PNG",
-"ninetales.PNG",
-"oddish.PNG",
-"omanyte.PNG",
-"omastar.PNG",
-"onix.PNG",
-"paras.PNG",
-"parasect.PNG",
-"persian.PNG",
-"pidgeot.PNG",
-"pidgeotto.PNG",
-"pidgey.PNG",
-"pikachu.PNG",
-"pinsir.PNG",
-"poliwag.PNG",
-"poliwhirl.PNG",
-"poliwrath.PNG",
-"ponyta.PNG",
-"porygon.PNG",
-"primeape.PNG",
-"psyduck.PNG",
-"raichu.PNG",
-"rapidash.PNG",
-"raticate.PNG",
-"rattata.PNG",
-"rhydon.PNG",
-"rhyhorn.PNG",
-"sandshrew.PNG",
-"sandslash.PNG",
-"scyther.PNG",
-"seadra.PNG",
-"seaking.PNG",
-"seel.PNG",
-"shellder.PNG",
-"slowbro.PNG",
-"slowpoke.PNG",
-"snorlax.PNG",
-"spearow.PNG",
-"squirtle.PNG",
-"starmie.PNG",
-"staryu.PNG",
-"tangela.PNG",
-"tauros.PNG",
-"tentacool.PNG",
-"tentacruel.PNG",
-"vaporeon.PNG",
-"venomoth.PNG",
-"venonat.PNG",
-"venusaur.PNG",
-"victreebel.PNG",
-"vileplume.PNG",
-"voltorb.PNG",
-"vulpix.PNG",
-"wartortle.PNG",
-"weedle.PNG",
-"weepinbell.PNG",
-"weezing.PNG",
-"wigglytuff.PNG",
-"zapdos.PNG",
-"zubat.PNG",
 
 
 
-];
 
-let pokename ="notdefined";
-let findMyPoke = "notdefined";
-let element = document.getElementById("btn-start")
+
+
+const pokename ="notdefined";
+const findMyPoke = "notdefined";
+const element = document.getElementById("btn-start")
 element.addEventListener("click", runGame);
 
 
 
+ 
 
 
 
 
+ const power = document.getElementsByClassName("power");
+ const speed = document.getElementsByClassName("speed");
+ const stamina = document.getElementsByClassName("stamina");
 
- let power = document.getElementsByClassName("power");
- let speed = document.getElementsByClassName("speed");
- let stamina = document.getElementsByClassName("stamina");
+
+//power[3].addEventListener("click", powerSelect);
+//power[4].addEventListener("click", powerSelect);
+//power[5].addEventListener("click", powerSelect);
+//speed[3].addEventListener("click", powerSelect(playChoice));
+//speed[4].addEventListener("click", battleSpeed);
+//speed[5].addEventListener("click", battleSpeed);
+//stamina[3].addEventListener("click", battleStamina);
+//stamina[4].addEventListener("click", battleStamina);
+//stamina[5].addEventListener("click", battleStamina);
 
 
-power[3].addEventListener("click", battlePowers);
-power[4].addEventListener("click", battlePowers);
-power[5].addEventListener("click", battlePowers);
-speed[3].addEventListener("click", battleSpeed);
-speed[4].addEventListener("click", battleSpeed);
-speed[5].addEventListener("click", battleSpeed);
-stamina[3].addEventListener("click", battleStamina);
-stamina[4].addEventListener("click", battleStamina);
-stamina[5].addEventListener("click", battleStamina);
 
+ speed[3].addEventListener("click", powerSelect);
+//const playChoice2 = speed[4].addEventListener("click", powerSelect(speed[4].innerHTML));
+//const playChoice3 = speed[5].addEventListener("click", powerSelect(speed[5].innerHTML));
 
 function runGame(){
 
@@ -370,10 +65,16 @@ function runGame(){
        
         dealCards();
         sortImgPoke()
-    
+       
 
 };
+function powerSelect(playChoice){
+ 
+  // parseInt(playChoice);
+//num = parseInt (play)
+    console.log("sua escolha",playChoice);
 
+}
 
 
 
@@ -471,20 +172,20 @@ function battleSpeed(){
          scoreCountYou();
  
  
-     }else if(myNum6 < speedbattlenumrandom){
+     }else if(speedbattlenumrandom > myNum6 ){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
  
-     }else if(myNum7 < speedbattlenumrandom){
+     }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
  
  
-     }else if(myNum8 < speedbattlenumrandom){
+     }else if(speedbattlenumrandom > myNum8 ){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
@@ -686,7 +387,7 @@ function dealCards(){
                     if( name[j] === name[j]  ){
 
                        
-                        pokename = Math.floor(Math.random()*pokemons.length);
+                       const pokename = Math.floor(Math.random()*pokemons.length);
                         let power = Math.floor(Math.random()*100);
                         let speed = Math.floor(Math.random()*100);
                          let stamina = Math.floor(Math.random()*100);
@@ -697,7 +398,7 @@ function dealCards(){
                           //imgpoke[y].style.backgroundImage = 'url("./assets/images/' + namepoke + '.PNG")';
                           document.getElementsByClassName("name")[j].innerHTML = namepoke;
                           document.getElementsByClassName("power")[p].innerHTML =`Power:${power}` ;
-                          document.getElementsByClassName("speed")[s].innerHTML = `Speed:${speed}`;
+                          document.getElementsByClassName("speed")[s].innerHTML = speed;
                           document.getElementsByClassName("stamina")[a].innerHTML = `Stamina:${stamina}`;
                           //document.getElementsByClassName("imgpoke")[y].style.backgroundImage = "url(./assets/images/arbok.PNG";
                           
