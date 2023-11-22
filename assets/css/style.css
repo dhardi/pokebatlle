@@ -49,7 +49,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 38px;
     background-image: url(../images/gameboyscreen.PNG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,12 +59,31 @@ footer{
     margin-left: -7px;
     margin-top: 52px;
 }
+
+.picagif{
+    background-image: url(../images/picachu.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+   
+    box-sizing: border-box;
+    width: 168px;
+    height: 152px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
 #mainmenu{
     padding-top: 0px;
     padding-left: 50px;
     margin-left: 10px;
     margin-right: 79px;
 }
+
+
 
 .frame-menu{
     position: relative;
