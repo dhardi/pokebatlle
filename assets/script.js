@@ -30,8 +30,10 @@ const findMyPoke = "notdefined";
 const element = document.getElementById("btn-start")
 element.addEventListener("click", runGame);
 
-
-
+const battlecamp = document.getElementById("battlecamp");
+const menu = document.getElementById("mainmenu");
+const start = document.getElementById("gamestart");
+menu.addEventListener("click", mainMenu);
  
 
 
@@ -462,12 +464,21 @@ function sortImgPoke(){
     }
         
 
+   //Main menu
+   
+   function mainMenu(){
+    battlecamp.style.display = 'flex'
+    menu.style.display = 'none'
     
-     
+    console.log(menu);
+
+   }
+   
+   
 
         
     
-    //}
+  
 
 
 

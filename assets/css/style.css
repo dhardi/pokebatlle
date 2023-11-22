@@ -53,10 +53,10 @@ footer{
     background-image: url(../images/gameboyscreen.PNG);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 70%;
+    width: 104%;
     height: 257px;
     border-radius: 38px;
-    margin-left: 52px;
+    margin-left: -7px;
     margin-top: 52px;
 }
 #mainmenu{
