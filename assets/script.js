@@ -39,6 +39,8 @@ element.addEventListener("click", runGame);
 
  const power = document.getElementsByClassName("power");
  const speed = document.getElementsByClassName("speed");
+ 
+
  const stamina = document.getElementsByClassName("stamina");
 
 
@@ -52,9 +54,9 @@ element.addEventListener("click", runGame);
 //stamina[4].addEventListener("click", battleStamina);
 //stamina[5].addEventListener("click", battleStamina);
 
+speed[3].addEventListener("click", powerSelect);
 
-
- speed[3].addEventListener("click", powerSelect);
+ //speed[3].addEventListener("click", powerSelect(Event));
 //const playChoice2 = speed[4].addEventListener("click", powerSelect(speed[4].innerHTML));
 //const playChoice3 = speed[5].addEventListener("click", powerSelect(speed[5].innerHTML));
 
@@ -68,11 +70,16 @@ function runGame(){
        
 
 };
+
+
+
 function powerSelect(playChoice){
  
-  // parseInt(playChoice);
+     
+    console.log('Your Choice', playChoice);
+  //const num=  Event.target.value;
 //num = parseInt (play)
-    console.log("sua escolha",playChoice);
+   // console.log("sua escolha",num);
 
 }
 

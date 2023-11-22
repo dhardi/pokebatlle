@@ -22,7 +22,7 @@ main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
+    margin-top: 0px;
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
@@ -30,23 +30,66 @@ main {
 }
 
 header{
-    background-color: yellow;
+    background-color: #4d4d4d;
 }
 main{
     display: flex;
-    background-color: aqua;
+    background-color: #6eb300;
 }
 footer{
-    background-color: blueviolet;
+    background-color: #4d4d4d;
     height: 50px;
 }
 
 .gifstyle{
     width: 20%;
 }
+/*main menu*/
+#gameboyscreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url(../images/gameboyscreen.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 257px;
+    border-radius: 38px;
+    margin-left: 52px;
+    margin-top: 52px;
+}
+#mainmenu{
+    padding-top: 0px;
+    padding-left: 50px;
+    margin-left: 10px;
+    margin-right: 79px;
+}
+
+.frame-menu{
+    position: relative;
+    border-image: url(../images/frame-hd.png) 42 round;
+    border-width: 21px;
+    border-style: solid;
+    padding: 1em;
+ 
+    margin: 1em 0 0 0;
+    width: 100%;
+    max-width: 100%;
+}
+.frame-menu>li{
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-family: "Pokemon GB";
+    list-style: none;
+}
+
+
+
+
 
 #battlecamp{
-    display: flex;
+    display: none;
     flex-direction: column;
    
     width: 400px;
