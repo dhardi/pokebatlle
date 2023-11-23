@@ -35,6 +35,7 @@ hpPage[0].addEventListener("click", returnMenu);
 const battlecamp = document.getElementById("battlecamp");
 const menu = document.getElementById("mainmenu");
 const start = document.getElementById("gamestart");
+start.addEventListener("click",startGamePage );
 menu.addEventListener("click", mainMenu);
  const howTo = document.getElementById("howtoplaypage")
 howTo.addEventListener("click", howToPlay);
@@ -471,11 +472,7 @@ function sortImgPoke(){
    
    function mainMenu(){
     
-    battlecamp.style.display = 'block'
-    menu.style.display = 'none'
-    let pgTutorial = document.getElementById("howtoplay");
-    pgTutorial.style.display = "none" 
-    console.log(menu);
+    
 
    }
    
@@ -483,10 +480,7 @@ function sortImgPoke(){
 
    function returnMenu(){
    
-    let mainone = document.getElementById("howtoplay");
-    mainone.style.display = "none";
-    menu.style.display = "block";
-    battlecamp.style.display = "none"
+   
     
   
     
@@ -494,16 +488,17 @@ function sortImgPoke(){
 
 function howToPlay(){
   
-    let pgTutorial = document.getElementById("howtoplay");
-    pgTutorial.style.display = "block"  
+    howTo.style.display = "block"
     battlecamp.style.display = "none"
-    let mainone = document.getElementById("mainmenu");
-    mainone.style.display = "none";
-    
+    menu.style.display = "none";
 }
     
   
 
-
+function startGamePage(){
+    battlecamp.style.display = "block"
+    menu.style.display = "none";
+    howTo.style.display = "none"
+}
 
 
