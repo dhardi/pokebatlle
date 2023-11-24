@@ -37,9 +37,34 @@ main{
     background-color: #6eb300;
 }
 footer{
+    display: flex;
+    flex-direction: row;
     background-color: #4d4d4d;
     height: 50px;
+    
 }
+#social-btn>ul{
+    padding-top: 10px;
+    padding-left: 176px;
+    font-size: ;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    }
+    #social-btn>ul>li{
+        margin-right: 10px;
+
+    }
+.social-icon{
+    font-size: 20px;
+    
+    display: flex;
+    flex-direction: row;
+   margin-left: 20px;
+}
+
 
 .gifstyle{
     width: 20%;
@@ -77,7 +102,7 @@ footer{
 
 
 #mainmenu{
-    display: block;
+    display: none;
     padding-top: 0px;
     padding-left: 50px;
     margin-left: 10px;
