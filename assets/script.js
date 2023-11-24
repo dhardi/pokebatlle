@@ -39,6 +39,7 @@ start.addEventListener("click",startGamePage );
 menu.addEventListener("click", mainMenu);
  const howTo = document.getElementById("howtoplaypage")
 howTo.addEventListener("click", howToPlay);
+const tutorial = document.getElementById("howtoplay");
 
 
 
@@ -479,7 +480,9 @@ function sortImgPoke(){
    //return to main menu 
 
    function returnMenu(){
-   
+    tutorial.style.display = "none"
+    battlecamp.style.display = "none"
+    menu.style.display = "block";
    
     
   
@@ -488,7 +491,7 @@ function sortImgPoke(){
 
 function howToPlay(){
   
-    howTo.style.display = "block"
+    tutorial.style.display = "block"
     battlecamp.style.display = "none"
     menu.style.display = "none";
 }
