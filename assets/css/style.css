@@ -60,15 +60,13 @@ footer{
 .social-icon{
     font-size: 20px;
     
-    display: flex;
+  
     flex-direction: row;
    margin-left: 20px;
 }
 
 
-.gifstyle{
-    width: 20%;
-}
+
 /*main menu*/
 #gameboyscreen{
     display: flex;
