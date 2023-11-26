@@ -30,13 +30,24 @@ const findMyPoke = "notdefined";
 const element = document.getElementById("btn-start")
 
 element.addEventListener("click", runGame);
+
+
 const hpPage = document.getElementsByClassName("return");
 hpPage[0].addEventListener("click", returnMenu);
+hpPage[1].addEventListener("click", returnMenu);
+
+const optionsPage = document.getElementById("optionpage")
+optionsPage.addEventListener("click",pageOptions)
+const optionsPageGame = document.getElementById("optionspage")
+
 const battlecamp = document.getElementById("battlecamp");
+
 const menu = document.getElementById("mainmenu");
 const start = document.getElementById("gamestart");
+
 start.addEventListener("click",startGamePage );
 menu.addEventListener("click", mainMenu);
+
  const howTo = document.getElementById("howtoplaypage")
 howTo.addEventListener("click", howToPlay);
 const tutorial = document.getElementById("howtoplay");
@@ -480,20 +491,24 @@ function sortImgPoke(){
    //return to main menu 
 
    function returnMenu(){
+    
     tutorial.style.display = "none"
     battlecamp.style.display = "none"
     menu.style.display = "block";
-   
+    optionsPageGame.style.display = "none"
     
   
     
    }
+
+   
 
 function howToPlay(){
   
     tutorial.style.display = "block"
     battlecamp.style.display = "none"
     menu.style.display = "none";
+    optionsPageGame.style.display = "none"
 }
     
   
@@ -502,6 +517,13 @@ function startGamePage(){
     battlecamp.style.display = "block"
     menu.style.display = "none";
     howTo.style.display = "none"
+    optionsPageGame.style.display = "none"
 }
 
 
+function pageOptions(){
+    optionsPageGame.style.display = "block"
+    battlecamp.style.display = "none"
+    menu.style.display = "none";
+    tutorial.style.display = "none"
+}

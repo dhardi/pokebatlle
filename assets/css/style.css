@@ -102,7 +102,7 @@ footer{
 
 
 #mainmenu{
-    display: block;
+    display: none;
     padding-top: 0px;
     padding-left: 50px;
     margin-left: 10px;
@@ -157,7 +157,83 @@ footer{
 }
 
 
+/*Options page*/
 
+#optionsgame{
+    display: flex;
+    
+}
+.framegameboyone{
+    display: flex;
+    flex-direction: row;
+}
+.framegameboytwo{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.classic{
+    border-style: solid;
+    width: 140px;
+    margin-right: 10px;
+    height: 132px;
+    background-image: url(../images/gameboyclassic.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 9px;
+
+}
+
+.blue{
+    border-style: solid;
+    width: 150px;
+    margin-right: 10px;
+    height: 132px;
+    background-image: url(../images/gameboyblue.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 9px;
+
+}
+
+.green{
+    border-style: solid;
+    width: 150px;
+    margin-right: 10px;
+    height: 132px;
+    background-image: url(../images/gameboyscreen.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 9px;
+
+}
+
+.purple{
+    border-style: solid;
+    width: 150px;
+    margin-right: 10px;
+    height: 132px;
+    background-image: url(../images/gameboypurple.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 9px;
+
+}
+.return{
+    
+    font-family: "Pokemon GB";
+    font-size: small;
+}
+#optionspage>span{
+    display: flex;
+    margin-top: 274px;
+    margin-left: 88px;
+}
 
 #battlecamp{
     display: none;
