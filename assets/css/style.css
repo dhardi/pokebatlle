@@ -234,6 +234,10 @@ footer{
 }
 
 #battlecamp{
+    background-image: url(../images/arenaone.jpg);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    background-position-y: 100px;
     display: none;
     flex-direction: column;
    
@@ -333,6 +337,7 @@ footer{
 
 /*middle lane*/
 #middlelane{
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

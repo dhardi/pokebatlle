@@ -36,8 +36,9 @@ const hpPage = document.getElementsByClassName("return");
 hpPage[0].addEventListener("click", returnMenu);
 hpPage[1].addEventListener("click", returnMenu);
 
-const optionsPage = document.getElementById("optionpage")
-optionsPage.addEventListener("click",pageOptions)
+const optionsPage = document.getElementById("optionpage");
+const mainBackground = document.getElementById("mainbackground");
+optionsPage.addEventListener("click",pageOptions);
 const optionsPageGame = document.getElementById("optionspage")
 
 const battlecamp = document.getElementById("battlecamp");
@@ -515,6 +516,7 @@ function howToPlay(){
 
 function startGamePage(){
     battlecamp.style.display = "block"
+   mainBackground.style.backgroundColor ="#804533"
     menu.style.display = "none";
     howTo.style.display = "none"
     optionsPageGame.style.display = "none"
