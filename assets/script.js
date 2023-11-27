@@ -22,7 +22,8 @@ const pokemons = [
 
 const classic = document.getElementsByClassName("classic");
 classic[0].addEventListener("click",changeThemeClassic);
-
+const blue = document.getElementsByClassName("blue");
+blue[0].addEventListener("click",changeThemeBlue);
 
 
 const pokename ="notdefined";
@@ -539,4 +540,13 @@ function changeThemeClassic(){
     document.getElementById("gameboyscreen").style.height = "276px";
     document.getElementsByClassName("picagif")[0].style.width = "177px"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
+}
+
+function changeThemeBlue(){
+    mainBackground.style.backgroundColor = "#05a9c5"
+    document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
+    document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementsByClassName("picagif")[0].style.width = "69%"
+    document.getElementsByClassName("picagif")[0].style.height = "176px"
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
 }
