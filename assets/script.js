@@ -20,8 +20,8 @@ const pokemons = [
 
 
 
-
-
+const classic = document.getElementsByClassName("classic");
+classic[0].addEventListener("click",changeThemeClassic);
 
 
 
@@ -33,6 +33,7 @@ element.addEventListener("click", runGame);
 
 
 const hpPage = document.getElementsByClassName("return");
+
 hpPage[0].addEventListener("click", returnMenu);
 hpPage[1].addEventListener("click", returnMenu);
 
@@ -528,4 +529,14 @@ function pageOptions(){
     battlecamp.style.display = "none"
     menu.style.display = "none";
     tutorial.style.display = "none"
+}
+
+
+
+function changeThemeClassic(){
+    mainBackground.style.backgroundColor = "#d2d2d4"
+    document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
+    document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementsByClassName("picagif")[0].style.width = "177px"
+    document.getElementsByClassName("picagif")[0].style.height = "176px"
 }
