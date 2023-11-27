@@ -24,6 +24,10 @@ const classic = document.getElementsByClassName("classic");
 classic[0].addEventListener("click",changeThemeClassic);
 const blue = document.getElementsByClassName("blue");
 blue[0].addEventListener("click",changeThemeBlue);
+const purple = document.getElementsByClassName("purple");
+purple[0].addEventListener("click",changeThemePurple);
+const green = document.getElementsByClassName("green");
+green[0].addEventListener("click",changeThemeGreen);
 
 
 const pokename ="notdefined";
@@ -545,6 +549,24 @@ function changeThemeClassic(){
 function changeThemeBlue(){
     mainBackground.style.backgroundColor = "#05a9c5"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
+    document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementsByClassName("picagif")[0].style.width = "69%"
+    document.getElementsByClassName("picagif")[0].style.height = "176px"
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+}
+
+function changeThemePurple(){
+    mainBackground.style.backgroundColor = "#b14cf1"
+    document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
+    document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementsByClassName("picagif")[0].style.width = "69%"
+    document.getElementsByClassName("picagif")[0].style.height = "176px"
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+}
+
+function changeThemeGreen(){
+    mainBackground.style.backgroundColor = "#7cc901"
+    document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
     document.getElementById("gameboyscreen").style.height = "276px";
     document.getElementsByClassName("picagif")[0].style.width = "69%"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
