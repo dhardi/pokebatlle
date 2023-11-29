@@ -18,7 +18,13 @@ const pokemons = [
     "dratini", "dragonair", "dragonite", "mewtwo", "mew"
 ];
 
-
+//cards Op
+const firstCardOp = document.getElementById("card4");
+const secondCardOp = document.getElementById("card5");
+const thirdCardOp = document.getElementById("card6");
+const skillsPoke = document.getElementsByClassName("skillspoke");
+const imgPoke = document.getElementsByClassName("imgpoke");
+const namePokeCard = document.getElementsByClassName("name");
 
 const classic = document.getElementsByClassName("classic");
 classic[0].addEventListener("click",changeThemeClassic);
@@ -92,6 +98,7 @@ function runGame(){
        
         dealCards();
         sortImgPoke()
+        hidenCardOp()
        
 
 };
@@ -189,19 +196,21 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         
+         showOpCard(speedrandom)
          
       }else if(myNum7 > speedbattlenumrandom){
         alert("you win");
         alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
+        showOpCard(speedrandom)
  
      }else if (myNum8 > speedbattlenumrandom){
          alert("you win");
          alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
+         showOpCard(speedrandom)
  
  
      }else if(speedbattlenumrandom > myNum6 ){
@@ -209,12 +218,14 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
+         showOpCard(speedrandom)
  
      }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
+         showOpCard(speedrandom)
  
  
      }else if(speedbattlenumrandom > myNum8 ){
@@ -222,6 +233,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
+         showOpCard(speedrandom)
       
       
      } else{
@@ -230,6 +242,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
+         showOpCard(speedrandom)
          
       } 
 
@@ -313,17 +326,19 @@ function battlePowers(){
         let opNum0 =  parseInt (document.getElementsByClassName("power")[0].innerText.replace(/\D/g,''));
         let opNum1 = parseInt (document.getElementsByClassName("power")[1].innerText.replace(/\D/g,''));
         let opNum2 = parseInt (document.getElementsByClassName("power")[2].innerText.replace(/\D/g,''));
-        let arraypowers=[];
+        const arraypowers=[];
         arraypowers.push(opNum0,opNum1,opNum2);
           
         //sort a random number and select a item into the array
-        let powerrandom = Math.floor(Math.random()*3);
+        const powerrandom = Math.floor(Math.random()*3);
              
      //my hand deck
         let myNum3 = this.innerText
         let myNum4 =  this.innerText
         let myNum5 =  this.innerText
-        let powerbattlenumrandom = arraypowers[powerrandom];
+
+
+        const powerbattlenumrandom = arraypowers[powerrandom];
 
 
     
@@ -580,4 +595,41 @@ function changeThemeGreen(){
     document.getElementsByClassName("picagif")[0].style.width = "69%"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
     document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+}
+
+
+
+
+
+function hidenCardOp(){
+firstCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+secondCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+thirdCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+  for (let i = 0 ; i < 3; i++){
+   skillsPoke[i].style.display= "none";
+    imgPoke[i].style.display= "none";
+    namePokeCard[i].style.display= "none";
+}
+
+}
+
+
+function showOpCard(card){
+    if (card === 0){
+        firstCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
+        skillsPoke[card].style.display= "block";
+        imgPoke[card].style.display= "block";
+        namePokeCard[card].style.display= "block";
+    }else if (card === 1){
+        secondCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
+        skillsPoke[card].style.display= "block";
+        imgPoke[card].style.display= "block";
+        namePokeCard[card].style.display= "block";
+    }else{
+        thirdCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
+        skillsPoke[card].style.display= "block";
+        imgPoke[card].style.display= "block";
+        namePokeCard[card].style.display= "block";
+    }
+   
 }

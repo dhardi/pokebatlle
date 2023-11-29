@@ -283,8 +283,7 @@ footer{
 
 #namepoke{
     font-family: "Pokemon GB";
-    border-style: solid;
-    box-sizing: border-box;
+  
 }
 
 #namepoke>h2{
@@ -311,7 +310,7 @@ footer{
     
 }
 
-#skillspoke{
+.skillspoke{
     padding-top: 10px;
     list-style: none;
     font-size: 10px;
