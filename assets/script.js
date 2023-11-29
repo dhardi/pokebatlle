@@ -541,15 +541,20 @@ function pageOptions(){
 function changeThemeClassic(){
     mainBackground.style.backgroundColor = "#d2d2d4"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
+    document.getElementById("gameboyscreen").style.width = "118%";
     document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementById("gameboyscreen").style.marginLeft  = "-15px";
     document.getElementsByClassName("picagif")[0].style.width = "177px"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "7px"
 }
 
 function changeThemeBlue(){
     mainBackground.style.backgroundColor = "#05a9c5"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
+    document.getElementById("gameboyscreen").style.width = "128%";
     document.getElementById("gameboyscreen").style.height = "276px";
+    document.getElementById("gameboyscreen").style.marginLeft  = "-33px";
     document.getElementsByClassName("picagif")[0].style.width = "69%"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
     document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
@@ -558,6 +563,8 @@ function changeThemeBlue(){
 function changeThemePurple(){
     mainBackground.style.backgroundColor = "#b14cf1"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
+    document.getElementById("gameboyscreen").style.width = "124%";
+    document.getElementById("gameboyscreen").style.marginLeft = "-22px";
     document.getElementById("gameboyscreen").style.height = "276px";
     document.getElementsByClassName("picagif")[0].style.width = "69%"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
@@ -567,6 +574,8 @@ function changeThemePurple(){
 function changeThemeGreen(){
     mainBackground.style.backgroundColor = "#7cc901"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
+    document.getElementById("gameboyscreen").style.width = "124%";
+    document.getElementById("gameboyscreen").style.marginLeft = "-22px";
     document.getElementById("gameboyscreen").style.height = "276px";
     document.getElementsByClassName("picagif")[0].style.width = "69%"
     document.getElementsByClassName("picagif")[0].style.height = "176px"
