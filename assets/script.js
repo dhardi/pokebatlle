@@ -269,19 +269,21 @@ function battleStamina(){
             alert(staminarandomnum);
              roundCount();
              scoreCountYou();
-             
+             showOpCard(staminarandom);
              
           }else if(myNum10 > staminarandomnum){
             alert("you win");
             alert(staminarandomnum);
             roundCount();
             scoreCountYou();
+            showOpCard(staminarandom);
      
          }else if (myNum11 > staminarandomnum){
              alert("you win");
              alert(staminarandomnum);
              roundCount();
              scoreCountYou();
+             showOpCard(staminarandom);
      
      
          }else if(myNum9 < staminarandomnum){
@@ -289,12 +291,14 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
+             showOpCard(staminarandom);
      
          }else if(myNum10 < staminarandomnum){
              alert("you lost");
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
+             showOpCard(staminarandom);
      
      
          }else if(myNum11 < staminarandomnum){
@@ -302,6 +306,7 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
+             showOpCard(staminarandom);
           
           
          } else{
@@ -310,6 +315,7 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
+             showOpCard(staminarandom);
              
           }
              
@@ -348,6 +354,7 @@ function battlePowers(){
        alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
+        showOpCard(powerrandom);
         
         
      }else if(myNum4 > powerbattlenumrandom){
@@ -355,12 +362,14 @@ function battlePowers(){
        alert(powerbattlenumrandom);
        roundCount();
        scoreCountYou();
+       showOpCard(powerrandom);
 
     }else if (myNum5 > powerbattlenumrandom){
         alert("you win");
         alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
+        showOpCard(powerrandom);
 
 
     }else if(myNum3 < powerbattlenumrandom){
@@ -368,12 +377,14 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
+        showOpCard(powerrandom);
 
     }else if(myNum4 < powerbattlenumrandom){
         alert("you lost");
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
+        showOpCard(powerrandom);
 
 
     }else if(myNum5 < powerbattlenumrandom){
@@ -381,6 +392,7 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
+        showOpCard(powerrandom);
      
      
     } else{
@@ -389,6 +401,7 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
+        showOpCard(powerrandom);
         
      }
      
