@@ -17,7 +17,7 @@ const pokemons = [
     "porygon", "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres",
     "dratini", "dragonair", "dragonite", "mewtwo", "mew"
 ];
-
+const pokemonPlayed = []
 //cards Op
 const firstCardOp = document.getElementById("card4");
 const secondCardOp = document.getElementById("card5");
@@ -26,12 +26,12 @@ const skillsPoke = document.getElementsByClassName("skillspoke");
 const imgPoke = document.getElementsByClassName("imgpoke");
 const namePokeCard = document.getElementsByClassName("name");
 
-//my deck 
+//players cards
 const playerCardOne = document.getElementById("card1");
 const playerCardTwo = document.getElementById("card2");
 const playerCardThird = document.getElementById("card3");
 
-
+// options change the theme
 const classic = document.getElementsByClassName("classic");
 classic[0].addEventListener("click",changeThemeClassic);
 const blue = document.getElementsByClassName("blue");
@@ -41,19 +41,22 @@ purple[0].addEventListener("click",changeThemePurple);
 const green = document.getElementsByClassName("green");
 green[0].addEventListener("click",changeThemeGreen);
 
-
+// display initials 
 const pokename ="notdefined";
 const findMyPoke = "notdefined";
 const element = document.getElementById("btn-start")
-
+const btnShow = document.getElementById("btn-show")
+btnShow.addEventListener("click",ShowMyHand);
+btnShow.addEventListener("click",checkerPoint);
 element.addEventListener("click", runGame);
 
-
+// return pages
 const hpPage = document.getElementsByClassName("return");
 
 hpPage[0].addEventListener("click", returnMenu);
 hpPage[1].addEventListener("click", returnMenu);
-
+//ends here
+//menu events 
 const optionsPage = document.getElementById("optionpage");
 const mainBackground = document.getElementById("mainbackground");
 optionsPage.addEventListener("click",pageOptions);
@@ -71,16 +74,14 @@ menu.addEventListener("click", mainMenu);
 howTo.addEventListener("click", howToPlay);
 const tutorial = document.getElementById("howtoplay");
 
+//menu envents ends here
 
-
-
+//powers skill 
  const power = document.getElementsByClassName("power");
  const speed = document.getElementsByClassName("speed");
- 
-
  const stamina = document.getElementsByClassName("stamina");
 
-
+// event select powers also hidden card 
 power[3].addEventListener("click",battlePowers);
 power[3].addEventListener("click",hiddenMyCardOne);
 
@@ -95,8 +96,11 @@ speed[3].addEventListener("click",hiddenMyCardOne);
 
 
 speed[4].addEventListener("click", battleSpeed);
+speed[4].addEventListener("click",hiddenMyCardTwo);
 
 speed[5].addEventListener("click", battleSpeed);
+speed[5].addEventListener("click",hiddenMyCardThird);
+
 
 stamina[3].addEventListener("click", battleStamina);
 stamina[3].addEventListener("click",hiddenMyCardOne);
@@ -104,7 +108,11 @@ stamina[3].addEventListener("click",hiddenMyCardOne);
 
 
 stamina[4].addEventListener("click", battleStamina);
+stamina[4].addEventListener("click",hiddenMyCardTwo);
+
+
 stamina[5].addEventListener("click", battleStamina);
+stamina[5].addEventListener("click",hiddenMyCardThird);
 
 //speed[3].addEventListener("click", powerSelect);
 
@@ -120,7 +128,7 @@ function runGame(){
         dealCards();
         sortImgPoke()
         hidenCardOp()
-       
+        
 
 };
 
@@ -155,39 +163,59 @@ function scoreCountOp(){
 
 function roundCount(){
     let i = 0
+    
     do{
         i++
         let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
-        document.getElementById("roundpoint").innerText = ++roundpoint
+        
+      
+       document.getElementById("roundpoint").innerText = ++roundpoint
         if(roundpoint ===3){
             dealCards();
             sortImgPoke();
+            alert("round over")
            
         }else if(roundpoint===6){
+           
             dealCards();
             hidenCardOp();
             sortImgPoke();
+            alert("round over")
+            
+           
             
         }else if(roundpoint===9){
+           
             dealCards();
             hidenCardOp();
             sortImgPoke();
+            alert("round over")
+            
            
         }else if (roundpoint===12){
+           
             dealCards();
             hidenCardOp();
             sortImgPoke();
+            alert("round over")
+            
             
         }else if (roundpoint===15){
+            
             dealCards();
             hidenCardOp();
             sortImgPoke();
+            alert("round over")
+            
             
 
             }else if (roundpoint===18){
+                
                 dealCards(); 
                 hidenCardOp();
                 sortImgPoke();
+                alert("round over")
+               
                 
             }else if (roundpoint===21)
             gameOver();
@@ -467,6 +495,7 @@ function gameOver(){
 
 
 function dealCards(){
+    
     // it will get all elements i need 
     let imgpoke = document.getElementsByClassName("imgpoke");
     let name = document.getElementsByClassName("name");
@@ -486,7 +515,7 @@ function dealCards(){
                         let power = Math.floor(Math.random()*100);
                         let speed = Math.floor(Math.random()*100);
                          let stamina = Math.floor(Math.random()*100);
-                         pokemons.sort();
+                         //pokemons.sort();
                           namepoke = pokemons[pokename];
                          
                           
@@ -495,7 +524,7 @@ function dealCards(){
                           document.getElementsByClassName("power")[p].innerHTML = power ;
                           document.getElementsByClassName("speed")[s].innerHTML = speed;
                           document.getElementsByClassName("stamina")[a].innerHTML = stamina;
-                          
+                         
                           
                          
 
@@ -510,8 +539,9 @@ function dealCards(){
         }
 
     }
+    
 }
-         
+
 };
 
 function sortImgPoke(){
@@ -686,9 +716,39 @@ function showOpCard(card){
 function hiddenMyCardOne(){
     
   
-    playerCardOne.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
-    skillsPoke[3].style.display= "none";
+        playerCardOne.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+        skillsPoke[3].style.display= "none";
         imgPoke[3].style.display= "none";
         namePokeCard[3].style.display= "none";
     }
 
+function hiddenMyCardTwo(){
+        playerCardTwo.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+        skillsPoke[4].style.display= "none";
+        imgPoke[4].style.display= "none";
+        namePokeCard[4].style.display= "none";
+    }
+
+    function hiddenMyCardThird(){
+        playerCardThird.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
+        skillsPoke[5].style.display= "none";
+        imgPoke[5].style.display= "none";
+        namePokeCard[5].style.display= "none";
+    }
+
+   function ShowMyHand(){
+   
+   pokemonPlayed.push(namepoke);
+    playerCardOne.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
+    playerCardTwo.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
+    playerCardThird.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
+    for (let i = 3; i < 6; i++){
+        skillsPoke[i].style.display= "block";
+        imgPoke[i].style.display= "block";
+        namePokeCard[i].style.display= "block";
+    }
+}
+
+    function checkerPoint(){
+        console.log(pokemonPlayed);
+    }
