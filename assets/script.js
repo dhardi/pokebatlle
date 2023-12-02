@@ -25,6 +25,7 @@ const thirdCardOp = document.getElementById("card6");
 const skillsPoke = document.getElementsByClassName("skillspoke");
 const imgPoke = document.getElementsByClassName("imgpoke");
 const namePokeCard = document.getElementsByClassName("name");
+const oldplayeds = [];
 
 //players cards
 const playerCardOne = document.getElementById("card1");
@@ -47,7 +48,7 @@ const findMyPoke = "notdefined";
 const element = document.getElementById("btn-start")
 const btnShow = document.getElementById("btn-show")
 btnShow.addEventListener("click",ShowMyHand);
-btnShow.addEventListener("click",checkerPoint);
+//btnShow.addEventListener("click",checkerPoint);
 element.addEventListener("click", runGame);
 
 // return pages
@@ -244,7 +245,9 @@ function battleSpeed(){
     arrayspeed.push(opNum3,opNum4,opNum5);
     let speedrandom = Math.floor(Math.random()*3);
     let speedbattlenumrandom = arrayspeed[speedrandom];
-
+    const number = speedrandom
+    receiver(number)
+    checkerPoint()
     //my deck
 
     const myNum6 = this.innerHTML
@@ -318,10 +321,9 @@ function battleStamina(){
         let opNum8= parseInt (document.getElementsByClassName("stamina")[2].innerText.replace(/\D/g,''));
         let arraystamina = [];
         arraystamina.push(opNum6,opNum7,opNum8);
-        let staminarandom = Math.floor(Math.random()*3);
+        const staminarandom = Math.floor(Math.random()*3);
         let staminarandomnum = arraystamina[staminarandom];
-
-
+      
         //my deck
         let myNum9 =  this.innerText
         let myNum10 = this.innerText
@@ -738,7 +740,7 @@ function hiddenMyCardTwo(){
 
    function ShowMyHand(){
    
-   pokemonPlayed.push(namepoke);
+   
     playerCardOne.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
     playerCardTwo.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
     playerCardThird.style.backgroundImage = 'url("./assets/images/frontcard.jpg")';
@@ -749,6 +751,20 @@ function hiddenMyCardTwo(){
     }
 }
 
-    function checkerPoint(){
-        console.log(pokemonPlayed);
+   function receiver(num){
+   if(num === oldplayeds[0] && num === oldplayeds[1] ){
+    battleSpeed();
+       
+   }else{
+  
+   oldplayeds.push(num);
+  
+   console.log(oldplayeds);
+   }
+   }
+
+   function checkerPoint(){
+    if(oldplayeds.length === 2){
+        oldplayeds.pop()
     }
+   }
