@@ -17,6 +17,8 @@ const pokemons = [
     "porygon", "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl", "snorlax", "articuno", "zapdos", "moltres",
     "dratini", "dragonair", "dragonite", "mewtwo", "mew"
 ];
+
+
 const pokemonPlayed = []
 //cards Op
 const firstCardOp = document.getElementById("card4");
@@ -25,7 +27,7 @@ const thirdCardOp = document.getElementById("card6");
 const skillsPoke = document.getElementsByClassName("skillspoke");
 const imgPoke = document.getElementsByClassName("imgpoke");
 const namePokeCard = document.getElementsByClassName("name");
-const oldplayeds = [];
+const oldplayeds = [0];
 
 //players cards
 const playerCardOne = document.getElementById("card1");
@@ -167,21 +169,21 @@ function roundCount(){
     
     do{
         i++
-        let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
+       let roundpoint = parseInt(document.getElementById("roundpoint").innerText);
         
       
        document.getElementById("roundpoint").innerText = ++roundpoint
         if(roundpoint ===3){
             dealCards();
             sortImgPoke();
-            alert("round over")
-           
+            hidenCardOp();
+           break;
         }else if(roundpoint===6){
            
             dealCards();
             hidenCardOp();
             sortImgPoke();
-            alert("round over")
+            hidenCardOp();
             
            
             
@@ -190,7 +192,7 @@ function roundCount(){
             dealCards();
             hidenCardOp();
             sortImgPoke();
-            alert("round over")
+            hidenCardOp();
             
            
         }else if (roundpoint===12){
@@ -198,7 +200,7 @@ function roundCount(){
             dealCards();
             hidenCardOp();
             sortImgPoke();
-            alert("round over")
+            hidenCardOp();
             
             
         }else if (roundpoint===15){
@@ -206,7 +208,7 @@ function roundCount(){
             dealCards();
             hidenCardOp();
             sortImgPoke();
-            alert("round over")
+            hidenCardOp();
             
             
 
@@ -215,7 +217,7 @@ function roundCount(){
                 dealCards(); 
                 hidenCardOp();
                 sortImgPoke();
-                alert("round over")
+                hidenCardOp();
                
                 
             }else if (roundpoint===21)
@@ -246,8 +248,8 @@ function battleSpeed(){
     let speedrandom = Math.floor(Math.random()*3);
     let speedbattlenumrandom = arrayspeed[speedrandom];
     const number = speedrandom
-    receiver(number)
-    checkerPoint()
+    
+    
     //my deck
 
     const myNum6 = this.innerHTML
@@ -261,7 +263,7 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(speedrandom)
+         showOpCard(number)
         
          
       }else if(myNum7 > speedbattlenumrandom){
@@ -269,14 +271,14 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(speedrandom)
+        showOpCard(number)
  
      }else if (myNum8 > speedbattlenumrandom){
          alert("you win");
          alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(speedrandom)
+         showOpCard(number)
  
  
      }else if(speedbattlenumrandom > myNum6 ){
@@ -284,14 +286,14 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(number)
  
      }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(number)
  
  
      }else if(speedbattlenumrandom > myNum8 ){
@@ -299,7 +301,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(number)
       
       
      } else{
@@ -308,7 +310,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(number)
          
       } 
 
@@ -682,6 +684,8 @@ function changeThemeGreen(){
 
 
 function hidenCardOp(){
+  
+   
 firstCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
 secondCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
 thirdCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
@@ -689,23 +693,25 @@ thirdCardOp.style.backgroundImage = 'url("./assets/images/pokecardback.PNG")';
    skillsPoke[i].style.display= "none";
     imgPoke[i].style.display= "none";
     namePokeCard[i].style.display= "none";
-}
+  
+  }
 
 }
 
 
 function showOpCard(card){
-    if (card === 0){
+    console.log(card);
+   if (card === 0){
         firstCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
         skillsPoke[card].style.display= "block";
         imgPoke[card].style.display= "block";
-        namePokeCard[card].style.display= "block";
+       namePokeCard[card].style.display= "block";
     }else if (card === 1){
         secondCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
         skillsPoke[card].style.display= "block";
         imgPoke[card].style.display= "block";
         namePokeCard[card].style.display= "block";
-    }else{
+   }else{
         thirdCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
         skillsPoke[card].style.display= "block";
         imgPoke[card].style.display= "block";
@@ -722,6 +728,9 @@ function hiddenMyCardOne(){
         skillsPoke[3].style.display= "none";
         imgPoke[3].style.display= "none";
         namePokeCard[3].style.display= "none";
+
+
+       
     }
 
 function hiddenMyCardTwo(){
@@ -729,6 +738,11 @@ function hiddenMyCardTwo(){
         skillsPoke[4].style.display= "none";
         imgPoke[4].style.display= "none";
         namePokeCard[4].style.display= "none";
+
+       
+
+
+
     }
 
     function hiddenMyCardThird(){
@@ -736,6 +750,10 @@ function hiddenMyCardTwo(){
         skillsPoke[5].style.display= "none";
         imgPoke[5].style.display= "none";
         namePokeCard[5].style.display= "none";
+
+        
+
+
     }
 
    function ShowMyHand(){
@@ -751,20 +769,4 @@ function hiddenMyCardTwo(){
     }
 }
 
-   function receiver(num){
-   if(num === oldplayeds[0] && num === oldplayeds[1] ){
-    battleSpeed();
-       
-   }else{
   
-   oldplayeds.push(num);
-  
-   console.log(oldplayeds);
-   }
-   }
-
-   function checkerPoint(){
-    if(oldplayeds.length === 1){
-        oldplayeds.pop()
-    }
-   }
