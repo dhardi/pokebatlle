@@ -767,6 +767,11 @@ function hiddenMyCardTwo(){
         imgPoke[i].style.display= "block";
         namePokeCard[i].style.display= "block";
     }
+
+    hidenCardOp()
+
+
+
 }
 
   
