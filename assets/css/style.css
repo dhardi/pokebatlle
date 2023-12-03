@@ -100,7 +100,7 @@ footer{
 
 
 #mainmenu{
-    display: none;
+    display: block;
     padding-top: 0px;
     padding-left: 50px;
     margin-left: 10px;
@@ -232,7 +232,9 @@ footer{
     margin-top: 274px;
     margin-left: 88px;
 }
-
+#optionspage{
+    display: none;
+}
 #battlecamp{
     background-image: url(../images/arenaone.jpg);
     background-repeat: no-repeat;
@@ -254,7 +256,7 @@ footer{
 
 }
 .playboxcard{
-    border-style: solid;
+    
     box-sizing: border-box;
     width: 125px;
     height: 182px ;
@@ -295,7 +297,6 @@ footer{
 
 .imgpoke{
     padding-left: 10px;
-    border-style: solid;
     box-sizing: border-box;
     width: 116px;
     height: 80px ;
@@ -468,4 +469,108 @@ footer{
         box-shadow: none;
         position: relative;
         top: .2em;
+    }
+    @media screen and (min-width: 576px) {
+        /*main menu*/
+        #gameboyscreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 38px;
+            background-image: url(../images/gameboyscreen.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 72%;
+            height: 257px;
+            border-radius: 25px;
+            margin-left: 55px;
+            margin-top: 52px;
+        }
+        .picagif {
+            background-image: url(../images/picachu.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-style: solid;
+            box-sizing: border-box;
+            width: 183px;
+            height: 170px;
+            margin-bottom: 10px;
+        }
+
+        /*options*/
+        .framegameboyone {
+            display: flex;
+            flex-direction: row;
+            padding-left: 100px;
+        }
+
+        .framegameboytwo {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 100px;
+        }
+        .classic {
+            width: 185px;
+            height: 173px;
+        }
+        .blue {
+            width: 185px;          
+            height: 173px; 
+        }
+        .purple {           
+            width: 185px;           
+            height: 173px;            
+        }
+        .green {        
+            width: 185px;         
+            height: 173px;            
+        }
+        #optionspage>span {
+            
+            margin-left: 178px;
+            margin-bottom: 30px;
+        }
+        .no-hd {
+            margin-bottom: 50px;
+        }
+        #howtoplay>span {
+            margin-left: 173px;
+           
+        }
+
+        /*Gameboard*/
+        #battlecamp {
+            background-position-y: 0px;
+            width: 575px;     
+            margin: 5px;      
+        }
+        #opcards {
+            margin-right: 10px; 
+        }
+        .skillpoke>li{
+            padding-top: 12px;
+        }
+        .skillpoke, .spaceselect{
+            padding-top: 6px;
+        }
+        #namepoke>h2 {  
+            padding-top: 9px; 
+            padding-left: 8px;
+        }
+        .imgpoke {
+            
+           
+            box-sizing: border-box;
+            width: 114px;
+            height: 83px;
+            margin-left: 5px;
+            background-position-y: -11px;
+        }
+        .playboxcard {
+           
+            width: 129px;
+            height: 182px;
+           
+        }
     }

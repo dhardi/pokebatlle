@@ -764,7 +764,7 @@ function hiddenMyCardTwo(){
    }
 
    function checkerPoint(){
-    if(oldplayeds.length === 2){
+    if(oldplayeds.length === 1){
         oldplayeds.pop()
     }
    }
