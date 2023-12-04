@@ -67,6 +67,7 @@ footer{
 
 /*message pop up*/
 #popmessage{
+    display: none;
     background-image: url(../images/popmessage.jpg);
     background-size: 360px;
     background-repeat: no-repeat;
