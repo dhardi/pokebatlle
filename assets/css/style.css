@@ -65,7 +65,20 @@ footer{
    margin-left: 20px;
 }
 
-
+/*message pop up*/
+#popmessage{
+    background-image: url(../images/popmessage.jpg);
+    background-size: 360px;
+    background-repeat: no-repeat;
+    background-position-y: -77px;
+    margin-top: -77px;
+    margin-left: 74px;
+    position: absolute;
+    background-color: white;
+    width: 359px;
+    height: 264px;
+    z-index: 5;
+}
 
 /*main menu*/
 #gameboyscreen{

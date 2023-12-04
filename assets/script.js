@@ -129,9 +129,9 @@ function runGame(){
   
        
         dealCards();
-        sortImgPoke()
-        hidenCardOp()
-        
+        sortImgPoke();
+        hidenCardOp();
+        HiddenButton();
 
 };
 
@@ -489,9 +489,11 @@ function gameOver(){
     if( yourscore > opscore ){
         
         alert("Game Over!",yourscore, "You Win");
+        location.reload();
 
     }else{
         alert("Game Over!",yourscore, "You Lost");
+        location.reload();
     }
 
 };
@@ -774,4 +776,11 @@ function hiddenMyCardTwo(){
 
 }
 
+function HiddenButton(){
+    element.style.display = "none";
+
+}
   
+function ShowMybutton(){
+    element.style.display = "block";
+}
