@@ -176,48 +176,48 @@ function roundCount(){
         if(roundpoint ===3){
             dealCards();
             sortImgPoke();
-            hidenCardOp();
+            
            break;
         }else if(roundpoint===6){
            
             dealCards();
-            hidenCardOp();
+           
             sortImgPoke();
-            hidenCardOp();
+            
             
            
             
         }else if(roundpoint===9){
            
             dealCards();
-            hidenCardOp();
+            
             sortImgPoke();
-            hidenCardOp();
+           
             
            
         }else if (roundpoint===12){
            
             dealCards();
-            hidenCardOp();
+           
             sortImgPoke();
-            hidenCardOp();
+            
             
             
         }else if (roundpoint===15){
             
             dealCards();
-            hidenCardOp();
+            
             sortImgPoke();
-            hidenCardOp();
+           
             
             
 
             }else if (roundpoint===18){
                 
                 dealCards(); 
-                hidenCardOp();
+                
                 sortImgPoke();
-                hidenCardOp();
+                
                
                 
             }else if (roundpoint===21)
@@ -235,9 +235,7 @@ function roundCount(){
 
 
 
-function selectPower(){
 
-};
 
 function battleSpeed(){
     let opNum3= parseInt (document.getElementsByClassName("speed")[0].innerText.replace(/\D/g,''));
@@ -393,7 +391,7 @@ function battleStamina(){
 
 function battlePowers(){
    
-    //for(let f = 0 ; f < power.length; f++){
+    
          //this part take 3 int numbers from the class and push into array 
          
         let opNum0 =  parseInt (document.getElementsByClassName("power")[0].innerText.replace(/\D/g,''));
@@ -640,45 +638,45 @@ function pageOptions(){
 function changeThemeClassic(){
     mainBackground.style.backgroundColor = "#d2d2d4"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
-    document.getElementById("gameboyscreen").style.width = "118%";
-    document.getElementById("gameboyscreen").style.height = "276px";
-    document.getElementById("gameboyscreen").style.marginLeft  = "-15px";
-    document.getElementsByClassName("picagif")[0].style.width = "177px"
-    document.getElementsByClassName("picagif")[0].style.height = "176px"
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "7px"
+  //  document.getElementById("gameboyscreen").style.width = "118%";
+  //  document.getElementById("gameboyscreen").style.height = "276px";
+  //  document.getElementById("gameboyscreen").style.marginLeft  = "-15px";
+   // document.getElementsByClassName("picagif")[0].style.width = "177px"
+   // document.getElementsByClassName("picagif")[0].style.height = "176px"
+   // document.getElementsByClassName("picagif")[0].style.marginLeft = "7px"
 }
 
 function changeThemeBlue(){
     mainBackground.style.backgroundColor = "#05a9c5"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
-    document.getElementById("gameboyscreen").style.width = "128%";
-    document.getElementById("gameboyscreen").style.height = "276px";
-    document.getElementById("gameboyscreen").style.marginLeft  = "-33px";
-    document.getElementsByClassName("picagif")[0].style.width = "69%"
-    document.getElementsByClassName("picagif")[0].style.height = "176px"
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+   // document.getElementById("gameboyscreen").style.width = "128%";
+  //  document.getElementById("gameboyscreen").style.height = "276px";
+   // document.getElementById("gameboyscreen").style.marginLeft  = "-33px";
+   // document.getElementsByClassName("picagif")[0].style.width = "69%"
+  //  document.getElementsByClassName("picagif")[0].style.height = "176px"
+   // document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
 }
 
 function changeThemePurple(){
     mainBackground.style.backgroundColor = "#b14cf1"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
-    document.getElementById("gameboyscreen").style.width = "124%";
-    document.getElementById("gameboyscreen").style.marginLeft = "-22px";
-    document.getElementById("gameboyscreen").style.height = "276px";
-    document.getElementsByClassName("picagif")[0].style.width = "69%"
-    document.getElementsByClassName("picagif")[0].style.height = "176px"
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+   // document.getElementById("gameboyscreen").style.width = "124%";
+   // document.getElementById("gameboyscreen").style.marginLeft = "-22px";
+   // document.getElementById("gameboyscreen").style.height = "276px";
+   // document.getElementsByClassName("picagif")[0].style.width = "69%"
+   // document.getElementsByClassName("picagif")[0].style.height = "176px"
+   // document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
 }
 
 function changeThemeGreen(){
     mainBackground.style.backgroundColor = "#7cc901"
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
-    document.getElementById("gameboyscreen").style.width = "124%";
-    document.getElementById("gameboyscreen").style.marginLeft = "-22px";
-    document.getElementById("gameboyscreen").style.height = "276px";
-    document.getElementsByClassName("picagif")[0].style.width = "69%"
-    document.getElementsByClassName("picagif")[0].style.height = "176px"
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+   // document.getElementById("gameboyscreen").style.width = "124%";
+  //  document.getElementById("gameboyscreen").style.marginLeft = "-22px";
+  //  document.getElementById("gameboyscreen").style.height = "276px";
+//    document.getElementsByClassName("picagif")[0].style.width = "69%"
+ //   document.getElementsByClassName("picagif")[0].style.height = "176px"
+  //  document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
 }
 
 
@@ -705,19 +703,21 @@ function showOpCard(card){
     console.log(card);
    if (card === 0){
         firstCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
-        skillsPoke[card].style.display= "block";
-        imgPoke[card].style.display= "block";
-       namePokeCard[card].style.display= "block";
+        skillsPoke[0].style.display= "block";
+        imgPoke[0].style.display= "block";
+       namePokeCard[0].style.display= "block";
     }else if (card === 1){
         secondCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
-        skillsPoke[card].style.display= "block";
-        imgPoke[card].style.display= "block";
-        namePokeCard[card].style.display= "block";
-   }else{
+        skillsPoke[1].style.display= "block";
+        imgPoke[1].style.display= "block";
+        namePokeCard[1].style.display= "block";
+   }else if (card ===2){
         thirdCardOp.style.backgroundImage = 'url("./assets/images/frontcard.jpg")'; 
-        skillsPoke[card].style.display= "block";
-        imgPoke[card].style.display= "block";
-        namePokeCard[card].style.display= "block";
+        skillsPoke[2].style.display= "block";
+        imgPoke[2].style.display= "block";
+        namePokeCard[2].style.display= "block";
+    }else if (card === card){
+
     }
    
 }
