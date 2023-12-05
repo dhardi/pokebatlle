@@ -19,7 +19,7 @@ const pokemons = [
 ];
 
 
-const pokemonPlayed = []
+const pokemonPlayed = [0,1,2];
 //cards Op
 const firstCardOp = document.getElementById("card4");
 const secondCardOp = document.getElementById("card5");
@@ -243,11 +243,16 @@ function battleSpeed(){
     let opNum5= parseInt (document.getElementsByClassName("speed")[2].innerText.replace(/\D/g,''));
     let arrayspeed=[];
     arrayspeed.push(opNum3,opNum4,opNum5);
-    let speedrandom = Math.floor(Math.random()*3);
+    //let speedrandom = Math.floor(Math.random()*3);
+   // let speedbattlenumrandom = arrayspeed[speedrandom];
+    //const number = speedrandom
+    //test
+    let speedrandom = Math.floor(Math.random() * pokemonPlayed.length);
     let speedbattlenumrandom = arrayspeed[speedrandom];
-    const number = speedrandom
-    
-    
+   
+    pokemonPlayed.splice(speedrandom, 1);
+    console.log(pokemonPlayed)
+    //end test
     //my deck
 
     const myNum6 = this.innerHTML
@@ -261,7 +266,7 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(number)
+         showOpCard(speedrandom)
         
          
       }else if(myNum7 > speedbattlenumrandom){
@@ -269,14 +274,14 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(number)
+        showOpCard(speedrandom)
  
      }else if (myNum8 > speedbattlenumrandom){
          alert("you win");
          alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(number)
+         showOpCard(speedrandom)
  
  
      }else if(speedbattlenumrandom > myNum6 ){
@@ -284,14 +289,14 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(number)
+         showOpCard(speedrandom)
  
      }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(number)
+         showOpCard(speedrandom)
  
  
      }else if(speedbattlenumrandom > myNum8 ){
@@ -299,7 +304,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(number)
+         showOpCard(speedrandom)
       
       
      } else{
@@ -308,7 +313,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(number)
+         showOpCard(speedrandom)
          
       } 
 
@@ -321,9 +326,10 @@ function battleStamina(){
         let opNum8= parseInt (document.getElementsByClassName("stamina")[2].innerText.replace(/\D/g,''));
         let arraystamina = [];
         arraystamina.push(opNum6,opNum7,opNum8);
-        const staminarandom = Math.floor(Math.random()*3);
+        const staminarandom = Math.floor(Math.random()*pokemonPlayed.length);
         let staminarandomnum = arraystamina[staminarandom];
-      
+        pokemonPlayed.splice(staminarandom, 1);
+        console.log(pokemonPlayed)
         //my deck
         let myNum9 =  this.innerText
         let myNum10 = this.innerText
@@ -401,7 +407,7 @@ function battlePowers(){
         arraypowers.push(opNum0,opNum1,opNum2);
           
         //sort a random number and select a item into the array
-        const powerrandom = Math.floor(Math.random()*3);
+        const powerrandom = Math.floor(Math.random()*pokemonPlayed.length);
              
      //my hand deck
         const myNum3 = this.innerText
@@ -410,8 +416,9 @@ function battlePowers(){
         
 
         const powerbattlenumrandom = arraypowers[powerrandom];
-
-
+    
+        pokemonPlayed.splice(powerrandom, 1);
+        console.log(pokemonPlayed)
     
        
      if(myNum3 > powerbattlenumrandom ){
@@ -771,6 +778,7 @@ function hiddenMyCardTwo(){
     }
 
     hidenCardOp()
+    ResetArray()
 
 
 
@@ -784,3 +792,7 @@ function HiddenButton(){
 function ShowMybutton(){
     element.style.display = "block";
 }
+
+function ResetArray() {
+   pokemonPlayed.push(0,1,2)
+   }
