@@ -18,6 +18,10 @@ const pokemons = [
     "dratini", "dragonair", "dragonite", "mewtwo", "mew"
 ];
 
+let opPointsFinal = document.getElementById("oppoints").innerText;
+let playerPointsFinal = document.getElementById("youpoints").innerText;
+const popMessage = document.getElementById("popmessage");
+const message = document.getElementById("finalresult")
 
 const pokemonPlayed = [0,1,2];
 //cards Op
@@ -127,7 +131,7 @@ function runGame(){
 
 
   
-       
+   
         dealCards();
         sortImgPoke();
         hidenCardOp();
@@ -151,17 +155,20 @@ function powerSelect(){
 
 
 function scoreCountYou(){
-    let youscore = parseInt(document.getElementById("youpoints").innerText);
-    document.getElementById("youpoints").innerText = ++youscore 
-
+   
+    playerPointsFinal.innerText = ++playerPointsFinal 
+    document.getElementById("youpoints").innerText = playerPointsFinal
+    console.log(playerPointsFinal)
 };
 
 
 
 function scoreCountOp(){
-    let oppoints = parseInt(document.getElementById("oppoints").innerText);
-    document.getElementById("oppoints").innerText = ++oppoints 
-
+   
+     
+    opPointsFinal.innerText = ++opPointsFinal 
+    document.getElementById("oppoints").innerText = opPointsFinal
+    console.log(opPointsFinal)
 };
 
 function roundCount(){
@@ -488,20 +495,21 @@ function battlePowers(){
 
 
 function gameOver(){
+    if(playerPointsFinal > opPointsFinal){
+    popMessage.style.display = "block"
+     document.getElementById("messageresult").innerHTML = "YOU Win"
+     document.getElementById("messagepoints").innerHTML = playerPointsFinal
+    console.log()
+    console.log(playerPointsFinal)
     
-    let yourscore = parseInt(document.getElementById("youpoints").innerText);
-    let opscore = parseInt(document.getElementById("oppoints").innerText);
-    
-
-    if( yourscore > opscore ){
-        
-        alert("Game Over!",yourscore, "You Win");
-        location.reload();
-
     }else{
-        alert("Game Over!",yourscore, "You Lost");
-        location.reload();
+        document.getElementById("messageresult").innerHTML = "YOU Have Been Defeat"
+        document.getElementById("messagepoints").innerHTML = playerPointsFinal
     }
+
+   
+      //  location.reload();
+   // }
 
 };
 
