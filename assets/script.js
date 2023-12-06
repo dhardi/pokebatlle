@@ -174,13 +174,13 @@ function roundCount(){
       
        document.getElementById("roundpoint").innerText = ++roundpoint
         if(roundpoint ===3){
-            dealCards();
+            
             sortImgPoke();
             
            break;
         }else if(roundpoint===6){
            
-            dealCards();
+            
            
             sortImgPoke();
             
@@ -189,7 +189,7 @@ function roundCount(){
             
         }else if(roundpoint===9){
            
-            dealCards();
+           
             
             sortImgPoke();
            
@@ -197,7 +197,7 @@ function roundCount(){
            
         }else if (roundpoint===12){
            
-            dealCards();
+            
            
             sortImgPoke();
             
@@ -205,7 +205,7 @@ function roundCount(){
             
         }else if (roundpoint===15){
             
-            dealCards();
+            
             
             sortImgPoke();
            
@@ -214,7 +214,7 @@ function roundCount(){
 
             }else if (roundpoint===18){
                 
-                dealCards(); 
+                
                 
                 sortImgPoke();
                 
@@ -249,7 +249,7 @@ function battleSpeed(){
     //test
     let speedrandom = Math.floor(Math.random() * pokemonPlayed.length);
     let speedbattlenumrandom = arrayspeed[speedrandom];
-   
+    let cpuCardPlayed = pokemonPlayed[speedrandom];
     pokemonPlayed.splice(speedrandom, 1);
     console.log(pokemonPlayed)
     //end test
@@ -266,7 +266,7 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
         
          
       }else if(myNum7 > speedbattlenumrandom){
@@ -274,14 +274,14 @@ function battleSpeed(){
         alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(speedrandom)
+        showOpCard(cpuCardPlayed)
  
      }else if (myNum8 > speedbattlenumrandom){
          alert("you win");
          alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
  
  
      }else if(speedbattlenumrandom > myNum6 ){
@@ -289,14 +289,14 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
  
      }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
  
  
      }else if(speedbattlenumrandom > myNum8 ){
@@ -304,7 +304,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
       
       
      } else{
@@ -313,7 +313,7 @@ function battleSpeed(){
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(speedrandom)
+         showOpCard(cpuCardPlayed)
          
       } 
 
@@ -328,7 +328,9 @@ function battleStamina(){
         arraystamina.push(opNum6,opNum7,opNum8);
         const staminarandom = Math.floor(Math.random()*pokemonPlayed.length);
         let staminarandomnum = arraystamina[staminarandom];
+        let cpuCardPlayed = pokemonPlayed[staminarandom];
         pokemonPlayed.splice(staminarandom, 1);
+        
         console.log(pokemonPlayed)
         //my deck
         let myNum9 =  this.innerText
@@ -340,21 +342,21 @@ function battleStamina(){
             alert(staminarandomnum);
              roundCount();
              scoreCountYou();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
              
           }else if(myNum10 > staminarandomnum){
             alert("you win");
             alert(staminarandomnum);
             roundCount();
             scoreCountYou();
-            showOpCard(staminarandom);
+            showOpCard(cpuCardPlayed);
      
          }else if (myNum11 > staminarandomnum){
              alert("you win");
              alert(staminarandomnum);
              roundCount();
              scoreCountYou();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
      
      
          }else if(myNum9 < staminarandomnum){
@@ -362,14 +364,14 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
      
          }else if(myNum10 < staminarandomnum){
              alert("you lost");
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
      
      
          }else if(myNum11 < staminarandomnum){
@@ -377,7 +379,7 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
           
           
          } else{
@@ -386,7 +388,7 @@ function battleStamina(){
              alert(staminarandomnum);
              scoreCountOp ();      
              roundCount();
-             showOpCard(staminarandom);
+             showOpCard(cpuCardPlayed);
              
           }
              
@@ -416,7 +418,7 @@ function battlePowers(){
         
 
         const powerbattlenumrandom = arraypowers[powerrandom];
-    
+        let cpuCardPlayed = pokemonPlayed[powerrandom];
         pokemonPlayed.splice(powerrandom, 1);
         console.log(pokemonPlayed)
     
@@ -426,7 +428,7 @@ function battlePowers(){
        alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
         
         
      }else if(myNum4 > powerbattlenumrandom){
@@ -434,14 +436,14 @@ function battlePowers(){
        alert(powerbattlenumrandom);
        roundCount();
        scoreCountYou();
-       showOpCard(powerrandom);
+       showOpCard(cpuCardPlayed);
 
     }else if (myNum5 > powerbattlenumrandom){
         alert("you win");
         alert(powerbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
 
 
     }else if(myNum3 < powerbattlenumrandom){
@@ -449,14 +451,14 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
 
     }else if(myNum4 < powerbattlenumrandom){
         alert("you lost");
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
 
 
     }else if(myNum5 < powerbattlenumrandom){
@@ -464,7 +466,7 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
      
      
     } else{
@@ -473,7 +475,7 @@ function battlePowers(){
         alert(powerbattlenumrandom);
         scoreCountOp ();      
         roundCount();
-        showOpCard(powerrandom);
+        showOpCard(cpuCardPlayed);
         
      }
      
@@ -776,7 +778,8 @@ function hiddenMyCardTwo(){
         imgPoke[i].style.display= "block";
         namePokeCard[i].style.display= "block";
     }
-
+    dealCards();
+    sortImgPoke();
     hidenCardOp()
     ResetArray()
 
