@@ -6,6 +6,7 @@
 
 body {
     min-height: 100vh;
+   
     display: flex;
     flex-direction: column;
   
@@ -19,6 +20,7 @@ body {
 }
 
 main {
+   
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
@@ -31,6 +33,7 @@ main {
 
 header{
     background-color: #4d4d4d;
+    width: auto;
 }
 main{
     display: flex;
@@ -484,16 +487,40 @@ footer{
         position: relative;
         top: .2em;
     }
-    @media (min-width: 414px) {
+    @media screen and (min-width: 416px){
         #mainmenu{
-            width: 80%;
+            width: auto;
         }
-        #battlecamp{
-            width: 99%;
+       
+        .frame-menu{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 265px;
+            margin-left: 30px;
+            
         }
-    }
-    @media screen and (min-width: 576px) {
-        /*main menu*/
+        .framegameboyone{
+            padding-left: 20px;
+        }
+        .framegameboytwo{
+            padding-left: 20px;
+        }
+        .frame-option{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 401px;
+            margin-left: 16px;
+        }
         #gameboyscreen {
             display: flex;
             flex-direction: column;
@@ -502,10 +529,34 @@ footer{
             background-image: url(../images/gameboyscreen.PNG);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 72%;
+            width: 288px;
             height: 257px;
             border-radius: 25px;
-            margin-left: 55px;
+            margin-left: 24px;
+            margin-top: 52px;
+        }
+    }
+    @media screen and (min-width: 576px) {
+        /*main menu*/
+        #mainmenu{
+            width: auto;
+        }
+        #battlecamp{
+            margin-left: 69px;
+            margin-right: 10px;
+           }
+        #gameboyscreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 38px;
+            background-image: url(../images/gameboyscreen.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 288px;
+            height: 257px;
+            border-radius: 25px;
+            margin-left: 84px;
             margin-top: 52px;
         }
         .picagif {
@@ -518,39 +569,63 @@ footer{
             height: 163px;        
             margin-bottom: 10px;
         }
+        .frame-menu{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 288px;
+            max-width: 100%;
+            margin-left: 69px;
+        }
+
+        .frame-option{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 570px;
+            margin-left: 36px;
+        }
 
         /*options*/
         .framegameboyone {
             display: flex;
             flex-direction: row;
-            padding-left: 100px;
+            padding-left: 81px;
         }
 
         .framegameboytwo {
             margin-top: 25px;
             display: flex;
             flex-direction: row;
-            padding-left: 100px;
+            padding-left: 81px;
         }
         .classic {
             width: 185px;
             height: 173px;
         }
         .blue {
-            width: 185px;          
+            width: 198px;          
             height: 173px; 
         }
         .purple {           
-            width: 185px;           
+            width: 198px;           
             height: 173px;            
         }
         .green {        
-            width: 185px;         
+            width: 198px;         
             height: 173px;            
         }
         #optionspage>span {
             
-            margin-left: 178px;
+            margin-left: 198px;
             margin-bottom: 30px;
         }
         .no-hd {
@@ -596,4 +671,35 @@ footer{
            
         }
     }
-   
+    @media (min-width: 700px){
+       #battlecamp{
+        margin-left: 69px;
+        margin-right: 10px;
+       }
+        #gameboyscreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 38px;
+            background-image: url(../images/gameboyscreen.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 288px;
+            height: 257px;
+            border-radius: 25px;
+            margin-left: 160px;
+            margin-top: 52px;
+        } 
+        .frame-menu{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 288px;
+            max-width: 100%;
+            margin-left: 157px;
+        }
+    }
