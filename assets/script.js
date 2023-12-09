@@ -19,6 +19,8 @@ const pokemons = [
 ];
 let opPointsFinal = document.getElementById("oppoints").innerText;
 let playerPointsFinal = document.getElementById("youpoints").innerText;
+const btnEndGame = document.getElementById("endgame")
+btnEndGame.addEventListener("click",endGame);
 const popMessage = document.getElementById("popmessage");
 const message = document.getElementById("finalresult");
 const pokemonPlayed = [0,1,2];
@@ -118,17 +120,23 @@ function roundCount(){
        document.getElementById("roundpoint").innerText = ++roundpoint;
         if(roundpoint ===3){  
             sortImgPoke();
+            showMyCardButton();
            break;
         }else if(roundpoint===6){         
-            sortImgPoke();             
+            sortImgPoke();
+            showMyCardButton();             
         }else if(roundpoint===9){          
             sortImgPoke();
+            showMyCardButton();
         }else if (roundpoint===12){  
             sortImgPoke();
+            showMyCardButton();
         }else if (roundpoint===15){
             sortImgPoke();
+            showMyCardButton();
             }else if (roundpoint===18){ 
-                sortImgPoke();  
+                sortImgPoke();
+                showMyCardButton();  
             }else if (roundpoint===21)
             gameOver();
             break;
@@ -606,6 +614,8 @@ function hiddenMyCardTwo(){
     sortImgPoke();
     hidenCardOp();
     ResetArray();
+    HiddenButton()
+    
 
 
 
@@ -613,13 +623,20 @@ function hiddenMyCardTwo(){
 
 function HiddenButton(){
     element.style.display = "none";
-
+    btnShow.style.display = "none"
 }
   
 function ShowMybutton(){
     element.style.display = "block";
+
 }
 
 function ResetArray() {
    pokemonPlayed.push(0,1,2);
    }
+function endGame(){
+    location.reload();
+   }
+function showMyCardButton(){
+    btnShow.style.display = "block"
+}

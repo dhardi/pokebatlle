@@ -74,8 +74,11 @@ footer{
 }
 
 /*message pop up*/
+#endgame{
+    margin-left: 150px;
+}
 #popmessage{
-    display: block;
+    display: none;
     background-image: url(../images/popmessage.jpg);
     background-size: 360px;
     background-repeat: no-repeat;
@@ -487,7 +490,7 @@ footer{
         display: inline-block;
         margin: 5px;
         font-weight: bold;
-        padding: 10px 0 10px 10px;
+        padding: 7px 0 7px 2px;
         background-color: lightgray;
         text-shadow: -1px -1px black, 1px 1px white;
         color: gray;
@@ -577,8 +580,8 @@ footer{
             display: none;
             flex-direction: column;
            
-            width: 456px;
-            height: 800px;
+            width: 420px;
+            height: 844px;
         }
         .picagif {
             background-image: url(../images/picachu.gif);
@@ -637,6 +640,32 @@ footer{
             margin-top: 52px;
         }
     }
+    @media screen and (min-width: 520px){
+        #battlecamp {
+            background-image: url(../images/arenaone.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y: 100px;
+            display: none;
+            flex-direction: column;
+            width: 512px;
+            height: 844px;
+        }
+        #popmessage {
+            
+            background-image: url(../images/popmessage.jpg);
+            background-size: 360px;
+            background-repeat: no-repeat;
+            background-position-y: -77px;
+            margin-top: -33px;
+            margin-left: 78px;
+            position: absolute;
+            background-color: white;
+            width: 359px;
+            height: 264px;
+            z-index: 5;
+        }
+    }
     @media screen and (min-width: 576px) {
         /*main menu*/
         #mainmenu{
@@ -661,6 +690,20 @@ footer{
             border-radius: 25px;
             margin-left: 84px;
             margin-top: 52px;
+        }
+        #popmessage {
+            
+            background-image: url(../images/popmessage.jpg);
+            background-size: 360px;
+            background-repeat: no-repeat;
+            background-position-y: -77px;
+            margin-top: -33px;
+            margin-left: 78px;
+            position: absolute;
+            background-color: white;
+            width: 359px;
+            height: 264px;
+            z-index: 5;
         }
         .picagif {
             background-image: url(../images/picachu.gif);
