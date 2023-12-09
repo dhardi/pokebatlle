@@ -325,9 +325,9 @@ footer{
 
 .namepoke>h2{
     height: 30px;
-    padding-top: 5px;
     font-size: 12px;
-    padding-left: 4px;
+    padding-top: 9px;
+    padding-left: 8px;
 }
 
 .imgpoke{
@@ -337,11 +337,9 @@ footer{
     height: 86px;
     background-image: url("../images/charmander.PNG");
     background-size: cover;
-    background-position-y: -13px ;
+    background-position-y: -9px ;
 }
-.skillpoke, .spaceselect {
-    padding-top: 6px;
-}
+
 
 .powerspoke{
     font-family: "Pokemon GB";
@@ -509,6 +507,15 @@ footer{
         #mainmenu{
             width: auto;
         }
+        .namepoke>h2{
+            height: 30px;
+            font-size: 12px;
+            padding-top: 9px;
+            padding-left: 8px;
+        }
+        .skillpoke, .spaceselect {
+            padding-top: 6px;
+        }
         .frame-menu{
             position: relative;
             border-image: url(../images/frame-hd.png) 42 round;
@@ -561,6 +568,17 @@ footer{
     @media screen and (min-width: 416px){
         #mainmenu{
             width: auto;
+        }
+        #battlecamp{
+            background-image: url(../images/arenaone.jpg);
+            background-repeat: no-repeat;
+            background-size:100% ;
+            background-position-y: 100px;
+            display: none;
+            flex-direction: column;
+           
+            width: 456px;
+            height: 800px;
         }
         .picagif {
             background-image: url(../images/picachu.gif);
@@ -628,6 +646,7 @@ footer{
         #battlecamp{
             margin-left: 69px;
             margin-right: 10px;
+            width: 618px;
            }
         #gameboyscreen {
             display: flex;
