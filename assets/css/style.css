@@ -25,6 +25,16 @@ h1{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+h2{
+    font-family: "Pokemon GB"; 
+    margin-left: 68px;
+}
+.boardtitle{
+    font-size: 18px;
+}
+.name{
+    margin-left: 5px;
+}
 main {
    
     /* Enlarge main element to push footer down*/
@@ -92,7 +102,8 @@ footer{
     z-index: 5;
 }
 #messageresult{
-    color: #a94337;
+    background-color:#a94337 ;
+    color: black;
     margin-left: 113px;
     font-family: "Pokemon GB";
     font-size: x-large;
@@ -395,6 +406,8 @@ footer{
 
 #pokescore{
     border-style: solid;
+    margin-top: 10px;
+    border-radius: 32px;
     
 }
 
@@ -472,6 +485,8 @@ footer{
     width: 65px;
     height: 56px;
     border-radius: 17px;
+    margin-left: 75px;
+    margin-top: 10px;
     
     
 }
@@ -572,6 +587,7 @@ footer{
         #mainmenu{
             width: auto;
         }
+
         #battlecamp{
             background-image: url(../images/arenaone.jpg);
             background-repeat: no-repeat;
@@ -650,6 +666,62 @@ footer{
             flex-direction: column;
             width: 512px;
             height: 844px;
+            margin-left: 8px;
+        }
+        #messageresult{
+           
+            margin-left: 70px;
+            font-size: 11px;
+        }
+        #messagepoints{
+            margin-top: 10px;
+          margin-left: 173px;
+            font-size: x-large;
+        }
+        .frame-option {
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 494px;
+            margin-left: 16px;
+        }
+        .framegameboyone {
+            padding-left: 48px;
+        }
+        .framegameboytwo {
+            padding-left: 48px;
+        }
+        #optionspage>span {
+            
+            margin-left: 146px;
+        }
+        #gameboyscreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 38px;
+            background-image: url(../images/gameboyscreen.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 288px;
+            height: 257px;
+            border-radius: 25px;
+            margin-left: 57px;
+            margin-top: 57px;
+        }
+        #social-btn>ul {
+           
+            padding-left: 229px;
+            
+        }
+        h1 {
+            font-family: "Pokemon GB";
+            margin-left: 167px;
+            
         }
         #popmessage {
             
@@ -665,11 +737,31 @@ footer{
             height: 264px;
             z-index: 5;
         }
+        .frame-menu{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 21px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 288px;
+            max-width: 100%;
+            margin-left: 61px;
+        }
     }
     @media screen and (min-width: 576px) {
         /*main menu*/
         #mainmenu{
             width: auto;
+        }
+        #social-btn>ul {
+            padding-left: 255px;
+        }
+        h1 {
+            font-family: "Pokemon GB";
+            margin-left: 151px;
+            
         }
         
         #battlecamp{
@@ -823,6 +915,9 @@ footer{
         margin-left: 69px;
         margin-right: 10px;
        }
+       #social-btn>ul {
+        padding-left: 326px;
+    }
        .frame-option{
         position: relative;
         border-image: url(../images/frame-hd.png) 42 round;
@@ -870,5 +965,10 @@ footer{
             width: 288px;
             max-width: 100%;
             margin-left: 157px;
+        }
+        h1 {
+            font-family: "Pokemon GB";
+            margin-left: 228px;
+            
         }
     }
