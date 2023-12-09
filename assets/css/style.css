@@ -18,7 +18,13 @@ body {
     src: url("../fonts/Pokemon_GB.woff") format('woff');
     src: url("../fonts/Pokemon\ GB.ttf") format('truetype');
 }
-
+h1{
+    font-family: "Pokemon GB"; 
+    margin-left: 123px;
+    font-size: 140%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 main {
    
     /* Enlarge main element to push footer down*/
@@ -32,7 +38,7 @@ main {
 }
 
 header{
-    background-color: #4d4d4d;
+    background-color: #FFFF00;
     width: auto;
 }
 main{
@@ -42,7 +48,7 @@ main{
 footer{
     display: flex;
     flex-direction: row;
-    background-color: #4d4d4d;
+    background-color: #FFFF00;
     height: 50px;
     
 }
@@ -300,12 +306,12 @@ footer{
     flex-direction: column;
 }
 
-#namepoke{
+.namepoke{
     font-family: "Pokemon GB";
   
 }
 
-#namepoke>h2{
+.namepoke>h2{
     height: 30px;
     padding-top: 5px;
     font-size: 12px;
@@ -322,7 +328,7 @@ footer{
     background-position-y: -13px ;
 }
 
-#powerspoke{
+.powerspoke{
     font-family: "Pokemon GB";
     padding-left: 12px;
     
@@ -487,10 +493,75 @@ footer{
         position: relative;
         top: .2em;
     }
+    @media (min-width: 360px){
+        #mainmenu{
+            width: auto;
+        }
+        .frame-menu{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 15px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 265px;
+            margin-left: 19px;
+            
+        }
+        #gameboyscreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 38px;
+            background-image: url(../images/gameboyscreen.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 266px;
+            height: 257px;
+            border-radius: 25px;
+            margin-left: -4px;
+            margin-top: 52px;
+        }
+        .frame-option{
+            position: relative;
+            border-image: url(../images/frame-hd.png) 42 round;
+            border-width: 13px;
+            border-style: solid;
+            padding: 6px;
+            margin-top: 50px;
+            margin: 1em 0 0 0;
+            width: 341px;
+            margin-left: 16px;
+        }
+        .picagif {
+            background-image: url(../images/picachu.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-style: solid;
+            box-sizing: border-box;
+            width: 168px;
+            height: 152px;
+            margin-bottom: 10px;
+            margin-left: 22px;
+        }
+    }
     @media screen and (min-width: 416px){
         #mainmenu{
             width: auto;
         }
+        .picagif {
+            background-image: url(../images/picachu.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-style: solid;
+            box-sizing: border-box;
+            width: 168px;
+            height: 152px;
+            margin-bottom: 10px;
+            margin-left: 2px;
+        }
+
        
         .frame-menu{
             position: relative;
@@ -541,6 +612,7 @@ footer{
         #mainmenu{
             width: auto;
         }
+        
         #battlecamp{
             margin-left: 69px;
             margin-right: 10px;
@@ -568,6 +640,7 @@ footer{
             width: 179px;
             height: 163px;        
             margin-bottom: 10px;
+            margin-left: 2px;
         }
         .frame-menu{
             position: relative;
@@ -651,7 +724,7 @@ footer{
         .skillpoke, .spaceselect{
             padding-top: 6px;
         }
-        #namepoke>h2 {  
+        .namepoke>h2 {  
             padding-top: 9px; 
             padding-left: 8px;
         }
@@ -676,6 +749,28 @@ footer{
         margin-left: 69px;
         margin-right: 10px;
        }
+       .frame-option{
+        position: relative;
+        border-image: url(../images/frame-hd.png) 42 round;
+        border-width: 21px;
+        border-style: solid;
+        padding: 6px;
+        margin-top: 50px;
+        margin: 1em 0 0 0;
+        width: 570px;
+        margin-left: 36px;
+    }
+       .picagif {
+        background-image: url(../images/picachu.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style: solid;
+        box-sizing: border-box;
+        width: 179px;
+        height: 163px;        
+        margin-bottom: 10px;
+        margin-left: 2px;
+    }
         #gameboyscreen {
             display: flex;
             flex-direction: column;
