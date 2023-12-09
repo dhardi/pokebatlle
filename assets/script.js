@@ -3,7 +3,7 @@ const pokemons = [
     "bulbasaur", "ivysaur", "venusaur", "charmander", "charmeleon", "charizard", "squirtle", "wartortle", "blastoise",
     "caterpie", "metapod", "butterfree", "weedle", "kakuna", "beedrill", "pidgey", "pidgeotto", "pidgeot",
     "rattata", "raticate", "spearow", "fearow", "ekans", "arbok", "pikachu", "raichu", "sandshrew", "sandslash",
-    "nidoran♀", "nidorina", "nidoqueen", "nidoran♂", "nidorino", "nidoking", "clefairy", "clefable", "culpix",
+    "nidoran♀", "nidorina", "nidoqueen", "nidoran", "nidorino", "nidoking", "clefairy", "clefable", "vulpix",
     "ninetales", "jigglypuff", "wigglytuff", "zubat", "golbat", "oddish", "gloom", "vileplume", "paras", "parasect",
     "venonat", "venomoth", "diglett", "dugtrio", "meowth", "persian", "psyduck", "golduck", "mankey", "primeape",
     "growlithe", "arcanine", "poliwag", "poliwhirl", "poliwrath", "abra", "kadabra", "alakazam", "machop", "machoke",
@@ -20,7 +20,7 @@ const pokemons = [
 let opPointsFinal = document.getElementById("oppoints").innerText;
 let playerPointsFinal = document.getElementById("youpoints").innerText;
 const popMessage = document.getElementById("popmessage");
-const message = document.getElementById("finalresult")
+const message = document.getElementById("finalresult");
 const pokemonPlayed = [0,1,2];
 //cards Op
 const firstCardOp = document.getElementById("card4");
@@ -46,8 +46,8 @@ green[0].addEventListener("click",changeThemeGreen);
 // display initials 
 const pokename ="notdefined";
 const findMyPoke = "notdefined";
-const element = document.getElementById("btn-start")
-const btnShow = document.getElementById("btn-show")
+const element = document.getElementById("btn-start");
+const btnShow = document.getElementById("btn-show");
 btnShow.addEventListener("click",ShowMyHand);
 //btnShow.addEventListener("click",checkerPoint);
 element.addEventListener("click", runGame);
@@ -60,7 +60,7 @@ hpPage[1].addEventListener("click", returnMenu);
 const optionsPage = document.getElementById("optionpage");
 const mainBackground = document.getElementById("mainbackground");
 optionsPage.addEventListener("click",pageOptions);
-const optionsPageGame = document.getElementById("optionspage")
+const optionsPageGame = document.getElementById("optionspage");
 const battlecamp = document.getElementById("battlecamp");
 const menu = document.getElementById("mainmenu");
 const start = document.getElementById("gamestart");
@@ -98,24 +98,24 @@ function runGame(){
     sortImgPoke();
     hidenCardOp();
     HiddenButton();
-};
+}
 //score points board
 function scoreCountYou(){ 
-    playerPointsFinal.innerText = ++playerPointsFinal 
-    document.getElementById("youpoints").innerText = playerPointsFinal
-    console.log(playerPointsFinal)
-};
+    playerPointsFinal.innerText = ++playerPointsFinal ;
+    document.getElementById("youpoints").innerText = playerPointsFinal;
+    console.log(playerPointsFinal);
+}
 function scoreCountOp(){     
-    opPointsFinal.innerText = ++opPointsFinal 
-    document.getElementById("oppoints").innerText = opPointsFinal
-    console.log(opPointsFinal)
-};
+    opPointsFinal.innerText = ++opPointsFinal ;
+    document.getElementById("oppoints").innerText = opPointsFinal;
+    console.log(opPointsFinal);
+}
 function roundCount(){
-    let i = 0   
+    let i = 0  ; 
     do{
-        i++
+        i++;
        let roundpoint = parseInt(document.getElementById("roundpoint").innerText);    
-       document.getElementById("roundpoint").innerText = ++roundpoint
+       document.getElementById("roundpoint").innerText = ++roundpoint;
         if(roundpoint ===3){  
             sortImgPoke();
            break;
@@ -147,53 +147,53 @@ function battleSpeed(){
     let speedbattlenumrandom = arrayspeed[speedrandom];
     let cpuCardPlayed = pokemonPlayed[speedrandom];
     pokemonPlayed.splice(speedrandom, 1);
-    console.log(pokemonPlayed)
+    console.log(pokemonPlayed);
 //my deck
-    const myNum6 = this.innerHTML
-    const myNum7 = this.innerHTML
-    const myNum8 = this.innerHTML
+    const myNum6 = this.innerHTML;
+    const myNum7 = this.innerHTML;
+    const myNum8 = this.innerHTML;
     if(myNum6 > speedbattlenumrandom ){
         alert("you win");
         alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(cpuCardPlayed)   
+         showOpCard(cpuCardPlayed);   
       }else if(myNum7 > speedbattlenumrandom){
         alert("you win");
         alert(speedbattlenumrandom);
         roundCount();
         scoreCountYou();
-        showOpCard(cpuCardPlayed)
+        showOpCard(cpuCardPlayed);
      }else if (myNum8 > speedbattlenumrandom){
          alert("you win");
          alert(speedbattlenumrandom);
          roundCount();
          scoreCountYou();
-         showOpCard(cpuCardPlayed)
+         showOpCard(cpuCardPlayed);
      }else if(speedbattlenumrandom > myNum6 ){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(cpuCardPlayed)
+         showOpCard(cpuCardPlayed);
      }else if(speedbattlenumrandom > myNum7){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(cpuCardPlayed)
+         showOpCard(cpuCardPlayed);
      }else if(speedbattlenumrandom > myNum8 ){
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(cpuCardPlayed)
+         showOpCard(cpuCardPlayed);
      } else{  
          alert("you lost");
          alert(speedbattlenumrandom);
          scoreCountOp ();      
          roundCount();
-         showOpCard(cpuCardPlayed)     
+         showOpCard(cpuCardPlayed); 
       } 
 
 
@@ -210,11 +210,11 @@ function battleStamina(){
         let cpuCardPlayed = pokemonPlayed[staminarandom];
         pokemonPlayed.splice(staminarandom, 1);
         
-        console.log(pokemonPlayed)
+        console.log(pokemonPlayed);
         //my deck
-        let myNum9 =  this.innerText
-        let myNum10 = this.innerText
-        let myNum11 =  this.innerText
+        let myNum9 =  this.innerText;
+        let myNum10 = this.innerText;
+        let myNum11 =  this.innerText;
 
         if(myNum9 > staminarandomnum ){
             alert("you win");
@@ -288,15 +288,15 @@ function battlePowers(){
         const powerrandom = Math.floor(Math.random()*pokemonPlayed.length);
              
      //my hand deck
-        const myNum3 = this.innerText
-        const myNum4 =  this.innerText
-        const myNum5 =  this.innerText
+        const myNum3 = this.innerText;
+        const myNum4 =  this.innerText;
+        const myNum5 =  this.innerText;
         
 
         const powerbattlenumrandom = arraypowers[powerrandom];
         let cpuCardPlayed = pokemonPlayed[powerrandom];
         pokemonPlayed.splice(powerrandom, 1);
-        console.log(pokemonPlayed)
+        console.log(pokemonPlayed);
     
        
      if(myNum3 > powerbattlenumrandom ){
@@ -360,22 +360,22 @@ function battlePowers(){
 //end of the game
 function gameOver(){
     if(playerPointsFinal > opPointsFinal){
-    popMessage.style.display = "block"
-     document.getElementById("messageresult").innerHTML = "YOU Win"
-     document.getElementById("messagepoints").innerHTML = playerPointsFinal
-    console.log()
-    console.log(playerPointsFinal)
+    popMessage.style.display = "block";
+     document.getElementById("messageresult").innerHTML = "YOU Win";
+     document.getElementById("messagepoints").innerHTML = playerPointsFinal;
+    console.log();
+    console.log(playerPointsFinal);
     
     }else{
-        document.getElementById("messageresult").innerHTML = "YOU Have Been Defeat"
-        document.getElementById("messagepoints").innerHTML = playerPointsFinal
+        document.getElementById("messageresult").innerHTML = "YOU Have Been Defeat";
+        document.getElementById("messagepoints").innerHTML = playerPointsFinal;
     }
 
    
       //  location.reload();
    // }
 
-};
+}
 //Deal random cards and sort the random numbers
 function dealCards(){
     
@@ -413,7 +413,7 @@ function dealCards(){
         }
     }  
 }
-};
+}
 //sort images pokemons
 function sortImgPoke(){
    let cardname00 = (document.getElementsByClassName("name")[0]).innerText;
@@ -449,10 +449,10 @@ function sortImgPoke(){
 
    function returnMenu(){
     
-    tutorial.style.display = "none"
-    battlecamp.style.display = "none"
+    tutorial.style.display = "none";
+    battlecamp.style.display = "none";
     menu.style.display = "block";
-    optionsPageGame.style.display = "none"
+    optionsPageGame.style.display = "none";
     
   
     
@@ -462,34 +462,34 @@ function sortImgPoke(){
 
 function howToPlay(){
   
-    tutorial.style.display = "block"
-    battlecamp.style.display = "none"
+    tutorial.style.display = "block";
+    battlecamp.style.display = "none";
     menu.style.display = "none";
-    optionsPageGame.style.display = "none"
+    optionsPageGame.style.display = "none";
 }
     
   
 
 function startGamePage(){
-    battlecamp.style.display = "block"
-   mainBackground.style.backgroundColor ="#804533"
+    battlecamp.style.display = "block";
+   mainBackground.style.backgroundColor ="#804533";
     menu.style.display = "none";
-    howTo.style.display = "none"
-    optionsPageGame.style.display = "none"
+    howTo.style.display = "none";
+    optionsPageGame.style.display = "none";
 }
 
 
 function pageOptions(){
-    optionsPageGame.style.display = "block"
-    battlecamp.style.display = "none"
+    optionsPageGame.style.display = "block";
+    battlecamp.style.display = "none";
     menu.style.display = "none";
-    tutorial.style.display = "none"
+    tutorial.style.display = "none";
 }
 
 
 
 function changeThemeClassic(){
-    mainBackground.style.backgroundColor = "#d2d2d4"
+    mainBackground.style.backgroundColor = "#d2d2d4";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
   //  document.getElementById("gameboyscreen").style.width = "118%";
   //  document.getElementById("gameboyscreen").style.height = "276px";
@@ -500,7 +500,7 @@ function changeThemeClassic(){
 }
 
 function changeThemeBlue(){
-    mainBackground.style.backgroundColor = "#05a9c5"
+    mainBackground.style.backgroundColor = "#05a9c5";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
    // document.getElementById("gameboyscreen").style.width = "128%";
   //  document.getElementById("gameboyscreen").style.height = "276px";
@@ -511,7 +511,7 @@ function changeThemeBlue(){
 }
 
 function changeThemePurple(){
-    mainBackground.style.backgroundColor = "#b14cf1"
+    mainBackground.style.backgroundColor = "#b14cf1";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
    // document.getElementById("gameboyscreen").style.width = "124%";
    // document.getElementById("gameboyscreen").style.marginLeft = "-22px";
@@ -522,7 +522,7 @@ function changeThemePurple(){
 }
 
 function changeThemeGreen(){
-    mainBackground.style.backgroundColor = "#7cc901"
+    mainBackground.style.backgroundColor = "#7cc901";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
    // document.getElementById("gameboyscreen").style.width = "124%";
   //  document.getElementById("gameboyscreen").style.marginLeft = "-22px";
@@ -604,8 +604,8 @@ function hiddenMyCardTwo(){
     }
     dealCards();
     sortImgPoke();
-    hidenCardOp()
-    ResetArray()
+    hidenCardOp();
+    ResetArray();
 
 
 
@@ -621,5 +621,5 @@ function ShowMybutton(){
 }
 
 function ResetArray() {
-   pokemonPlayed.push(0,1,2)
+   pokemonPlayed.push(0,1,2);
    }

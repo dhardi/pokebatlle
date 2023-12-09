@@ -55,7 +55,6 @@ footer{
 #social-btn>ul{
     padding-top: 10px;
     padding-left: 176px;
-    font-size: ;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -76,18 +75,31 @@ footer{
 
 /*message pop up*/
 #popmessage{
-    display: none;
+    display: block;
     background-image: url(../images/popmessage.jpg);
     background-size: 360px;
     background-repeat: no-repeat;
     background-position-y: -77px;
-    margin-top: -77px;
-    margin-left: 74px;
+    margin-top: -33px;
+    margin-left: -13px;
     position: absolute;
     background-color: white;
     width: 359px;
     height: 264px;
     z-index: 5;
+}
+#messageresult{
+    color: #a94337;
+    margin-left: 113px;
+    font-family: "Pokemon GB";
+    font-size: x-large;
+}
+#messagepoints{
+    color: black;
+    margin-left: 113px;
+    background-color: #a94337;
+    font-family: "Pokemon GB";
+    font-size: x-large;
 }
 
 /*main menu*/
@@ -321,11 +333,14 @@ footer{
 .imgpoke{
     padding-left: 10px;
     box-sizing: border-box;
-    width: 116px;
-    height: 80px ;
+    width: 115px;
+    height: 86px;
     background-image: url("../images/charmander.PNG");
     background-size: cover;
     background-position-y: -13px ;
+}
+.skillpoke, .spaceselect {
+    padding-top: 6px;
 }
 
 .powerspoke{
@@ -478,9 +493,6 @@ footer{
         background-color: lightgray;
         text-shadow: -1px -1px black, 1px 1px white;
         color: gray;
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-        -o-border-radius: 7px;
         border-radius: 7px;
         box-shadow: 0 .2em gray;
         cursor: pointer;
@@ -732,8 +744,8 @@ footer{
             
            
             box-sizing: border-box;
-            width: 114px;
-            height: 83px;
+            width: 115px;
+            height: 86px;
             margin-left: 5px;
             background-position-y: -11px;
         }
