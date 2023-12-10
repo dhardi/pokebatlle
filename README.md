@@ -47,21 +47,21 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
  - End of cycle
   - every three rounds the cycle ends and the game will give you three more cards when pressing the Show my cards button will reveal your three new cards and a new cycle will begin.
-  ![End of Cycle]()
+  ![End of Cycle](https://github.com/dhardi/pokebatlle/blob/main/docs/endcycle.PNG)
 
 
 # Design and Colors
 - O design foi baseado nos jogos da franquia pokemon versao de GameBoy Color e Classico as cores vao se basear nos portateis da epoca dos anos 90 e 2000 .
 
-![End of Cycle]()
+
 
 ## Colors 
 -The colors was based on the Pokémon franchise games, the GameBoy Color and Classic versions. The colors will be based on portable consoles from the 90s and 2000s.
-![GameBoy Colors]()
+![GameBoy Colors](https://github.com/dhardi/pokebatlle/blob/main/docs/gameboycollection.PNG)
 
 ## design
 - the design of the game is based on the old pokemon games from the series YELLOW, RED, BLUE and GREEN the textures the font family were implemented exactly as in the Pokemon Games Franchise the border to make the menu was used the same as used in the game.
-![textures]()
+![textures](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
 
 
 ## Future Ideas to Implement 
@@ -83,19 +83,19 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 - W3c Html Validator
 
-![htmlvalidator]()
+![htmlvalidator](https://github.com/dhardi/pokebatlle/blob/main/docs/html-validator.PNG)
 
 - Jigsaw Validator 
 
-![cssvalidator]()
+![cssvalidator](https://github.com/dhardi/pokebatlle/blob/main/docs/css-validator.PNG)
 
 - Performace Lighthouse Desktop
   
-![lighthouse]()
+![lighthouse](https://github.com/dhardi/pokebatlle/blob/main/docs/lighthouse-desktop.PNG)
 
 - Performace Lighthouse Mobile
 
-![lighthousemobile]()
+![lighthousemobile](https://github.com/dhardi/pokebatlle/blob/main/docs/lighthousetest.PNG)
 
 ### Unfixed Bugs
 
@@ -116,10 +116,7 @@ You can find the live site via the following URL - [PokeBattle](https://dhardi.g
 
  Firstly, I would like to mention my tutor who was a great help to my development, I would like to thank my wife for her help with color choices. Below I will provide the links to the content to produce the website.
 
- - Video made by [Martin](https://martincurleyvisuals.com/)
- - Pictures made by me and my Wife
- - [Create your Logo](https://looka.com/onboarding)
+ - textures and Font [Luttge](https://luttje.github.io/css-pokemon-gameboy/)
  - Content
-   -  [Why Should start jiujitsu](https://www.westsidemma.net/single-post/2016-1-29-7-reasons-why-everyone-should-train-brazilian-jiujitsu)
-   -  [Pillars Jiu Jistu](https://gbriveroaks.com/what-are-the-pillars-of-jiu-jitsu/)
-   -  [Things You’ll Need Before Your First Brazillian Jiu Jistu Class](https://evolve-mma.com/blog/7-things-you-should-get-before-your-first-bjj-class/)
+   -  [Pokemon Images](https://www.pinterest.ie/search/pins/?q=pokemons&rs=typed)
+   -  [©2023 Pokémon. ©1995 - 2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.](https://www.pokemon.com/us/copyright//)
