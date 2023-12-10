@@ -573,3 +573,54 @@ footer{
 
         }
     }
+    @media (min-width: 600px){
+        body{
+            width: 600px;
+        }
+        #gameboyscreen {
+            
+            width: 62%;
+            margin-left: 83px;
+            
+        }
+        .picagif{
+            margin-left: 5px;
+        }
+        .frame-menu{
+            width: 57%;
+            margin-left: 95px;
+        }
+        .frame-option{
+            width: 580px;
+        }
+        .classic, .blue, .purple, .green {
+            width: 178px;
+            height: 169px;
+        }
+        .framegameboyone {
+            margin-left: 71px;
+        }
+        .framegameboytwo {
+            margin-left: 71px;
+        }
+        h1{
+            margin-left: 165px;
+        }
+        #social-btn>ul {
+            
+            padding-left: 260px;
+            
+        }
+        #optionspage>h2 {
+           padding-left: 68px;
+        }
+        #optionspage>span {
+            
+            margin-left: 182px;
+        }
+        #battlecamp {
+            background-position-y: 2px;
+            width: 598px;
+        }
+        
+    }
