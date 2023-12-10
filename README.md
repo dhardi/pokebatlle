@@ -15,12 +15,12 @@
   - How To Play
   - Option 
 
-  ![Main Menu]()
+  ![Main Menu](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
 
 - The Game 
    - The game will give you three cards with three different pokemons. The card will have three attributes and each attribute has a value linked to it. The winner will be the one who scores the most points when they reach round twenty one and the game ends. each round is equivalent to one point each round you must choose your pokemon's attribute and battle until the last round.
   
-  ![Gameplay]()
+  ![Gameplay](https://github.com/dhardi/pokebatlle/blob/main/docs/gameplay.PNG)
 
 - How the Game Works
   - As soon as the player selects the start game menu option the game will open you will see a start button when you press the game it will draw three cards for the player and three cards for the CPU each round you must choose an attribute among your three pokemons and click in the attribute value to continue the battle.
@@ -32,11 +32,11 @@ At the end of twenty-one rounds the value of the player's points will be compare
 - BoardScore
  -No BoardScore o player vai conseguir acompanhar seus pontos e de seu oponente ao lado voce vera tambem a contagem dos rounds bem ao lado do boardscore.
 
-![BoardScore]()
+![BoardScore](https://github.com/dhardi/pokebatlle/blob/main/docs/boardscore.PNG)
 
 - pokemon Card
   -the card, the player will be able to see the name of the pokemon that was drawn, the pokemon's image and its attributes right below the pokemon's image. To select the attribute, place the hovered effect to highlight the attribute value and direct the player where to click.
-![Pokemon Card]()
+![Pokemon Card](https://github.com/dhardi/pokebatlle/blob/main/docs/card.PNG)
 
 - Game Over
   - The Game Over window will appear when the game reaches twenty one rounds and the player will be able to see the result and also the final score he achieved.When the player clicks on the gameover button, he will be directed to the main page where he can start the game again or change the game theme.
