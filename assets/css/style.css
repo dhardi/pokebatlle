@@ -6,7 +6,8 @@
 
 body {
     min-height: 100vh;
-   
+   width: 400px;
+   height: 936px;
     display: flex;
     flex-direction: column;
   
@@ -20,7 +21,7 @@ body {
 }
 h1{
     font-family: "Pokemon GB"; 
-    margin-left: 123px;
+    margin-left: 94px;
     font-size: 140%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -131,13 +132,34 @@ footer{
     margin-left: -7px;
     margin-top: 52px;
 }
+#gamestart:hover {
+    text-decoration: underline;
+  }
+  #howtoplaypage:hover {
+    text-decoration: underline;
+  }
+  #optionpage:hover {
+    text-decoration: underline;
+  }
+  .return:hover {
+    text-decoration: underline;
+  }
+.power:hover {
+    text-decoration: underline;
+  }
+  .speed:hover {
+    text-decoration: underline;
+  }
+  .stamina:hover {
+    text-decoration: underline;
+  }
 
 .picagif{
     background-image: url(../images/picachu.gif);
     background-repeat: no-repeat;
     background-size: cover;
     border-style: solid;
-   
+   margin-left: 14px;
     box-sizing: border-box;
     width: 168px;
     height: 152px;
@@ -322,7 +344,7 @@ footer{
     flex-direction: row;
     justify-content:space-evenly ;
     padding-top: 74px;
-    padding-right: 10px;
+   
     align-self: flex-end;
 }
 /*cards details */
@@ -342,6 +364,9 @@ footer{
     font-size: 12px;
     padding-top: 9px;
     padding-left: 8px;
+}
+.skillpoke, .spaceselect{
+    padding-top: 6px;
 }
 
 .imgpoke{
@@ -390,9 +415,9 @@ footer{
     
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 35px;
+    width: 289px;
+   
+    margin-left: 9px;
     margin-right: 35px;
     padding-top: 150px;
 
@@ -485,16 +510,37 @@ footer{
     width: 65px;
     height: 56px;
     border-radius: 17px;
-    margin-left: 75px;
+    margin-left: 40px;
     margin-top: 10px;
     
     
+}
+.boardtitle{
+    margin-left: 36px;
 }
 #boxround>span{
     font-family:  "Pokemon GB";
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
+    
+}
+.frame-option{
+    position: relative;
+    border-image: url(../images/frame-hd.png) 42 round;
+    border-width: 13px;
+    border-style: solid;
+    padding: 6px;
+    margin-top: 50px;
+    margin: 1em 0 0 0;
+    width: 380px;
+    margin-left: 16px;
+}
+#optionspage>h2{
+
+    margin-right: 53px;
+    font-size: 17px;
+    margin-top: 10px;
     
 }
 
@@ -521,454 +567,9 @@ footer{
         position: relative;
         top: .2em;
     }
-    @media (min-width: 360px){
-        #mainmenu{
-            width: auto;
-        }
-        .namepoke>h2{
-            height: 30px;
-            font-size: 12px;
-            padding-top: 9px;
-            padding-left: 8px;
-        }
-        .skillpoke, .spaceselect {
-            padding-top: 6px;
-        }
-        .frame-menu{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 15px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 265px;
-            margin-left: 19px;
-            
-        }
-        #gameboyscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 38px;
-            background-image: url(../images/gameboyscreen.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 266px;
-            height: 257px;
-            border-radius: 25px;
-            margin-left: -4px;
-            margin-top: 52px;
-        }
-        .frame-option{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 13px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 341px;
-            margin-left: 16px;
-        }
-        .picagif {
-            background-image: url(../images/picachu.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-style: solid;
-            box-sizing: border-box;
-            width: 168px;
-            height: 152px;
-            margin-bottom: 10px;
-            margin-left: 22px;
-        }
-    }
-    @media screen and (min-width: 416px){
-        #mainmenu{
-            width: auto;
-        }
+    @media (min-width: 420px){
+        body{
+            height: 857px;
 
-        #battlecamp{
-            background-image: url(../images/arenaone.jpg);
-            background-repeat: no-repeat;
-            background-size:100% ;
-            background-position-y: 100px;
-            display: none;
-            flex-direction: column;
-           
-            width: 420px;
-            height: 844px;
-        }
-        .picagif {
-            background-image: url(../images/picachu.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-style: solid;
-            box-sizing: border-box;
-            width: 168px;
-            height: 152px;
-            margin-bottom: 10px;
-            margin-left: 2px;
-        }
-
-       
-        .frame-menu{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 265px;
-            margin-left: 30px;
-            
-        }
-        .framegameboyone{
-            padding-left: 20px;
-        }
-        .framegameboytwo{
-            padding-left: 20px;
-        }
-        .frame-option{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 401px;
-            margin-left: 16px;
-        }
-        #gameboyscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 38px;
-            background-image: url(../images/gameboyscreen.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 288px;
-            height: 257px;
-            border-radius: 25px;
-            margin-left: 24px;
-            margin-top: 52px;
-        }
-    }
-    @media screen and (min-width: 520px){
-        #battlecamp {
-            background-image: url(../images/arenaone.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position-y: 100px;
-            display: none;
-            flex-direction: column;
-            width: 512px;
-            height: 844px;
-            margin-left: 8px;
-        }
-        #messageresult{
-           
-            margin-left: 70px;
-            font-size: 11px;
-        }
-        #messagepoints{
-            margin-top: 10px;
-          margin-left: 173px;
-            font-size: x-large;
-        }
-        .frame-option {
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 494px;
-            margin-left: 16px;
-        }
-        .framegameboyone {
-            padding-left: 48px;
-        }
-        .framegameboytwo {
-            padding-left: 48px;
-        }
-        #optionspage>span {
-            
-            margin-left: 146px;
-        }
-        #gameboyscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 38px;
-            background-image: url(../images/gameboyscreen.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 288px;
-            height: 257px;
-            border-radius: 25px;
-            margin-left: 57px;
-            margin-top: 57px;
-        }
-        #social-btn>ul {
-           
-            padding-left: 229px;
-            
-        }
-        h1 {
-            font-family: "Pokemon GB";
-            margin-left: 167px;
-            
-        }
-        #popmessage {
-            
-            background-image: url(../images/popmessage.jpg);
-            background-size: 360px;
-            background-repeat: no-repeat;
-            background-position-y: -77px;
-            margin-top: -33px;
-            margin-left: 78px;
-            position: absolute;
-            background-color: white;
-            width: 359px;
-            height: 264px;
-            z-index: 5;
-        }
-        .frame-menu{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 288px;
-            max-width: 100%;
-            margin-left: 61px;
-        }
-    }
-    @media screen and (min-width: 576px) {
-        /*main menu*/
-        #mainmenu{
-            width: auto;
-        }
-        #social-btn>ul {
-            padding-left: 255px;
-        }
-        h1 {
-            font-family: "Pokemon GB";
-            margin-left: 151px;
-            
-        }
-        
-        #battlecamp{
-            margin-left: 69px;
-            margin-right: 10px;
-            width: 618px;
-           }
-        #gameboyscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 38px;
-            background-image: url(../images/gameboyscreen.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 288px;
-            height: 257px;
-            border-radius: 25px;
-            margin-left: 84px;
-            margin-top: 52px;
-        }
-        #popmessage {
-            
-            background-image: url(../images/popmessage.jpg);
-            background-size: 360px;
-            background-repeat: no-repeat;
-            background-position-y: -77px;
-            margin-top: -33px;
-            margin-left: 78px;
-            position: absolute;
-            background-color: white;
-            width: 359px;
-            height: 264px;
-            z-index: 5;
-        }
-        .picagif {
-            background-image: url(../images/picachu.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-style: solid;
-            box-sizing: border-box;
-            width: 179px;
-            height: 163px;        
-            margin-bottom: 10px;
-            margin-left: 2px;
-        }
-        .frame-menu{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 288px;
-            max-width: 100%;
-            margin-left: 69px;
-        }
-
-        .frame-option{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 570px;
-            margin-left: 36px;
-        }
-
-        /*options*/
-        .framegameboyone {
-            display: flex;
-            flex-direction: row;
-            padding-left: 81px;
-        }
-
-        .framegameboytwo {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: row;
-            padding-left: 81px;
-        }
-        .classic {
-            width: 185px;
-            height: 173px;
-        }
-        .blue {
-            width: 198px;          
-            height: 173px; 
-        }
-        .purple {           
-            width: 198px;           
-            height: 173px;            
-        }
-        .green {        
-            width: 198px;         
-            height: 173px;            
-        }
-        #optionspage>span {
-            
-            margin-left: 198px;
-            margin-bottom: 30px;
-        }
-        .no-hd {
-            margin-bottom: 50px;
-        }
-        #howtoplay>span {
-            margin-left: 173px;
-           
-        }
-
-        /*Gameboard*/
-        #battlecamp {
-            background-position-y: 0px;
-            width: 575px;     
-            margin: 5px;      
-        }
-        #opcards {
-            margin-right: 10px; 
-        }
-        .skillpoke>li{
-            padding-top: 12px;
-        }
-        .skillpoke, .spaceselect{
-            padding-top: 6px;
-        }
-        .namepoke>h2 {  
-            padding-top: 9px; 
-            padding-left: 8px;
-        }
-        .imgpoke {
-            
-           
-            box-sizing: border-box;
-            width: 115px;
-            height: 86px;
-            margin-left: 5px;
-            background-position-y: -11px;
-        }
-        .playboxcard {
-           
-            width: 129px;
-            height: 182px;
-           
-        }
-    }
-    @media (min-width: 700px){
-       #battlecamp{
-        margin-left: 69px;
-        margin-right: 10px;
-       }
-       #social-btn>ul {
-        padding-left: 326px;
-    }
-       .frame-option{
-        position: relative;
-        border-image: url(../images/frame-hd.png) 42 round;
-        border-width: 21px;
-        border-style: solid;
-        padding: 6px;
-        margin-top: 50px;
-        margin: 1em 0 0 0;
-        width: 570px;
-        margin-left: 36px;
-    }
-       .picagif {
-        background-image: url(../images/picachu.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-style: solid;
-        box-sizing: border-box;
-        width: 179px;
-        height: 163px;        
-        margin-bottom: 10px;
-        margin-left: 2px;
-    }
-        #gameboyscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 38px;
-            background-image: url(../images/gameboyscreen.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 288px;
-            height: 257px;
-            border-radius: 25px;
-            margin-left: 160px;
-            margin-top: 52px;
-        } 
-        .frame-menu{
-            position: relative;
-            border-image: url(../images/frame-hd.png) 42 round;
-            border-width: 21px;
-            border-style: solid;
-            padding: 6px;
-            margin-top: 50px;
-            margin: 1em 0 0 0;
-            width: 288px;
-            max-width: 100%;
-            margin-left: 157px;
-        }
-        h1 {
-            font-family: "Pokemon GB";
-            margin-left: 228px;
-            
         }
     }
