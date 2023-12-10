@@ -43,7 +43,7 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 - Tips and funfacts
  - Each Pokemon card will only be allowed to be used once, so be smart and select the highest tribute value. At the end of the round, your card will be turned over and your opponent's card will be turned over and reveals the card that the CPU selected. Don't stay if you get a strong pokemon, the values are random for all pokemons so don't be scared if you get MewTwo and your opponent defeats you with a Metapoid.
- ![End of round]()
+ ![End of round](https://github.com/dhardi/pokebatlle/blob/main/docs/round.PNG)
 
  - End of cycle
   - every three rounds the cycle ends and the game will give you three more cards when pressing the Show my cards button will reveal your three new cards and a new cycle will begin.
