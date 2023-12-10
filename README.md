@@ -83,19 +83,19 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 - W3c Html Validator
 
-![htmlvalidator](https://github.com/dhardi/Project1/blob/main/docs/html-validator.PNG)
+![htmlvalidator]()
 
 - Jigsaw Validator 
 
-![cssvalidator](https://github.com/dhardi/Project1/blob/main/docs/validador-css.PNG)
+![cssvalidator]()
 
 - Performace Lighthouse Desktop
   
-![lighthouse](https://github.com/dhardi/Project1/blob/main/docs/performace-desktop.PNG)
+![lighthouse]()
 
 - Performace Lighthouse Mobile
 
-![lighthousemobile](https://github.com/dhardi/Project1/blob/main/docs/mobile-performace.PNG)
+![lighthousemobile]()
 
 ### Unfixed Bugs
 
@@ -109,7 +109,7 @@ At this Date no Unfixed Bugs.
   - Under the Source section, select the Main branch from the drop-down menu and click Save.
   - A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
 
-You can find the live site via the following URL - [Jiu Jitsu Vibes](https://dhardi.github.io/Project1/)
+You can find the live site via the following URL - [PokeBattle](https://dhardi.github.io/pokebatlle/)
 
 
 ## Credits
