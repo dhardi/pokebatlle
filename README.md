@@ -51,59 +51,33 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 
 # Design and Colors
-- 
+- O design foi baseado nos jogos da franquia pokemon versao de GameBoy Color e Classico as cores vao se basear nos portateis da epoca dos anos 90 e 2000 .
 
+![End of Cycle]()
 
+## Colors 
+-The colors was based on the Pokémon franchise games, the GameBoy Color and Classic versions. The colors will be based on portable consoles from the 90s and 2000s.
+![GameBoy Colors]()
 
-
-## Meet Up
-
-- This page allows the user signed up to Jiu jitsu Vibes to start training Jiu jitsu you can choose casual tranning or specific tranning.
-
-![Meetup](https://github.com/dhardi/Project1/blob/main/assets/images/meetupreadme.PNG)
-
-
-  - right bellow you will find the TimeTable you are able to pick the time suits you better.
-  
-![timetable](https://github.com/dhardi/Project1/blob/main/assets/images/timetable.PNG)
-
-
-## Gyms 
-
-- This page you will find a selection of three Gyms two base in Ireland and one in Brazil each one has the address right bellow the logo also the link to reach out the website.
-
-![Gyms](https://github.com/dhardi/Project1/blob/main/assets/images/gyms.PNG)
-
-
-## Tips
-
-- This page it show three great tips before start Jiu Jitsu 
-
-![Tips](https://github.com/dhardi/Project1/blob/main/assets/images/tips-readme.PNG)
-
-### Sign Up Button
-
-- In the end of the page just in case if jump straight to Tips page there is a button Sign up it will bring you to Meet up where you can fill the form and sign up for classes.
-
-![signup](https://github.com/dhardi/Project1/blob/main/assets/images/button-signup.PNG) 
-
+## design
+- the design of the game is based on the old pokemon games from the series YELLOW, RED, BLUE and GREEN the textures the font family were implemented exactly as in the Pokemon Games Franchise the border to make the menu was used the same as used in the game.
+![textures]()
 
 
 ## Future Ideas to Implement 
 
-- A booking page with calendar where you can book private or casual Classes
-- iframe with location visual of Gyms
-- Forum interactive
-- Videos Classes page
-- Streaming events
-- Betting page  
-- Newsletter upcomming News 
-
+- SuperCards
+- Rank System 
+- Expand Pokemons add add first second and third generation of pokemon
+- System of levels Hard Normal and Easy
+ 
 
 ## Testing 
 
-During my project I encountered certain challenges that I had to overcome, such as the page layout using flexbox and with my nav button, the website is fully responsive on tablets, laptops and large screens.
-At the beginning of the project I should have made more commits at each stage of my project, but I wasn't, after advice from my Tutor I started to make my commits frequently as I progressed during my project.
+During my project I set the objective of making a pokemon game with a first generation of 150 pokemons. The first challenge was to create a system that would generate a random value for each attribute and assign it to all 150 pokemons.
+After this challenge, the gameplay would come, so I created a number comparison system that in the end would compare the highest value of the attribute. To test the gameplay, I had my eight-year-old son play and explore the game.I also put my wife to play and it was vitally important for someone who is not familiar with games. 
+The game will guide you how to play, for players who still have questions about how to play, I have implemented a how to play section.
+I had a lot of problems with the game mechanics when adding events and how to compare the selected object. These problems helped me learn how the event click system works best and the type of variable we should use, but the biggest challenge was making the CPU selects a random card and a random attribute value without repeating for the entire cycle after that the array system was absorbed by me.
 
 ### Validator Testing 
 
