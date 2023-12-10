@@ -519,8 +519,8 @@ function changeThemeBlue(){
 function changeThemePurple(){
     mainBackground.style.backgroundColor = "#b14cf1";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
-    document.getElementsByClassName("color")[0].style.backgroundColor = "#FFFF00";
-    document.getElementsByClassName("color")[1].style.backgroundColor = "#FFFF00";
+    document.getElementsByClassName("color")[0].style.backgroundColor = "#5e5e53";
+    document.getElementsByClassName("color")[1].style.backgroundColor = "#5e5e53";
   
 }
 
