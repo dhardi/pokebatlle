@@ -126,7 +126,7 @@ footer{
     background-image: url(../images/gameboyscreen.PNG);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 104%;
+    width: 277px;
     height: 257px;
     border-radius: 25px;
     margin-left: -7px;
@@ -572,6 +572,18 @@ footer{
             height: 857px;
 
         }
+        #popmessage {
+            margin-left: 8px;  
+        }
+        #messageresult {
+            margin-top: 10px;
+            margin-left: 23px;
+            font-size: 16px;
+        }
+        #messagepoints {
+            margin-top: 10px;
+            margin-left: 170px;
+        }
     }
     @media (min-width: 600px){
         body{
@@ -621,6 +633,135 @@ footer{
         #battlecamp {
             background-position-y: 2px;
             width: 598px;
+        }
+        
+    }
+    @media (min-width: 700px){
+        body{
+            width: 700px;
+        }
+        #gameboyscreen {
+            
+            width: 277px;
+            margin-left: 127px;
+            
+        }
+        .frame-menu{
+            width: 46%;
+            margin-left: 145px;
+        }
+        h1 {
+            margin-left: 212px;
+        }
+        #social-btn>ul {
+            padding-left: 299px;
+        }
+        .frame-option {
+            width: 679px;
+        }
+        .framegameboyone {
+            margin-left: 130px;
+        }
+        .framegameboytwo {
+            margin-left: 130px;
+        }
+        #optionspage>h2 {
+            padding-left: 119px;
+        }
+        #optionspage>span {
+            margin-left: 249px;
+        }
+        #battlecamp {
+            background-position-y: 2px;
+            width: 691px;
+        }
+        
+    }
+    
+    @media (min-width: 768px){
+        body{
+            width: auto;
+        }
+        .picagif {
+            margin-left: 5px;
+             width: 194px;
+             height: 178px;
+        }
+        #gameboyscreen {
+            width: 317px;
+            margin-left: 170px;
+        }
+        .frame-menu {
+            width: 39%;
+            margin-left: 199px;
+        }
+        #battlecamp {
+            background-position-y: 2px;
+            width: 764px;
+           
+        }
+        .frame-option{
+            margin-left: 49px;
+        }
+        #optionspage>h2 {
+            padding-left: 184px;
+        }
+        #optionspage>span {
+            margin-left: 293px;
+        }
+        h1 {
+            margin-left: 278px;
+        }
+        #social-btn>ul {
+            padding-left: 351px;
+        }
+    }
+    
+    @media (min-width: 1080px){
+        body{
+            width: auto;
+        }
+        #gameboyscreen {
+            width: 317px;
+            margin-left: 335px;
+        }
+        .frame-menu {
+            width: 234px;
+            margin-left: 375px;
+          
+        }
+        h1 {
+            margin-left: 428px;
+        }
+        #social-btn>ul {
+            padding-left: 509px;
+        }
+        
+        #optionspage>h2 {
+            padding-left: 328px;
+        }
+        #optionspage>span {
+            margin-left: 446px;
+        }
+        #battlecamp{
+            margin-left: 204px;
+        }
+        .frame-option{
+            margin-left: 204px;
+        }
+        #popmessage {
+            background-size: 361px;
+            margin-left: 211px;   
+        }
+        #messageresult {
+            margin-top: 10px;
+            margin-left: 23px;
+            font-size: 16px;
+        }
+        #messagepoints {
+            margin-top: 10px;
+            margin-left: 170px;
+           
         }
         
     }
