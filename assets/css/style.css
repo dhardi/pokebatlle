@@ -49,7 +49,7 @@ main {
 }
 
 header{
-    background-color: #FFFF00;
+   
     width: auto;
 }
 main{
@@ -59,9 +59,12 @@ main{
 footer{
     display: flex;
     flex-direction: row;
-    background-color: #FFFF00;
     height: 50px;
     
+}
+.color{
+    background-color: #FFFF00;
+
 }
 #social-btn>ul{
     padding-top: 10px;
@@ -103,6 +106,7 @@ footer{
     z-index: 5;
 }
 #messageresult{
+    margin-top: 10px;
     background-color:#a94337 ;
     color: black;
     margin-left: 113px;
@@ -111,10 +115,10 @@ footer{
 }
 #messagepoints{
     color: black;
-    margin-left: 113px;
+    margin-left: 88px;
     background-color: #a94337;
     font-family: "Pokemon GB";
-    font-size: x-large;
+    font-size: 15px;
 }
 
 /*main menu*/
@@ -594,7 +598,7 @@ footer{
         }
         #gameboyscreen {
             
-            width: 62%;
+            width: 277px;
             margin-left: 83px;
             
         }
@@ -770,4 +774,42 @@ footer{
            
         }
         
+    }
+    @media screen and (min-width: 1200px){
+       
+        #mainmenu{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+
+        }
+        #gameboyscreen {
+            width: 317px;
+            margin-left: 35px;
+           
+        }
+        .frame-menu {
+            width: 234px;
+            margin-left: 38px;
+           
+        }
+        #social-btn>ul {
+            padding-left: 451px;
+        }
+      header{
+        display: flex;
+        align-items: center;
+       
+      }
+      footer{
+       
+        display: flex;
+        align-items: center;
+        padding-left: 509px;
+      }
+      h1 {
+        margin-left: 814px;
+    }
+
     }

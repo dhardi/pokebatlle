@@ -370,14 +370,14 @@ function gameOver(){
     if(playerPointsFinal > opPointsFinal){
     popMessage.style.display = "block";
      document.getElementById("messageresult").innerHTML = "YOU Win";
-     document.getElementById("messagepoints").innerHTML = playerPointsFinal;
+     document.getElementById("messagepoints").innerHTML = `Your Points ${playerPointsFinal}`;
     console.log();
     console.log(playerPointsFinal);
     
     }else{
         popMessage.style.display = "block";
         document.getElementById("messageresult").innerHTML = "YOU Have Been Defeat";
-        document.getElementById("messagepoints").innerHTML = playerPointsFinal;
+        document.getElementById("messagepoints").innerHTML = `Your Points ${playerPointsFinal}`;
     }
 
    
@@ -500,28 +500,34 @@ function pageOptions(){
 function changeThemeClassic(){
     mainBackground.style.backgroundColor = "#d2d2d4";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
+    document.getElementsByClassName("color")[0].style.backgroundColor = "#57244b";
+    document.getElementsByClassName("color")[1].style.backgroundColor = "#57244b";
   //  document.getElementById("gameboyscreen").style.width = "118%";
   //  document.getElementById("gameboyscreen").style.height = "276px";
   //  document.getElementById("gameboyscreen").style.marginLeft  = "-15px";
    // document.getElementsByClassName("picagif")[0].style.width = "177px"
-   // document.getElementsByClassName("picagif")[0].style.height = "176px"
-   // document.getElementsByClassName("picagif")[0].style.marginLeft = "7px"
+    document.getElementsByClassName("picagif")[0].style.height = "167px"
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "-3px"
 }
 
 function changeThemeBlue(){
     mainBackground.style.backgroundColor = "#05a9c5";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
+    document.getElementsByClassName("color")[0].style.backgroundColor = "#333f49";
+    document.getElementsByClassName("color")[1].style.backgroundColor = "#333f49";
    // document.getElementById("gameboyscreen").style.width = "128%";
   //  document.getElementById("gameboyscreen").style.height = "276px";
    // document.getElementById("gameboyscreen").style.marginLeft  = "-33px";
-   // document.getElementsByClassName("picagif")[0].style.width = "69%"
-  //  document.getElementsByClassName("picagif")[0].style.height = "176px"
-   // document.getElementsByClassName("picagif")[0].style.marginLeft = "26px"
+    document.getElementsByClassName("picagif")[0].style.width = "181px";
+   document.getElementsByClassName("picagif")[0].style.height = "163px";
+    document.getElementsByClassName("picagif")[0].style.marginLeft = "18px";
 }
 
 function changeThemePurple(){
     mainBackground.style.backgroundColor = "#b14cf1";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
+    document.getElementsByClassName("color")[0].style.backgroundColor = "#FFFF00";
+    document.getElementsByClassName("color")[1].style.backgroundColor = "#FFFF00";
    // document.getElementById("gameboyscreen").style.width = "124%";
    // document.getElementById("gameboyscreen").style.marginLeft = "-22px";
    // document.getElementById("gameboyscreen").style.height = "276px";
