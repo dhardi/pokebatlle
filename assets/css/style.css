@@ -589,6 +589,9 @@ footer{
         body{
             width: 600px;
         }
+        #popmessage{
+            margin-left: 110px;
+        }
         #gameboyscreen {
             
             width: 62%;
@@ -639,6 +642,9 @@ footer{
     @media (min-width: 700px){
         body{
             width: 700px;
+        }
+        #popmessage{
+            margin-left: 175px;
         }
         #gameboyscreen {
             
@@ -692,7 +698,7 @@ footer{
             margin-left: 170px;
         }
         .frame-menu {
-            width: 39%;
+            width: 260px;
             margin-left: 199px;
         }
         #battlecamp {
