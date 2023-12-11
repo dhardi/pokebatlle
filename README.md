@@ -69,10 +69,10 @@ At the end of twenty-one rounds the value of the player's points will be compare
 ![Options](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
 
 ### Blue
-![Blue](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+![Blue](https://github.com/dhardi/pokebatlle/blob/main/docs/blue.PNG)
 
 ### Purple
-![Purple](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+![Purple](https://github.com/dhardi/pokebatlle/blob/main/docs/purple.PNG)
 
 
 ### Green
