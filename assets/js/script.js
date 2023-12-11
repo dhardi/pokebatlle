@@ -460,7 +460,7 @@ function sortImgPoke(){
     
     tutorial.style.display = "none";
     battlecamp.style.display = "none";
-    menu.style.display = "block";
+    menu.style.display = "flex";
     optionsPageGame.style.display = "none";
     
   
@@ -471,7 +471,7 @@ function sortImgPoke(){
 
 function howToPlay(){
   
-    tutorial.style.display = "block";
+    tutorial.style.display = "flex";
     battlecamp.style.display = "none";
     menu.style.display = "none";
     optionsPageGame.style.display = "none";
@@ -480,7 +480,7 @@ function howToPlay(){
   
 
 function startGamePage(){
-    battlecamp.style.display = "block";
+    battlecamp.style.display = "flex";
    mainBackground.style.backgroundColor ="#804533";
     menu.style.display = "none";
     howTo.style.display = "none";
@@ -489,7 +489,7 @@ function startGamePage(){
 
 
 function pageOptions(){
-    optionsPageGame.style.display = "block";
+    optionsPageGame.style.display = "flex";
     battlecamp.style.display = "none";
     menu.style.display = "none";
     tutorial.style.display = "none";

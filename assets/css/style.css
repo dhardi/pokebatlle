@@ -21,7 +21,7 @@ body {
 }
 h1{
     font-family: "Pokemon GB"; 
-    margin-left: 94px;
+    
     font-size: 140%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -47,10 +47,16 @@ main {
     flex-direction: column;
    
 }
-
+#social-btn>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header{
-   
-    width: auto;
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 main{
     display: flex;
@@ -58,7 +64,8 @@ main{
 }
 footer{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     height: 50px;
     
 }
@@ -66,9 +73,12 @@ footer{
     background-color: #FFFF00;
 
 }
+#btn-show{
+    display: none;
+}
 #social-btn>ul{
     padding-top: 10px;
-    padding-left: 176px;
+    
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -175,11 +185,10 @@ footer{
 
 
 #mainmenu{
-    display: block;
-    padding-top: 0px;
-    padding-left: 50px;
-    margin-left: 10px;
-    margin-right: 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 
@@ -192,7 +201,7 @@ footer{
     padding: 6px;
     margin-top: 50px;
     margin: 1em 0 0 0;
-    width: 100%;
+    width: 265px;
     max-width: 100%;
 }
 .frame-menu>li{
@@ -211,7 +220,7 @@ footer{
 }
 #howtoplay>h1{
     display: flex;
-    margin-left: 111px;
+   
     
     padding-top: 20px;
     font-family: "Pokemon GB";
@@ -232,8 +241,10 @@ footer{
 
 /*Options page*/
 
-#optionsgame{
+#optionspage{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 .framegameboyone{
@@ -599,15 +610,20 @@ footer{
         #gameboyscreen {
             
             width: 277px;
-            margin-left: 83px;
             
+            
+        }
+        #mainmenu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .picagif{
             margin-left: 5px;
         }
         .frame-menu{
-            width: 57%;
-            margin-left: 95px;
+            width: 265px;
+            
         }
         .frame-option{
             width: 580px;
@@ -622,14 +638,8 @@ footer{
         .framegameboytwo {
             margin-left: 71px;
         }
-        h1{
-            margin-left: 165px;
-        }
-        #social-btn>ul {
-            
-            padding-left: 260px;
-            
-        }
+        
+       
         #optionspage>h2 {
            padding-left: 68px;
         }
@@ -650,22 +660,9 @@ footer{
         #popmessage{
             margin-left: 175px;
         }
-        #gameboyscreen {
-            
-            width: 277px;
-            margin-left: 127px;
-            
-        }
-        .frame-menu{
-            width: 46%;
-            margin-left: 145px;
-        }
-        h1 {
-            margin-left: 212px;
-        }
-        #social-btn>ul {
-            padding-left: 299px;
-        }
+       
+      
+       
         .frame-option {
             width: 679px;
         }
@@ -697,14 +694,7 @@ footer{
              width: 194px;
              height: 178px;
         }
-        #gameboyscreen {
-            width: 317px;
-            margin-left: 170px;
-        }
-        .frame-menu {
-            width: 260px;
-            margin-left: 199px;
-        }
+      
         #battlecamp {
             background-position-y: 2px;
             width: 764px;
@@ -719,33 +709,17 @@ footer{
         #optionspage>span {
             margin-left: 293px;
         }
-        h1 {
-            margin-left: 278px;
-        }
-        #social-btn>ul {
-            padding-left: 351px;
-        }
+       
+      
     }
     
     @media (min-width: 1080px){
         body{
             width: auto;
         }
-        #gameboyscreen {
-            width: 317px;
-            margin-left: 335px;
-        }
-        .frame-menu {
-            width: 234px;
-            margin-left: 375px;
-          
-        }
-        h1 {
-            margin-left: 428px;
-        }
-        #social-btn>ul {
-            padding-left: 509px;
-        }
+       
+        
+        
         
         #optionspage>h2 {
             padding-left: 328px;
@@ -797,9 +771,7 @@ footer{
             margin-left: 38px;
            
         }
-        #social-btn>ul {
-            padding-left: 451px;
-        }
+        
       header{
         display: flex;
         align-items: center;
@@ -809,10 +781,8 @@ footer{
        
         display: flex;
         align-items: center;
-        padding-left: 509px;
+        
       }
-      h1 {
-        margin-left: 814px;
-    }
+    
 
     }

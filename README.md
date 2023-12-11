@@ -36,6 +36,7 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 - pokemon Card
   -the card, the player will be able to see the name of the pokemon that was drawn, the pokemon's image and its attributes right below the pokemon's image. To select the attribute, place the hovered effect to highlight the attribute value and direct the player where to click.
+  
 ![Pokemon Card](https://github.com/dhardi/pokebatlle/blob/main/docs/card.PNG)
 
 - Game Over
