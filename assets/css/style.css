@@ -213,6 +213,8 @@ footer{
 }
 #howtoplay{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 #howtoplay>span{
     margin-left: 67px;
@@ -316,7 +318,7 @@ footer{
 #optionspage>span{
     display: flex;
     margin-top: 274px;
-    margin-left: 88px;
+    
 }
 #optionspage{
     display: none;
@@ -337,7 +339,6 @@ footer{
 #opcards{
     display: flex;
     flex-direction: row;
-    align-self: flex-start;
     justify-content: space-between;
 
 }
@@ -360,7 +361,7 @@ footer{
     justify-content:space-evenly ;
     padding-top: 74px;
    
-    align-self: flex-end;
+    
 }
 /*cards details */
 
@@ -549,11 +550,11 @@ footer{
     margin-top: 50px;
     margin: 1em 0 0 0;
     width: 380px;
-    margin-left: 16px;
+    
 }
 #optionspage>h2{
 
-    margin-right: 53px;
+   
     font-size: 17px;
     margin-top: 10px;
     
@@ -640,13 +641,8 @@ footer{
         }
         
        
-        #optionspage>h2 {
-           padding-left: 68px;
-        }
-        #optionspage>span {
-            
-            margin-left: 182px;
-        }
+        
+       
         #battlecamp {
             background-position-y: 2px;
             width: 598px;
@@ -672,12 +668,8 @@ footer{
         .framegameboytwo {
             margin-left: 130px;
         }
-        #optionspage>h2 {
-            padding-left: 119px;
-        }
-        #optionspage>span {
-            margin-left: 249px;
-        }
+       
+        
         #battlecamp {
             background-position-y: 2px;
             width: 691px;
@@ -700,15 +692,9 @@ footer{
             width: 764px;
            
         }
-        .frame-option{
-            margin-left: 49px;
-        }
-        #optionspage>h2 {
-            padding-left: 184px;
-        }
-        #optionspage>span {
-            margin-left: 293px;
-        }
+       
+        
+        
        
       
     }
@@ -721,18 +707,12 @@ footer{
         
         
         
-        #optionspage>h2 {
-            padding-left: 328px;
-        }
-        #optionspage>span {
-            margin-left: 446px;
-        }
+       
+       
         #battlecamp{
             margin-left: 204px;
         }
-        .frame-option{
-            margin-left: 204px;
-        }
+        
         #popmessage {
             background-size: 361px;
             margin-left: 211px;   
