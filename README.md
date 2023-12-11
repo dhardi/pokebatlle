@@ -17,37 +17,42 @@
 
   ![Main Menu](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
 
-- The Game 
-   - The game will give you three cards with three different pokemons. The card will have three attributes and each attribute has a value linked to it. The winner will be the one who scores the most points when they reach round twenty one and the game ends. each round is equivalent to one point each round you must choose your pokemon's attribute and battle until the last round.
+## The Game 
+    The game will give you three cards with three different pokemons. The card will have three attributes and each attribute has a value linked to it. The winner will be the one who scores the most points when they reach round twenty one and the game ends. each round is equivalent to one point each round you must choose your pokemon's attribute and battle until the last round.
   
   ![Gameplay](https://github.com/dhardi/pokebatlle/blob/main/docs/gameplay.PNG)
 
-- How the Game Works
-  - As soon as the player selects the start game menu option the game will open you will see a start button when you press the game it will draw three cards for the player and three cards for the CPU each round you must choose an attribute among your three pokemons and click in the attribute value to continue the battle.
+## How the Game Works
+   As soon as the player selects the start game menu option the game will open you will see a start button when you press the game it will draw three cards for the player and three cards for the CPU each round you must choose an attribute among your three pokemons and click in the attribute value to continue the battle.
 The winner will be the one with the highest value of the chosen attribute.
 At the end of twenty-one rounds the value of the player's points will be compared and his opponent, the winner of the game will be the one with the most points.
 
 
 
-- BoardScore
- -No BoardScore o player vai conseguir acompanhar seus pontos e de seu oponente ao lado voce vera tambem a contagem dos rounds bem ao lado do boardscore.
+## BoardScore
+ No BoardScore o player vai conseguir acompanhar seus pontos e de seu oponente ao lado voce vera tambem a contagem dos rounds bem ao lado do boardscore.
 
 ![BoardScore](https://github.com/dhardi/pokebatlle/blob/main/docs/boardscore.PNG)
 
-- pokemon Card
+## Pokemon Card
   -the card, the player will be able to see the name of the pokemon that was drawn, the pokemon's image and its attributes right below the pokemon's image. To select the attribute, place the hovered effect to highlight the attribute value and direct the player where to click.
   
 ![Pokemon Card](https://github.com/dhardi/pokebatlle/blob/main/docs/card.PNG)
 
-- Game Over
+## Game Over
   - The Game Over window will appear when the game reaches twenty one rounds and the player will be able to see the result and also the final score he achieved.When the player clicks on the gameover button, he will be directed to the main page where he can start the game again or change the game theme.
 
-- Tips and funfacts
- - Each Pokemon card will only be allowed to be used once, so be smart and select the highest tribute value. At the end of the round, your card will be turned over and your opponent's card will be turned over and reveals the card that the CPU selected. Don't stay if you get a strong pokemon, the values are random for all pokemons so don't be scared if you get MewTwo and your opponent defeats you with a Metapoid.
+![Game Over](https://github.com/dhardi/pokebatlle/blob/main/docs/gameover.PNG)
+
+
+### Tips and Funfacts
+  Each Pokemon card will only be allowed to be used once, so be smart and select the highest tribute value. At the end of the round, your card will be turned over and your opponent's card will be turned over and reveals the card that the CPU selected. Don't stay if you get a strong pokemon, the values are random for all pokemons so don't be scared if you get MewTwo and your opponent defeats you with a Metapoid.
+
  ![End of round](https://github.com/dhardi/pokebatlle/blob/main/docs/round.PNG)
 
- - End of cycle
-  - every three rounds the cycle ends and the game will give you three more cards when pressing the Show my cards button will reveal your three new cards and a new cycle will begin.
+ ### End of cycle
+   every three rounds the cycle ends and the game will give you three more cards when pressing the Show my cards button will reveal your three new cards and a new cycle will begin.
+
   ![End of Cycle](https://github.com/dhardi/pokebatlle/blob/main/docs/endcycle.PNG)
 
 
@@ -57,15 +62,18 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 
 ## Colors 
--The colors was based on the Pokémon franchise games, the GameBoy Color and Classic versions. The colors will be based on portable consoles from the 90s and 2000s.
+ The colors was based on the Pokémon franchise games, the GameBoy Color and Classic versions. The colors will be based on portable consoles from the 90s and 2000s.
+
 ![GameBoy Colors](https://github.com/dhardi/pokebatlle/blob/main/docs/gameboycollection.PNG)
 
 ## design
-- the design of the game is based on the old pokemon games from the series YELLOW, RED, BLUE and GREEN the textures the font family were implemented exactly as in the Pokemon Games Franchise the border to make the menu was used the same as used in the game.
+ the design of the game is based on the old pokemon games from the series YELLOW, RED, BLUE and GREEN the textures the font family were implemented exactly as in the Pokemon Games Franchise the border to make the menu was used the same as used in the game.
+
 ![textures](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
 
 ## Options 
 - In the options section you can change the theme of the website, causing the website to change colors and also the gameboy screen above the menu.
+
 ![Options](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
 
 ### Blue
