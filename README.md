@@ -76,11 +76,11 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 
 ### Green
-![Green](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+![Green](https://github.com/dhardi/pokebatlle/blob/main/docs/green.PNG)
 
 
 ### Classic
-![Classic](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+![Classic](https://github.com/dhardi/pokebatlle/blob/main/docs/classico.PNG)
 
 
 ## Future Ideas to Implement 

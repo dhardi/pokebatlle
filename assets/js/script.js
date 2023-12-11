@@ -527,6 +527,8 @@ function changeThemePurple(){
 function changeThemeGreen(){
     mainBackground.style.backgroundColor = "#7cc901";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
+    document.getElementsByClassName("color")[0].style.backgroundColor = "#FFFF00";
+    document.getElementsByClassName("color")[1].style.backgroundColor = "#FFFF00";
 }
 //hide cards of my  OP
 function hidenCardOp(){
