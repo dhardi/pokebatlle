@@ -94,7 +94,7 @@ At the end of twenty-one rounds the value of the player's points will be compare
 ### Footer
  - Footer includes all liks to the relevant social media sites for this project .The links will open to a new tab to allow easy navigation for the user.
 
- ![Footer](https://github.com/dhardi/pokebatlle/blob/main/docs/classico.PNG)
+ ![Footer](https://github.com/dhardi/pokebatlle/blob/main/docs/footer.PNG)
 
 ## Future Ideas to Implement 
 
