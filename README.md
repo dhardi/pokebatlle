@@ -2,7 +2,7 @@
 
   PokeBattle was created for Pokemon lovers like me, I play Pokemon from the Gameboy Classic to the current Nitendo consoles, the old games from the Pokemon franchise were my aspiration for creating this game and design also.
 
-![responsive]()
+![responsive](https://github.com/dhardi/pokebatlle/blob/main/docs/responsive.PNG)
 
 ## Features Home Page
 
@@ -27,7 +27,7 @@
 The winner will be the one with the highest value of the chosen attribute.
 At the end of twenty-one rounds the value of the player's points will be compared and his opponent, the winner of the game will be the one with the most points.
 
-![Gamerunning]()
+
 
 - BoardScore
  -No BoardScore o player vai conseguir acompanhar seus pontos e de seu oponente ao lado voce vera tambem a contagem dos rounds bem ao lado do boardscore.
@@ -52,7 +52,7 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 
 # Design and Colors
-- O design foi baseado nos jogos da franquia pokemon versao de GameBoy Color e Classico as cores vao se basear nos portateis da epoca dos anos 90 e 2000 .
+- The design was based on the Pokémon franchise games, the GameBoy Color and Classic versions. The colors will be based on laptops from the 90s and 2000s.
 
 
 
@@ -63,6 +63,24 @@ At the end of twenty-one rounds the value of the player's points will be compare
 ## design
 - the design of the game is based on the old pokemon games from the series YELLOW, RED, BLUE and GREEN the textures the font family were implemented exactly as in the Pokemon Games Franchise the border to make the menu was used the same as used in the game.
 ![textures](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
+
+## Options 
+- In the options section you can change the theme of the website, causing the website to change colors and also the gameboy screen above the menu.
+![Options](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+
+### Blue
+![Blue](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+
+### Purple
+![Purple](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+
+
+### Green
+![Green](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
+
+
+### Classic
+![Classic](https://github.com/dhardi/pokebatlle/blob/main/docs/options.PNG)
 
 
 ## Future Ideas to Implement 
