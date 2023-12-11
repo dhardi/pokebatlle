@@ -18,6 +18,7 @@
   ![Main Menu](https://github.com/dhardi/pokebatlle/blob/main/docs/menu.PNG)
 
 ## The Game 
+
     The game will give you three cards with three different pokemons. The card will have three attributes and each attribute has a value linked to it. The winner will be the one who scores the most points when they reach round twenty one and the game ends. each round is equivalent to one point each round you must choose your pokemon's attribute and battle until the last round.
   
   ![Gameplay](https://github.com/dhardi/pokebatlle/blob/main/docs/gameplay.PNG)
