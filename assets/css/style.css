@@ -145,7 +145,6 @@ footer{
     width: 277px;
     height: 257px;
     border-radius: 25px;
-    margin-left: -7px;
     margin-top: 52px;
 }
 #gamestart:hover {
@@ -175,10 +174,10 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     border-style: solid;
-   margin-left: 14px;
+   width: 196px;
     box-sizing: border-box;
-    width: 168px;
-    height: 152px;
+    
+    height: 176px;
     margin-bottom: 10px;
     
 }
@@ -626,9 +625,7 @@ footer>p{
             flex-direction: column;
             align-items: center;
         }
-        .picagif{
-            margin-left: 5px;
-        }
+       
         .frame-menu{
             width: 265px;
             
@@ -691,8 +688,8 @@ footer>p{
             width: auto;
         }
         .picagif {
-            margin-left: 5px;
-             width: 194px;
+            
+            
              height: 178px;
         }
       
@@ -749,7 +746,7 @@ footer>p{
         }
         #gameboyscreen {
             width: 317px;
-            margin-left: 35px;
+            
            
         }
         #battlecamp{
@@ -757,7 +754,7 @@ footer>p{
         }
         .frame-menu {
             width: 234px;
-            margin-left: 38px;
+           
            
         }
         

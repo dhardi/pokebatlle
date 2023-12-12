@@ -500,10 +500,12 @@ function pageOptions(){
 function changeThemeClassic(){
     mainBackground.style.backgroundColor = "#d2d2d4";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
+    document.getElementById("gameboyscreen").style.height = "299px"
     document.getElementsByClassName("color")[0].style.backgroundColor = "#57244b";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#57244b";
-     document.getElementsByClassName("picagif")[0].style.height = "167px"
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "-3px"
+     document.getElementsByClassName("picagif")[0].style.height = "192px"
+     document.getElementsByClassName("picagif")[0].style.width = "192px"
+    
 }
 
 function changeThemeBlue(){
@@ -511,9 +513,7 @@ function changeThemeBlue(){
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
     document.getElementsByClassName("color")[0].style.backgroundColor = "#333f49";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#333f49";
-    document.getElementsByClassName("picagif")[0].style.width = "181px";
-   document.getElementsByClassName("picagif")[0].style.height = "163px";
-    document.getElementsByClassName("picagif")[0].style.marginLeft = "18px";
+   
 }
 
 function changeThemePurple(){
