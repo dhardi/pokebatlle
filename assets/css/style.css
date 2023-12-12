@@ -102,13 +102,15 @@ footer{
     margin-left: 150px;
 }
 #popmessage{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    
     background-image: url(../images/popmessage.jpg);
     background-size: 360px;
     background-repeat: no-repeat;
     background-position-y: -77px;
     margin-top: -33px;
-    margin-left: -13px;
+    align-items: center;
     position: absolute;
     background-color: white;
     width: 359px;
@@ -119,13 +121,13 @@ footer{
     margin-top: 10px;
     background-color:#a94337 ;
     color: black;
-    margin-left: 113px;
+    
     font-family: "Pokemon GB";
     font-size: x-large;
 }
 #messagepoints{
     color: black;
-    margin-left: 88px;
+    
     background-color: #a94337;
     font-family: "Pokemon GB";
     font-size: 15px;
@@ -221,7 +223,7 @@ footer>p{
     align-items: center;
 }
 #howtoplay>span{
-    margin-left: 67px;
+    
     font-family: "Pokemon GB";
 }
 #howtoplay>h1{
@@ -593,25 +595,26 @@ footer>p{
 
         }
         #popmessage {
-            margin-left: 8px;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             
         }
         #messageresult {
             margin-top: 10px;
-            margin-left: 23px;
+            
             font-size: 16px;
         }
         #messagepoints {
             margin-top: 10px;
-            margin-left: 170px;
+           
         }
     }
     @media (min-width: 600px){
         body{
             width: 600px;
         }
-        #popmessage{
-            margin-left: 110px;
-        }
+       
         #gameboyscreen {
             
             width: 277px;
@@ -644,7 +647,9 @@ footer>p{
             margin-left: 71px;
         }
         
-       
+       #popmessage{
+        margin-left: 103px;
+       }
         
        
         #battlecamp {
@@ -657,11 +662,11 @@ footer>p{
         body{
             width: 700px;
         }
-        #popmessage{
-            margin-left: 175px;
-        }
        
-      
+       
+        #popmessage{
+            margin-left: 153px;
+           }
        
         .frame-option {
             width: 679px;
@@ -719,16 +724,16 @@ footer>p{
         
         #popmessage {
             background-size: 361px;
-            margin-left: 211px;   
+           
         }
         #messageresult {
             margin-top: 10px;
-            margin-left: 23px;
+           
             font-size: 16px;
         }
         #messagepoints {
             margin-top: 10px;
-            margin-left: 170px;
+            
            
         }
         
