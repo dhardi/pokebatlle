@@ -368,14 +368,14 @@ function battlePowers(){
 //end of the game
 function gameOver(){
     if(playerPointsFinal > opPointsFinal){
-    popMessage.style.display = "block";
+    popMessage.style.display = "flex";
      document.getElementById("messageresult").innerHTML = "YOU Win";
      document.getElementById("messagepoints").innerHTML = `Your Points ${playerPointsFinal}`;
     console.log();
     console.log(playerPointsFinal);
     
     }else{
-        popMessage.style.display = "block";
+        popMessage.style.display = "flex";
         document.getElementById("messageresult").innerHTML = "YOU Have Been Defeat";
         document.getElementById("messagepoints").innerHTML = `Your Points ${playerPointsFinal}`;
     }
