@@ -18,6 +18,7 @@ body {
     src: url("../fonts/Pokemon_GB.woff") format('woff');
     src: url("../fonts/Pokemon\ GB.ttf") format('truetype');
 }
+
 h1{
     font-family: "Pokemon GB"; 
     
@@ -25,18 +26,21 @@ h1{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 h2{
     font-family: "Pokemon GB"; 
     margin-left: 68px;
 }
+
 .boardtitle{
     font-size: 18px;
 }
+
 .name{
     margin-left: 5px;
 }
-main {
-   
+
+main {  
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
@@ -44,62 +48,62 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    align-items: center;  
 }
+
 #social-btn>ul{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 header{
     
    display: flex;
    flex-direction: column;
    align-items: center;
 }
+
 main{
     display: flex;
     align-items: center;
     background-color: #6eb300;
 }
+
 footer{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
-    
+    flex-direction: column;    
 }
+
 .color{
     background-color: #FFFF00;
 
 }
+
 #btn-show{
     display: none;
 }
+
 #social-btn>ul{
-    padding-top: 10px;
-    
+    padding-top: 10px;   
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-   
-    }
-    #social-btn>ul>li{
-        margin-right: 10px;
+    justify-content: space-around;   
+}
 
-    }
+#social-btn>ul>li{
+    margin-right: 10px;
+}
+
 .social-icon{
     font-size: 20px;
-    
-  
     flex-direction: row;
-   margin-left: 20px;
+    margin-left: 20px;
 }
 
 /*message pop up*/
-
 #popmessage{
     display: none;
     flex-direction: column;
@@ -116,17 +120,17 @@ footer{
     height: 264px;
     z-index: 5;
 }
+
 #messageresult{
     margin-top: 10px;
     background-color:#a94337 ;
     color: black;
-    
     font-family: "Pokemon GB";
     font-size: x-large;
 }
+
 #messagepoints{
     color: black;
-    
     background-color: #a94337;
     font-family: "Pokemon GB";
     font-size: 15px;
@@ -146,52 +150,51 @@ footer{
     border-radius: 25px;
     margin-top: 52px;
 }
+
 #gamestart:hover {
     text-decoration: underline;
-  }
+}
+
   #howtoplaypage:hover {
     text-decoration: underline;
-  }
+}
+
   #optionpage:hover {
     text-decoration: underline;
-  }
+}
+
   .return:hover {
     text-decoration: underline;
-  }
+}
 .power:hover {
     text-decoration: underline;
-  }
-  .speed:hover {
+}
+
+.speed:hover {
     text-decoration: underline;
-  }
-  .stamina:hover {
+}
+
+.stamina:hover {
     text-decoration: underline;
-  }
+  
+}
 
 .picagif{
     background-image: url(../images/picachu.gif);
     background-repeat: no-repeat;
     background-size: cover;
     border-style: solid;
-   width: 196px;
+    width: 196px;
     box-sizing: border-box;
-    
     height: 176px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
-
-
-
 
 #mainmenu{
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    align-items: center;  
 }
-
-
 
 .frame-menu{
     position: relative;
@@ -204,34 +207,36 @@ footer{
     width: 265px;
     max-width: 100%;
 }
+
 .frame-menu>li{
     text-transform: uppercase;
     padding-top: 10px;
     font-family: "Pokemon GB";
     list-style: none;
-
 }
+
 footer>p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #howtoplay{
     display: none;
     flex-direction: column;
     align-items: center;
 }
+
 #howtoplay>span{
-    
     font-family: "Pokemon GB";
 }
+
 #howtoplay>h1{
-    display: flex;
-   
-    
+    display: flex; 
     padding-top: 20px;
     font-family: "Pokemon GB";
     font-size: 100%;
 }
+
 .no-hd{
     position: relative;
     border-image: url(../images/frame-hd.png) 42 round;
@@ -244,19 +249,18 @@ footer>p{
     max-width: 100%;
 }
 
-
 /*Options page*/
-
 #optionspage{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
+
 .framegameboyone{
     display: flex;
     flex-direction: row;
 }
+
 .framegameboytwo{
     margin-top: 25px;
     display: flex;
@@ -273,7 +277,6 @@ footer>p{
     background-size: cover;
     border-style: solid;
     border-radius: 9px;
-
 }
 
 .blue{
@@ -286,7 +289,6 @@ footer>p{
     background-size: cover;
     border-style: solid;
     border-radius: 9px;
-
 }
 
 .green{
@@ -299,7 +301,6 @@ footer>p{
     background-size: cover;
     border-style: solid;
     border-radius: 9px;
-
 }
 
 .purple{
@@ -312,21 +313,22 @@ footer>p{
     background-size: cover;
     border-style: solid;
     border-radius: 9px;
-
 }
-.return{
-    
+
+.return{  
     font-family: "Pokemon GB";
     font-size: small;
 }
+
 #optionspage>span{
     display: flex;
-    margin-top: 274px;
-    
+    margin-top: 274px;   
 }
+
 #optionspage{
     display: none;
 }
+
 #battlecamp{
     background-image: url(../images/arenaone.jpg);
     background-repeat: no-repeat;
@@ -334,7 +336,7 @@ footer>p{
     background-position-y: 100px;
     display: none;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     width: 400px;
     height: 800px;
 }
@@ -344,10 +346,9 @@ footer>p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-.playboxcard{
-    
+
+.playboxcard{    
     box-sizing: border-box;
     width: 125px;
     height: 182px ;
@@ -355,7 +356,6 @@ footer>p{
     margin-right: 0px;
     background-image: url("../images/frontcard.jpg");
     background-size: cover;
-
 }
 
 /*players cards */
@@ -363,12 +363,10 @@ footer>p{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
-    padding-top: 74px;
-   
-    
+    padding-top: 74px;    
 }
-/*cards details */
 
+/*cards details */
 #card1{
     display: flex;
     flex-direction: column;
@@ -385,6 +383,7 @@ footer>p{
     padding-top: 9px;
     padding-left: 8px;
 }
+
 .skillpoke, .spaceselect{
     padding-top: 6px;
 }
@@ -399,11 +398,9 @@ footer>p{
     background-position-y: -9px ;
 }
 
-
 .powerspoke{
     font-family: "Pokemon GB";
-    padding-left: 12px;
-    
+    padding-left: 12px;   
 }
 
 .skillspoke{
@@ -414,8 +411,7 @@ footer>p{
     height: 50px;
 }
 
-  /*border card player*/  
-
+/*border card player*/  
 .bordercard{
     border-style: solid;
     background-color: yellow;
@@ -429,7 +425,6 @@ footer>p{
     background-size: cover;
 }
 
-
 /*middle lane*/
 #middlelane{
     
@@ -440,28 +435,25 @@ footer>p{
     margin-left: 9px;
     margin-right: 35px;
     padding-top: 150px;
-
 }
 
 #scoreboard{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 #pokescore{
     border-style: solid;
     margin-top: 10px;
-    border-radius: 32px;
-    
+    border-radius: 32px;   
 }
 
 #youscore{
     display: flex;
     flex-direction: row;
-    margin-left: 45px;
-    
+    margin-left: 45px;   
 }
+
 #youscore>h2{
     font-family:  "Pokemon GB";
     margin-right: 10px;
@@ -480,24 +472,21 @@ footer>p{
     width: 65px;
     height: 56px;
     border-radius: 17px;
-    font-family:  "Pokemon GB";
-    
-   
+    font-family:  "Pokemon GB";   
 }
+
 #youboxscoreboard>span{
     display: flex;
     padding-left: 25px;
     padding-top: 17px;
     font-family:  "Pokemon GB";
-
 }
 
 #opscore {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    font-family:  "Pokemon GB";
-    
+    font-family:  "Pokemon GB";    
 }
 
 #opscore>h2 {
@@ -505,7 +494,6 @@ footer>p{
     margin-right: 10px;
     font-size: 15px;
     padding-top: 20px;
-
 }
 
 #opboxscoreboard{
@@ -516,6 +504,7 @@ footer>p{
     height: 56px;
     border-radius: 17px;
 }
+
 #opboxscoreboard>span{
     display: flex;
     padding-left: 25px;
@@ -531,20 +520,20 @@ footer>p{
     height: 56px;
     border-radius: 17px;
     margin-left: 40px;
-    margin-top: 10px;
-    
-    
+    margin-top: 10px; 
 }
+
 .boardtitle{
     margin-left: 36px;
 }
+
 #boxround>span{
     font-family:  "Pokemon GB";
     display: flex;
     padding-left: 25px;
-    padding-top: 17px;
-    
+    padding-top: 17px;    
 }
+
 .frame-option{
     position: relative;
     border-image: url(../images/frame-hd.png) 42 round;
@@ -553,211 +542,195 @@ footer>p{
     padding: 6px;
     margin-top: 50px;
     margin: 1em 0 0 0;
-    width: 380px;
-    
+    width: 380px;   
 }
-#optionspage>h2{
 
-   
+#optionspage>h2{ 
     font-size: 17px;
-    margin-top: 10px;
-    
+    margin-top: 10px;  
 }
-
 
 /*button game*/
 .video-game-button {
     text-align: center;
-        display: inline-block;
-        margin: 5px;
-        font-weight: bold;
-        padding: 7px 0 7px 2px;
-        background-color: lightgray;
-        text-shadow: -1px -1px black, 1px 1px white;
-        color: gray;
-        border-radius: 7px;
-        box-shadow: 0 .2em gray;
-        cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    padding: 7px 0 7px 2px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+}
     
-    }
-    
-    .video-game-button:active
-     {
-        box-shadow: none;
-        position: relative;
-        top: .2em;
-    }
-    @media (min-width: 420px){
-        body{
-            height: 857px;
+.video-game-button:active{   
+    box-shadow: none;
+     position: relative;
+    top: .2em;
+}
+@media (min-width: 420px){
 
-        }
-        #popmessage {
-            display: none;
-            flex-direction: column;
-            align-items: center;
+body{
+    height: 857px;
+
+}
+
+#popmessage {
+    display: none;
+    flex-direction: column;
+    align-items: center;
              
-        }
-        #messageresult {
-            margin-top: 10px;
-            
-            font-size: 16px;
-        }
-        #messagepoints {
-            margin-top: 10px;
-           
-        }
-    }
-    @media (min-width: 600px){
-        body{
-            width: 600px;
-        }
-       
-        #gameboyscreen {
-            
-            width: 277px;
-            
-            
-        }
-        #mainmenu{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-       
-        .frame-menu{
-            width: 265px;
-            
-        }
-        .frame-option{
-            width: 580px;
-        }
-        .classic, .blue, .purple, .green {
-            width: 178px;
-            height: 169px;
-        }
-        .framegameboyone {
-            margin-left: 71px;
-        }
-        .framegameboytwo {
-            margin-left: 71px;
-        }
-        
-       
-       
-        
-       
-        #battlecamp {
-            background-position-y: 2px;
-            align-items: center;
-            width: 598px;
-        }
-        
-    }
-    @media (min-width: 700px){
-        body{
-            width: 700px;
-        }
-       
-       
-       
-           
-       
-        .frame-option {
-            width: 679px;
-        }
-        .framegameboyone {
-            margin-left: 130px;
-        }
-        .framegameboytwo {
-            margin-left: 130px;
-        }
-       
-        
-        #battlecamp {
-            background-position-y: 2px;
-            width: 691px;
-            align-items: center;
-        }
-        
-    }
-    
-    @media (min-width: 768px){
-        body{
-            width: auto;
-        }
-        .picagif {
-            
-            
-             height: 178px;
-        }
-      
-        #battlecamp {
-            background-position-y: 2px;
-            align-items: center;
-            width: 764px;
-           
-        }
-       
-        
-        
-       
-      
-    }
-    
-    @media (min-width: 1080px){
-        body{
-            width: auto;
-        }
-        
-        #popmessage {
-            background-size: 361px;
-           
-        }
-        #messageresult {
-            margin-top: 10px;
-           
-            font-size: 16px;
-        }
-        #messagepoints {
-            margin-top: 10px;
-            
-           
-        }
-        
-    }
-    @media screen and (min-width: 1200px){
-       
-        #mainmenu{
-        display: flex;
-        flex-direction: column;
-       
-        align-items: center;
+}
 
-        }
-        #gameboyscreen {
-            width: 317px;
-            
-           
-        }
-      
-        .frame-menu {
-            width: 234px;
-           
-           
-        }
-        
-      header{
-        display: flex;
-        align-items: center;
-       
-      }
-      footer{
-       
-        display: flex;
-        align-items: center;
-        
-      }
-    
+#messageresult {
+    margin-top: 10px;           
+    font-size: 16px;
+}
 
-    }
+#messagepoints {
+    margin-top: 10px;
+           
+}
+
+}
+
+@media (min-width: 600px){
+
+body{
+    width: 600px;
+}
+       
+#gameboyscreen {          
+    width: 277px;          
+}
+
+#mainmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+       
+.frame-menu{
+    width: 265px;           
+}
+
+.frame-option{
+    width: 580px;
+}
+
+.classic, .blue, .purple, .green {
+    width: 178px;
+    height: 169px;
+}
+
+.framegameboyone {
+    margin-left: 71px;
+}
+
+.framegameboytwo {
+    margin-left: 71px;
+}
+
+ #battlecamp {
+    background-position-y: 2px;
+    align-items: center;
+    width: 598px;
+}
+
+}
+
+@media (min-width: 700px){
+
+body{
+    width: 700px;
+}
+
+.frame-option {
+    width: 679px;
+}
+
+.framegameboyone {
+    margin-left: 130px;
+}
+
+.framegameboytwo {
+    margin-left: 130px;
+}
+    
+#battlecamp {
+    background-position-y: 2px;
+    width: 691px;
+    align-items: center;
+}
+    
+}
+    
+@media (min-width: 768px){
+
+body{
+    width: auto;
+}
+
+.picagif {
+    height: 178px;
+}
+
+#battlecamp {
+    background-position-y: 2px;
+    align-items: center;
+    width: 764px;
+           
+}
+
+}
+    
+@media (min-width: 1080px){
+
+body{
+    width: auto;
+}
+        
+#popmessage {
+    background-size: 361px;  
+}
+
+#messageresult {
+    margin-top: 10px;
+           
+    font-size: 16px;
+}
+#messagepoints {
+    margin-top: 10px;   
+}
+     
+}
+
+@media screen and (min-width: 1200px){
+
+#mainmenu{
+    display: flex;
+    flex-direction: column;       
+    align-items: center;
+}
+
+#gameboyscreen {
+    width: 317px;          
+}
+      
+.frame-menu {
+    width: 234px;
+}
+ 
+header{
+    display: flex;
+    align-items: center;  
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+    
+}
