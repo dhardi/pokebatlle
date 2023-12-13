@@ -91,6 +91,13 @@ At the end of twenty-one rounds the value of the player's points will be compare
 ### Classic
 ![Classic](https://github.com/dhardi/pokebatlle/blob/main/docs/classico.PNG)
 
+
+### BattleCamp
+
+- BattleCamp wont change the backgound after changed the theme because the only color matches with the backgound Image is rgb(128, 69, 51).
+
+![Color]()
+
 ### Footer
  - Footer includes all liks to the relevant social media sites for this project .The links will open to a new tab to allow easy navigation for the user.
 
@@ -136,7 +143,7 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 ### Unfixed Bugs
 
-I had to use global Var one of my variables otherwise it will chash my code but i Know it not recommended.
+I had to use global Var one of my variables otherwise it will crash the game, i Know it not recommended to use Global variables.
 
 
 ## Deployment 
