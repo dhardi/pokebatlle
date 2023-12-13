@@ -6,8 +6,7 @@
 
 body {
     min-height: 100vh;
-   width: 400px;
-   height: 936px;
+    height: 936px;
     display: flex;
     flex-direction: column;
   
@@ -45,6 +44,7 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+    align-items: center;
    
 }
 #social-btn>ul{
@@ -60,6 +60,7 @@ header{
 }
 main{
     display: flex;
+    align-items: center;
     background-color: #6eb300;
 }
 footer{
@@ -98,13 +99,11 @@ footer{
 }
 
 /*message pop up*/
-#endgame{
-    margin-left: 150px;
-}
+
 #popmessage{
     display: none;
     flex-direction: column;
-    
+    align-items: center;
     background-image: url(../images/popmessage.jpg);
     background-size: 360px;
     background-repeat: no-repeat;
@@ -335,7 +334,7 @@ footer>p{
     background-position-y: 100px;
     display: none;
     flex-direction: column;
-   
+   align-items: center;
     width: 400px;
     height: 800px;
 }
@@ -644,13 +643,13 @@ footer>p{
             margin-left: 71px;
         }
         
-       #popmessage{
-        margin-left: 103px;
-       }
+       
+       
         
        
         #battlecamp {
             background-position-y: 2px;
+            align-items: center;
             width: 598px;
         }
         
@@ -661,9 +660,8 @@ footer>p{
         }
        
        
-        #popmessage{
-            margin-left: 153px;
-           }
+       
+           
        
         .frame-option {
             width: 679px;
@@ -679,6 +677,7 @@ footer>p{
         #battlecamp {
             background-position-y: 2px;
             width: 691px;
+            align-items: center;
         }
         
     }
@@ -695,6 +694,7 @@ footer>p{
       
         #battlecamp {
             background-position-y: 2px;
+            align-items: center;
             width: 764px;
            
         }
@@ -708,15 +708,6 @@ footer>p{
     @media (min-width: 1080px){
         body{
             width: auto;
-        }
-       
-        
-        
-        
-       
-       
-        #battlecamp{
-            margin-left: 204px;
         }
         
         #popmessage {
@@ -749,9 +740,7 @@ footer>p{
             
            
         }
-        #battlecamp{
-            margin-left: 531px;
-        }
+      
         .frame-menu {
             width: 234px;
            

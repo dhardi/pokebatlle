@@ -131,12 +131,12 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 - Performace Lighthouse Mobile
 
-![JsHint]()
+![JsHint](https://github.com/dhardi/pokebatlle/blob/main/docs/javahint.PNG)
 
 
 ### Unfixed Bugs
 
-At this Date no Unfixed Bugs.
+I had to use global Var one of my variables otherwise it will chash my code but i Know it not recommended.
 
 
 ## Deployment 
