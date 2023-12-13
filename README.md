@@ -96,7 +96,7 @@ At the end of twenty-one rounds the value of the player's points will be compare
 
 - BattleCamp wont change the backgound after changed the theme because the only color matches with the backgound Image is rgb(128, 69, 51).
 
-![Color]()
+![Color](https://github.com/dhardi/pokebatlle/blob/main/docs/colorbatle.PNG)
 
 ### Footer
  - Footer includes all liks to the relevant social media sites for this project .The links will open to a new tab to allow easy navigation for the user.
@@ -136,7 +136,7 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 ![lighthousemobile](https://github.com/dhardi/pokebatlle/blob/main/docs/lighthousetest.PNG)
 
-- Performace Lighthouse Mobile
+- JShint Validator
 
 ![JsHint](https://github.com/dhardi/pokebatlle/blob/main/docs/javahint.PNG)
 
