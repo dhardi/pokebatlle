@@ -19,10 +19,9 @@ const pokemons = [
 ];
 let opPointsFinal = document.getElementById("oppoints").innerText;
 let playerPointsFinal = document.getElementById("youpoints").innerText;
-const btnEndGame = document.getElementById("endgame")
+const btnEndGame = document.getElementById("endgame");
 btnEndGame.addEventListener("click",endGame);
 const popMessage = document.getElementById("popmessage");
-const message = document.getElementById("finalresult");
 const pokemonPlayed = [0,1,2];
 //cards Op
 const firstCardOp = document.getElementById("card4");
@@ -31,7 +30,6 @@ const thirdCardOp = document.getElementById("card6");
 const skillsPoke = document.getElementsByClassName("skillspoke");
 const imgPoke = document.getElementsByClassName("imgpoke");
 const namePokeCard = document.getElementsByClassName("name");
-const oldplayeds = [0];
 //players cards
 const playerCardOne = document.getElementById("card1");
 const playerCardTwo = document.getElementById("card2");
@@ -46,8 +44,6 @@ purple[0].addEventListener("click",changeThemePurple);
 const green = document.getElementsByClassName("green");
 green[0].addEventListener("click",changeThemeGreen);
 // display initials 
-const pokename ="notdefined";
-const findMyPoke = "notdefined";
 const element = document.getElementById("btn-start");
 const btnShow = document.getElementById("btn-show");
 btnShow.addEventListener("click",ShowMyHand);
@@ -68,7 +64,7 @@ const menu = document.getElementById("mainmenu");
 const start = document.getElementById("gamestart");
 start.addEventListener("click",startGamePage );
 menu.addEventListener("click", mainMenu);
-const howTo = document.getElementById("howtoplaypage")
+const howTo = document.getElementById("howtoplaypage");
 howTo.addEventListener("click", howToPlay);
 const tutorial = document.getElementById("howtoplay");
 //menu envents ends here
@@ -408,7 +404,7 @@ function dealCards(){
                         let speed = Math.floor(Math.random()*100);
                          let stamina = Math.floor(Math.random()*100);
                          //pokemons.sort();
-                          namepoke = pokemons[pokename];
+                         var namepoke = pokemons[pokename];
                          
                           
                          
@@ -500,19 +496,19 @@ function pageOptions(){
 function changeThemeClassic(){
     mainBackground.style.backgroundColor = "#d2d2d4";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyclassic.PNG")';
-    document.getElementById("gameboyscreen").style.height = "299px"
+    document.getElementById("gameboyscreen").style.height = "299px";
     document.getElementsByClassName("color")[0].style.backgroundColor = "#57244b";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#57244b";
-     document.getElementsByClassName("picagif")[0].style.height = "192px"
-     document.getElementsByClassName("picagif")[0].style.width = "192px"
+     document.getElementsByClassName("picagif")[0].style.height = "192px";
+     document.getElementsByClassName("picagif")[0].style.width = "192px";
     
 }
 
 function changeThemeBlue(){
     mainBackground.style.backgroundColor = "#05a9c5";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyblue.PNG")';
-    document.getElementById("gameboyscreen").style.height = "260px"
-    document.getElementById("gameboyscreen").style.width = "324px"
+    document.getElementById("gameboyscreen").style.height = "260px";
+    document.getElementById("gameboyscreen").style.width = "324px";
     document.getElementsByClassName("color")[0].style.backgroundColor = "#333f49";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#333f49";
    
@@ -520,8 +516,8 @@ function changeThemeBlue(){
 
 function changeThemePurple(){
     mainBackground.style.backgroundColor = "#b14cf1";
-    document.getElementById("gameboyscreen").style.height = "260px"
-    document.getElementById("gameboyscreen").style.width = "324px"
+    document.getElementById("gameboyscreen").style.height = "260px";
+    document.getElementById("gameboyscreen").style.width = "324px";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboypurple.PNG")';
     document.getElementsByClassName("color")[0].style.backgroundColor = "#5e5e53";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#5e5e53";
@@ -530,8 +526,8 @@ function changeThemePurple(){
 
 function changeThemeGreen(){
     mainBackground.style.backgroundColor = "#7cc901";
-    document.getElementById("gameboyscreen").style.height = "260px"
-    document.getElementById("gameboyscreen").style.width = "324px"
+    document.getElementById("gameboyscreen").style.height = "260px";
+    document.getElementById("gameboyscreen").style.width = "324px";
     document.getElementById("gameboyscreen").style.backgroundImage = 'url("./assets/images/gameboyscreen.PNG")';
     document.getElementsByClassName("color")[0].style.backgroundColor = "#FFFF00";
     document.getElementsByClassName("color")[1].style.backgroundColor = "#FFFF00";
@@ -611,7 +607,7 @@ function hiddenMyCardTwo(){
     sortImgPoke();
     hidenCardOp();
     ResetArray();
-    HiddenButton()
+    HiddenButton();
     
 
 
@@ -620,12 +616,7 @@ function hiddenMyCardTwo(){
 
 function HiddenButton(){
     element.style.display = "none";
-    btnShow.style.display = "none"
-}
-  
-function ShowMybutton(){
-    element.style.display = "block";
-
+    btnShow.style.display = "none";
 }
 
 function ResetArray() {
@@ -635,5 +626,5 @@ function endGame(){
     location.reload();
    }
 function showMyCardButton(){
-    btnShow.style.display = "block"
+    btnShow.style.display = "block";
 }

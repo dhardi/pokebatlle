@@ -129,6 +129,11 @@ I had a lot of problems with the game mechanics when adding events and how to co
 
 ![lighthousemobile](https://github.com/dhardi/pokebatlle/blob/main/docs/lighthousetest.PNG)
 
+- Performace Lighthouse Mobile
+
+![JsHint]()
+
+
 ### Unfixed Bugs
 
 At this Date no Unfixed Bugs.
